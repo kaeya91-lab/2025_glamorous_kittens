@@ -1,0 +1,90 @@
+!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на фотосессию</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-pink py-3">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Гламурные котята</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="breeds.html">Стильные породы</a></li>
+            <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуары</a></li>
+            <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link active" href="photoshoot.html">Фотосессия</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<header class="text-center py-5 bg-gradient">
+    <h1>Запись на фотосессию</h1>
+    <p class="lead">Заполните форму и выберите услугу для вашего котёнка</p>
+</header>
+
+
+<section class="container py-5">
+    <form action="https://example.com/submit" method="POST">
+        
+        <div class="mb-3">
+            <label for="ownerName" class="form-label">Ваше имя</label>
+            <input type="text" class="form-control" id="ownerName" name="ownerName" placeholder="Иван Иванов" required>
+        </div>
+
+       
+        <div class="mb-3">
+            <label for="catName" class="form-label">Имя котёнка</label>
+            <input type="text" class="form-control" id="catName" name="catName" placeholder="Барсик" required>
+        </div>
+
+        
+        <div class="mb-3">
+            <label for="catAge" class="form-label">Возраст котёнка (месяцы)</label>
+            <input type="number" class="form-control" id="catAge" name="catAge" value="1" min="1" required>
+        </div>
+
+        
+        <div class="mb-3">
+            <label class="form-label">Выберите услугу</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="service" id="service1" value="mini-session" checked>
+                <label class="form-check-label" for="service1">Мини-фотосессия</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="service" id="service2" value="spa-session">
+                <label class="form-check-label" for="service2">Фотосессия со спа</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="service" id="service3" value="full-session">
+                <label class="form-check-label" for="service3">Полная фотосессия</label>
+            </div>
+        </div>
+
+        
+        <div class="mb-3">
+            <label for="comment" class="form-label">Комментарий</label>
+            <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Особые пожелания"></textarea>
+        </div>
+
+        
+        <button type="submit" class="btn btn-pink">Записаться</button>
+    </form>
+</section>
+
+
+<footer class="text-center py-4 bg-dark text-white">
+    <p>© 2025 Гламурные котята. Все права защищены.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

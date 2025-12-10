@@ -78,16 +78,16 @@ body {
 .nav-link {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 900 !important; /* ИЗМЕНЕНО: сделал 900 (самый жирный) */
     color: var(--color2) !important;
     text-decoration: none;
-    padding: 20px 40px;
+    padding: 20px 50px !important; /* ИЗМЕНЕНО: увеличил горизонтальные отступы для ширины */
     display: inline-block;
     transition: all 0.3s ease;
     background-color: var(--color3) !important;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(218, 228, 152, 0.4);
-    min-width: 200px;
+    min-width: 220px !important; /* ИЗМЕНЕНО: увеличил минимальную ширину */
     text-align: center;
 }
 
@@ -99,8 +99,9 @@ body {
 }
 
 .heart-icon {
-    font-size: 1.6rem;
-    padding: 20px 30px;
+    font-size: 1.8rem !important; /* ИЗМЕНЕНО: увеличил сердечко */
+    padding: 20px 40px !important; /* ИЗМЕНЕНО: увеличил отступы для сердечка */
+    min-width: 130px !important; /* ИЗМЕНЕНО: минимальная ширина для сердечка */
 }
 
 .dropdown-menu {
@@ -329,14 +330,14 @@ body {
     
     .nav-link {
         font-size: 1.4rem;
-        padding: 18px 35px;
-        min-width: 180px;
+        padding: 18px 40px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
+        min-width: 200px !important; /* ИЗМЕНЕНО: сохраняем увеличенную ширину */
         background-color: var(--color3) !important;
     }
     
     .heart-icon {
-        font-size: 1.5rem;
-        padding: 18px 25px;
+        font-size: 1.6rem !important; /* ИЗМЕНЕНО: увеличил для адаптива */
+        padding: 18px 35px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
     }
     
     .welcome-text,
@@ -390,14 +391,14 @@ body {
     .nav-link {
         width: 250px;
         font-size: 1.3rem;
-        padding: 16px 40px;
-        min-width: 220px;
+        padding: 16px 45px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
+        min-width: 230px !important; /* ИЗМЕНЕНО: сохраняем увеличенную ширину */
         background-color: var(--color3) !important;
     }
     
     .heart-icon {
-        font-size: 1.5rem;
-        padding: 16px 30px;
+        font-size: 1.5rem !important;
+        padding: 16px 40px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
     }
     
     .cards-row {
@@ -441,14 +442,14 @@ body {
     
     .nav-link {
         font-size: 1.2rem;
-        padding: 14px 35px;
-        min-width: 200px;
+        padding: 14px 40px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
+        min-width: 210px !important; /* ИЗМЕНЕНО: сохраняем увеличенную ширину */
         background-color: var(--color3) !important;
     }
     
     .heart-icon {
-        font-size: 1.4rem;
-        padding: 14px 25px;
+        font-size: 1.4rem !important;
+        padding: 14px 35px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
     }
     
     .welcome-text,

@@ -1,4 +1,4 @@
-мя, [10.12.2025 4:57]
+мя, [10.12.2025 5:07]
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -10,19 +10,21 @@
 </head>
 <body>
 
+<!-- Заголовок по центру -->
+<header class="text-center py-5 bg-gradient">
+    <h1>Гламурные котята</h1>
+</header>
+
 <!-- Навигация -->
 <nav class="navbar navbar-expand-lg navbar-light bg-pink py-3">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Гламурные котята</a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="container justify-content-center">
+        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
             <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
             <li class="nav-item"><a class="nav-link" href="breeds.html">Стильные породы</a></li>
             <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуары</a></li>
             <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
+            <li class="nav-item"><a class="nav-link text-pink fs-4" href="order.html">🩷</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-            <li class="nav-item"><a class="nav-link" href="photoshoot.html">Фотосессия</a></li>
-
-            <!-- Новая кнопка с выпадающим меню -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
                 <ul class="dropdown-menu">
@@ -30,129 +32,83 @@
                     <li><a class="dropdown-item" href="#book-photoshoot">Записаться на фотосессию</a></li>
                 </ul>
             </li>
-
-            <!-- Иконка 🩷 -->
-            <li class="nav-item">
-                <a class="nav-link text-pink fs-4" href="order.html">🩷</a>
-            </li>
         </ul>
     </div>
 </nav>
 
-<!-- Хедер -->
-<header class="text-center py-5 bg-gradient">
-    <h1>Добро пожаловать в мир гламурных котят!</h1>
-    <p class="lead">Стиль. Красота. Пушистое совершенство.</p>
-</header>
-
 <!-- Вводный текст -->
 <section class="text-center py-4">
-    <p>Добро пожаловать в наш гламурный журнал о котиках! 
-    Здесь вы найдёте стильные породы, модные аксессуары и лучшие beauty-процедуры для пушистых модников.</p>
+    <p>Добро пожаловать в наш гламурный журнал о котиках! Здесь вы найдёте стильные породы, модные аксессуары и лучшие beauty-процедуры для пушистых модников.</p>
 </section>
 
-<!-- Наши предложения и Почему мы -->
-<section class="container py-5 text-center" id="offers">
-    <h2>Наши предложения</h2>
-    <div class="row justify-content-center g-4">
-        <div class="col-md-5">
-            <div class="card h-100">
-                <img src="images/offer1.jpg" class="card-img-top" alt="Предложение 1">
-                <div class="card-body">
-                    <h5 class="card-title"><a href="#offer1-detail" class="text-decoration-none">Узнать подробнее</a></h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5">
-            <div class="card h-100">
-                <img src="images/offer2.jpg" class="card-img-top" alt="Предложение 2">
-                <div class="card-body">
-                    <h5 class="card-title"><a href="#offer2-detail" class="text-decoration-none">Почему мы?</a></h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Блоки с подробным описанием -->
-<section class="container py-4">
-    <div id="offer1-detail" class="my-5">
-        <h3>Наши предложения</h3>
-        <p>Описание предложения, преимущества, уникальные особенности наших котят и услуг.</p>
-    </div>
-    <div id="offer2-detail" class="my-5">
-        <h3>Почему мы?</h3>
-        <p>Здесь рассказ о том, чем мы отличаемся: качество ухода, профессионализм, индивидуальный подход.</p>
-    </div>
-</section>
-
-<!-- Текст с ссылками на страницы и сторонние ресурсы -->
-<section class="container py-4 text-center">
-    <p>
-        Узнайте больше о наших <a href="breeds.html">стильных породах</a> или посетите <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.
-    </p>
-</section>
-
-<!-- Основные карточки разделов -->
+<!-- Карточки Узнать подробнее и Почему мы -->
 <section class="container py-5">
     <div class="row justify-content-center g-4">
-
-мя, [10.12.2025 4:57]
-<div class="col-md-4">
+        <div class="col-md-5">
             <div class="card h-100">
                 <img src="images/cat1.jpg" class="card-img-top" alt="Стильные породы">
                 <div class="card-body">
-                    <h5 class="card-title">Стильные породы</h5>
-                    <p class="card-text">Познакомьтесь с самыми гламурными породами котят.</p>
-                    <a href="breeds.html" class="btn btn-pink w-100">Подробнее</a>
+                    <h5 class="card-title"><a href="#offers" class="text-decoration-none">Узнать подробнее</a></h5>
                 </div>
             </div>
         </div>
+        <div class="col-md-5">
+            <div class="card h-100">
+                <img src="images/cat2.jpg" class="card-img-top" alt="Почему мы">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#why-us" class="text-decoration-none">Почему мы?</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Наши предложения -->
+<section class="container py-5" id="offers">
+    <h2 class="text-center mb-4">Наши предложения</h2>
+    <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="images/cat1.jpg" class="card-img-top" alt="Стильные породы">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="breeds.html" class="text-decoration-none">Стильные породы</a></h5>
+                </div>
+            </div>
+        </div>
         <div class="col-md-4">
             <div class="card h-100">
                 <img src="images/cat2.jpg" class="card-img-top" alt="Гламурные аксессуары">
                 <div class="card-body">
-                    <h5 class="card-title">Гламурные аксессуары</h5>
-                    <p class="card-text">Модные бантики, ошейники и одежда для ваших пушистиков.</p>
-                    <a href="accessories.html" class="btn btn-pink w-100">Подробнее</a>
+                    <h5 class="card-title"><a href="accessories.html" class="text-decoration-none">Гламурные аксессуары</a></h5>
                 </div>
             </div>
         </div>
-
         <div class="col-md-4">
             <div class="card h-100">
                 <img src="images/cat3.jpg" class="card-img-top" alt="Beauty-процедуры">
                 <div class="card-body">
-                    <h5 class="card-title">Beauty-процедуры</h5>
-                    <p class="card-text">Стрижка, уход за шерстью и спа-процедуры для котиков.</p>
-                    <a href="beauty.html" class="btn btn-pink w-100">Подробнее</a>
+                    <h5 class="card-title"><a href="beauty.html" class="text-decoration-none">Beauty-процедуры</a></h5>
                 </div>
-            </div>
+
+мя, [10.12.2025 5:07]
+</div>
         </div>
     </div>
 </section>
 
-<!-- Отзывы -->
-<section class="container py-4" id="reviews">
-    <h3>Отзывы</h3>
-    <p>Здесь будут реальные отзывы клиентов.</p>
+<!-- Почему мы -->
+<section class="container py-5" id="why-us">
+    <h2>Почему мы?</h2>
+    <p>Мы предлагаем индивидуальный подход к каждому пушистику, высокое качество ухода и профессиональные услуги по стрижке, спа-процедурам и аксессуарам.</p>
 </section>
 
-<!-- Запись на фотосессию -->
-<section class="container py-4" id="book-photoshoot">
-    <h3>Записаться на фотосессию</h3>
-    <p>Форма или информация о записи на фотосессию.</p>
+<!-- Текст внизу страницы -->
+<section class="container py-4 text-center">
+    <p>Узнайте больше о наших <a href="breeds.html">стильных породах</a> или посетите <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.</p>
 </section>
 
 <!-- Футер -->
 <footer class="text-center py-4 bg-dark text-white">
-    <div class="mb-2">
-        <a href="index.html" class="text-white me-3">Наверх ⏏️</a>
-        <a href="#" class="text-white me-3">Instagram</a>
-        <a href="#" class="text-white me-3">Telegram</a>
-        <a href="#" class="text-white">GitHub</a>
-    </div>
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
 

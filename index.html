@@ -6,111 +6,27 @@
     <title>Гламурные котята</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Стили для одинаковых карточек */
-        .card-img-top {
-            height: 250px;
-            object-fit: cover;
-            object-position: center;
-            width: 100%;
-        }
-        
-        .card {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        .card-body {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1.25rem;
-            min-height: 70px;
-        }
-        
-        .card-title {
-            margin-bottom: 0;
-        }
-        
-        .cards-row {
-            align-items: stretch;
-        }
-        
-        /* Стили для навигации */
-        .heart-icon {
-            color: #ff6b8b;
-            font-size: 1.2rem;
-        }
-        
-        .nav-link:hover {
-            color: #ff6b8b !important;
-        }
-        
-        /* Стили для заголовка */
-        .bg-gradient {
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #a1c4fd);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-        }
-        
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        /* Стили для заголовка большими буквами */
-        .main-title {
-            font-size: 3.5rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 800;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-        
-        @media (max-width: 768px) {
-            .main-title {
-                font-size: 2.5rem;
-                letter-spacing: 1px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .main-title {
-                font-size: 2rem;
-                letter-spacing: 0.5px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- Заголовок по центру -->
-<header class="text-center py-5 bg-gradient text-white">
+<header class="main-header">
     <h1 class="main-title">ГЛАМУРНЫЕ КОТЯТА</h1>
-    <p class="lead mt-3">Стиль и элегантность для ваших пушистых друзей</p>
 </header>
 
 <!-- Навигация -->
-<nav class="navbar navbar-expand-lg navbar-light py-3 shadow-sm">
-    <div class="container justify-content-center">
-        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
-            <li class="nav-item"><a class="nav-link fw-medium px-3" href="index.html">Главная</a></li>
-            <li class="nav-item"><a class="nav-link fw-medium px-3" href="breeds.html">Стильные породы</a></li>
-            <li class="nav-item"><a class="nav-link fw-medium px-3" href="accessories.html">Аксессуары</a></li>
-            <li class="nav-item"><a class="nav-link heart-icon fw-bold px-3" href="order.html">🩷</a></li>
-            <li class="nav-item"><a class="nav-link fw-medium px-3" href="beauty.html">Beauty-процедуры</a></li>
-            <li class="nav-item"><a class="nav-link fw-medium px-3" href="catalog.html">Каталог</a></li>
+<nav class="main-nav">
+    <div class="nav-container">
+        <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="breeds.html">Стильные породы</a></li>
+            <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуары</a></li>
+            <li class="nav-item"><a class="nav-link heart-icon" href="order.html">🩷</a></li>
+            <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle fw-medium px-3" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button">Дополнительная информация</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
                     <li><a class="dropdown-item" href="photoshoot.html">Записаться на фотосессию</a></li>
@@ -121,37 +37,35 @@
 </nav>
 
 <!-- Вводный текст -->
-<section class="text-center py-5 bg-light">
+<section class="welcome-section">
     <div class="container">
-        <p class="fs-5 mb-0">Добро пожаловать в наш гламурный журнал о котиках! Здесь вы найдёте стильные породы, модные аксессуары и лучшие beauty-процедуры для пушистых модников.</p>
+        <p class="welcome-text">Добро пожаловать в наш гламурный мир котиков! Здесь вы найдёте стильные породы, модные аксессуары и лучшие beauty-процедуры для пушистых модников.</p>
     </div>
 </section>
 
 <!-- Карточки Узнать подробнее и Почему мы -->
-<section class="container py-5">
-    <div class="row justify-content-center g-4 cards-row">
-        <div class="col-md-5">
-            <div class="card h-100">
-                <!-- Картинка 1: Стильные породы -->
+<section class="container cards-section">
+    <div class="cards-row">
+        <div class="card-col">
+            <div class="glamour-card">
                 <img src="https://i.pinimg.com/736x/58/e4/32/58e432bedfc250cb6d4f25eed304e838.jpg" 
-                     class="card-img-top" 
+                     class="card-image" 
                      alt="Пушистый котёнок с красивой шерстью">
-                <div class="card-body text-center">
+                <div class="card-content">
                     <h5 class="card-title">
-                        <a href="#offers" class="text-decoration-none text-dark fw-bold fs-5">Узнать подробнее</a>
+                        <a href="#offers" class="card-link">Узнать подробнее</a>
                     </h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-5">
-            <div class="card h-100">
-                <!-- Картинка 2: Почему мы -->
+        <div class="card-col">
+            <div class="glamour-card">
                 <img src="https://i.pinimg.com/736x/41/31/f5/4131f5c9a81410305af6395e2430afb6.jpg" 
-                     class="card-img-top" 
+                     class="card-image" 
                      alt="Милый котёнок с бантиком">
-                <div class="card-body text-center">
+                <div class="card-content">
                     <h5 class="card-title">
-                        <a href="#why-us" class="text-decoration-none text-dark fw-bold fs-5">Почему мы?</a>
+                        <a href="#why-us" class="card-link">Почему мы?</a>
                     </h5>
                 </div>
             </div>
@@ -160,44 +74,41 @@
 </section>
 
 <!-- Наши предложения -->
-<section class="container py-5" id="offers">
-    <h2 class="text-center mb-5 fw-bold display-6">Наши предложения</h2>
-    <div class="row justify-content-center g-4 cards-row">
-        <div class="col-md-4">
-            <div class="card h-100">
-                <!-- Картинка 3: Стильные породы (первая карточка) -->
+<section class="container offers-section" id="offers">
+    <h2 class="section-title">Наши предложения</h2>
+    <div class="cards-row offers-cards">
+        <div class="offer-col">
+            <div class="glamour-card">
                 <img src="https://i.pinimg.com/1200x/5c/23/48/5c2348f4ebe3e73be2fcb23605df62e4.jpg" 
-                     class="card-img-top" 
+                     class="card-image" 
                      alt="Породистый котёнок с выразительными глазами">
-                <div class="card-body text-center">
+                <div class="card-content">
                     <h5 class="card-title">
-                        <a href="breeds.html" class="text-decoration-none text-dark fw-bold fs-5">Стильные породы</a>
+                        <a href="breeds.html" class="card-link">Стильные породы</a>
                     </h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card h-100">
-                <!-- Картинка 4: Гламурные аксессуары -->
+        <div class="offer-col">
+            <div class="glamour-card">
                 <img src="https://i.pinimg.com/1200x/15/7c/d9/157cd9c31cbc4aaf8733014efbd25d5d.jpg" 
-                     class="card-img-top" 
+                     class="card-image" 
                      alt="Котёнок в ошейнике с бантиком">
-                <div class="card-body text-center">
+                <div class="card-content">
                     <h5 class="card-title">
-                        <a href="accessories.html" class="text-decoration-none text-dark fw-bold fs-5">Гламурные аксессуары</a>
+                        <a href="accessories.html" class="card-link">Гламурные аксессуары</a>
                     </h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card h-100">
-                <!-- Картинка 5: Beauty-процедуры -->
+        <div class="offer-col">
+            <div class="glamour-card">
                 <img src="https://i.pinimg.com/1200x/3b/9c/75/3b9c7595acd2717acf7146e465586e5d.jpg" 
-                     class="card-img-top" 
+                     class="card-image" 
                      alt="Ухоженный котёнок после процедур">
-                <div class="card-body text-center">
+                <div class="card-content">
                     <h5 class="card-title">
-                        <a href="beauty.html" class="text-decoration-none text-dark fw-bold fs-5">Beauty-процедуры</a>
+                        <a href="beauty.html" class="card-link">Beauty-процедуры</a>
                     </h5>
                 </div>
             </div>
@@ -205,24 +116,24 @@
     </div>
 </section>
 
-<!-- Почему мы (ВЫРОВНЕНО ПО ЦЕНТРУ) -->
-<section class="container py-5 text-center bg-light rounded-4" id="why-us">
-    <h2 class="text-center mb-4 fw-bold display-6">Почему мы?</h2>
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <p class="fs-5 mb-0">Мы предлагаем индивидуальный подход к каждому пушистику, высокое качество ухода и профессиональные услуги по стрижке, спа-процедурам и аксессуарам. Наши специалисты имеют многолетний опыт работы с самыми требовательными клиентами.</p>
+<!-- Почему мы -->
+<section class="why-us-section" id="why-us">
+    <div class="container">
+        <h2 class="section-title">Почему мы?</h2>
+        <div class="why-us-content">
+            <p class="why-us-text">Мы предлагаем индивидуальный подход к каждому пушистику, высокое качество ухода и профессиональные услуги по стрижке, спа-процедурам и аксессуарам.</p>
         </div>
     </div>
 </section>
 
 <!-- Текст внизу страницы -->
-<section class="container py-5 text-center">
-    <p class="fs-5 mb-0">Узнайте больше о наших <a href="breeds.html" class="text-decoration-none fw-bold text-info">стильных породах</a> или посетите <a href="https://example.com" target="_blank" class="text-decoration-none fw-bold text-info">наш блог</a> для дополнительных советов.</p>
+<section class="container bottom-section">
+    <p class="bottom-text">Узнайте больше о наших <a href="breeds.html" class="green-link">стильных породах</a> или посетите <a href="https://example.com" target="_blank" class="green-link">наш блог</a> для дополнительных советов.</p>
 </section>
 
 <!-- Футер -->
-<footer class="text-center py-4 bg-dark text-white">
-    <p class="mb-0">© 2025 Гламурные котята. Все права защищены.</p>
+<footer class="main-footer">
+    <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

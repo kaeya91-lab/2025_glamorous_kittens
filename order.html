@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гламурные котята - Оформление заказа</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Заголовок по центру -->
+<header class="text-center py-5">
+    <h1>Гламурные котята</h1>
+</header>
+
+<!-- Белое пространство -->
+<div class="white-space"></div>
+
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container justify-content-center">
+        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="breeds.html">Стильные породы</a></li>
+            <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуары</a></li>
+            <li class="nav-item"><a class="nav-link active heart-icon" href="order.html">🩷</a></li>
+            <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+                    <li><a class="dropdown-item" href="#book-photoshoot">Записаться на фотосессию</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Вводный текст -->
+<section class="intro-section text-center py-4">
+    <div class="container">
+        <p>Оформление заказа на гламурных котят</p>
+    </div>
+</section>
+
+<!-- Заголовок "Оформление заказа" -->
+<section class="container py-5 text-center">
+    <h2 class="section-title">Оформление заказа</h2>
+    <div class="title-spacing"></div>
+</section>
+
+<!-- Форма заказа -->
+<section class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="order-form-container">
+                <form id="order-form">
+                    <div class="mb-4">
+                        <h4 class="form-section-title">Личные данные</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Имя и Фамилия *</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Телефон *</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="address" class="form-label">Адрес доставки *</label>
+                                <textarea class="form-control" id="address" rows="3" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="form-section-title">Данные о заказе</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="product-type" class="form-label">Тип товара/услуги *</label>
+                                <select class="form-select" id="product-type" required>
+                                    <option value="" selected disabled>Выберите тип</option>
+                                    <option value="kitten">Котёнок</option>
+                                    <option value="accessory">Аксессуар</option>
+                                    <option value="beauty">Beauty-процедура</option>
+                                    <option value="photoshoot">Фотосессия</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="quantity" class="form-label">Количество *</label>
+                                <input type="number" class="form-control" id="quantity" min="1" value="1" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="product-name" class="form-label">Наименование товара/услуги</label>
+                                <input type="text" class="form-control" id="product-name" placeholder="Например: Сибирский котёнок, Розовый бантик">
+                            </div>
+                            <div class="col-12">
+                                <label for="comments" class="form-label">Комментарии к заказу</label>
+                                <textarea class="form-control" id="comments" rows="3" placeholder="Особые пожелания, цвет, размер и т.д."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="form-section-title">Способ оплаты</h4>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="payment" id="payment-cash" value="cash" checked>
+                            <label class="form-check-label" for="payment-cash">
+                                Наличными при получении
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="payment" id="payment-card" value="card">
+                            <label class="form-check-label" for="payment-card">
+                                Банковской картой онлайн
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="payment-transfer" value="transfer">
+                            <label class="form-check-label" for="payment-transfer">
+                                Банковский перевод
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="form-section-title">Способ доставки</h4>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="delivery" id="delivery-courier" value="courier" checked>
+                            <label class="form-check-label" for="delivery-courier">
+                                Курьерская доставка (+500₽)
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="delivery" id="delivery-pickup" value="pickup">
+                            <label class="form-check-label" for="delivery-pickup">
+                                Самовывоз (бесплатно)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="delivery" id="delivery-post" value="post">
+                            <label class="form-check-label" for="delivery-post">
+                                Почта России (+300₽)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="agree-terms" required>
+                        <label class="form-check-label" for="agree-terms">
+                            Я согласен с <a href="#" class="terms-link">правилами обработки персональных данных</a> и <a href="#" class="terms-link">условиями покупки</a> *
+                        </label>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn-order btn-lg">Оформить заказ</button>
+                        <p class="mt-3 small">* - обязательные поля для заполнения</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контактная информация -->
+<section class="container py-5 text-center">
+    <div class="contact-info">
+        <h3 class="mb-4">Контакты для связи</h3>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="contact-item">
+                    <h5>Телефон</h5>
+                    <p>+7 (999) 123-45-67</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="contact-item">
+                    <h5>Email</h5>
+                    <p>order@glamourkittens.ru</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="contact-item">
+                    <h5>Адрес</h5>
+                    <p>г. Москва, ул. Гламурная, д. 1</p>
+                </div>
+            </div>
+        </div>
+        <p class="mt-4">График работы: Пн-Пт 10:00-20:00, Сб-Вс 11:00-18:00</p>
+    </div>
+</section>
+
+<!-- Текст внизу страницы -->
+<section class="bottom-text-section">
+    <div class="container text-center">
+        <p>Вернуться в <a href="catalog.html">каталог</a> или посетить <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.</p>
+    </div>
+</section>
+
+<!-- Футер -->
+<footer class="text-center py-4">
+    <p>© 2025 Гламурные котята. Все права защищены.</p>
+</footer>
+
+<script>
+document.getElementById('order-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Получаем данные формы
+    const formData = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        address: document.getElementById('address').value,
+        productType: document.getElementById('product-type').value,
+        quantity: document.getElementById('quantity').value,
+        productName: document.getElementById('product-name').value,
+        comments: document.getElementById('comments').value,
+        payment: document.querySelector('input[name="payment"]:checked').value,
+        delivery: document.querySelector('input[name="delivery"]:checked').value,
+        agreeTerms: document.getElementById('agree-terms').checked
+    };
+    
+    // Проверка согласия с условиями
+    if (!formData.agreeTerms) {
+        alert('Пожалуйста, согласитесь с правилами обработки персональных данных');
+        return;
+    }
+    
+    // Здесь обычно отправка данных на сервер
+    // Вместо этого покажем сообщение об успехе
+    alert('Заказ успешно оформлен! Мы свяжемся с вами в ближайшее время для подтверждения заказа.\n\nВаш номер заказа: #' + Math.floor(Math.random() * 10000));
+    
+    // Очистка формы (опционально)
+    // this.reset();
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

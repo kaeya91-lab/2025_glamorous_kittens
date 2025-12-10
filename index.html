@@ -174,10 +174,10 @@
             border-radius: 15px !important;
             display: inline-block;
             background-color: white !important;
-            margin-bottom: 60px !important; /* Расстояние до карточек */
+            margin-bottom: 60px !important;
         }
         
-        /* ===== ПОЧЕМУ МЫ (ИСПРАВЛЕННО) ===== */
+        /* ===== ПОЧЕМУ МЫ ===== */
         #why-us {
             padding: 80px 20px !important;
             text-align: center;
@@ -193,7 +193,7 @@
             border-radius: 15px !important;
             display: inline-block;
             background-color: white !important;
-            margin-bottom: 60px !important; /* Такое же расстояние как у "Наши предложения" */
+            margin-bottom: 60px !important;
         }
         
         #why-us p {
@@ -203,30 +203,34 @@
             max-width: 900px;
             margin: 0 auto !important;
             line-height: 1.8;
-            padding-top: 20px; /* Дополнительный отступ */
         }
         
-        /* ===== ТЕКСТ ВНИЗУ С ССЫЛКАМИ ===== */
-        section.container.py-4.text-center:last-of-type {
+        /* ===== ТЕКСТ ВНИЗУ С ССЫЛКАМИ - ИСПРАВЛЕНО! ===== */
+        .bottom-text-section {
             padding: 60px 20px !important;
             margin: 40px 0 !important;
-            text-align: center !important;
             background-color: white !important;
+            width: 100%;
         }
         
-        section.container.py-4.text-center:last-of-type p {
+        .bottom-text-section .container {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
+        }
+        
+        .bottom-text-section p {
             color: #E196A9 !important;
             font-size: 1.7rem !important;
             font-weight: 700 !important;
-            margin-bottom: 20px !important;
+            margin: 0 !important;
+            padding: 0 !important;
             text-align: center !important;
-            max-width: 1000px;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            display: block !important;
+            display: inline-block !important;
         }
         
-        section.container.py-4.text-center:last-of-type a {
+        .bottom-text-section a {
             color: #DAE498 !important;
             font-weight: 700 !important;
             text-decoration: none !important;
@@ -234,9 +238,10 @@
             padding-bottom: 3px !important;
             transition: all 0.3s ease !important;
             font-size: 1.7rem !important;
+            display: inline !important;
         }
         
-        section.container.py-4.text-center:last-of-type a:hover {
+        .bottom-text-section a:hover {
             background-color: rgba(218, 228, 152, 0.15) !important;
             padding: 8px 15px !important;
             border-radius: 8px !important;
@@ -295,6 +300,9 @@
             #offers h2, #why-us h2 { font-size: 2.5rem !important; }
             
             .card-title a { font-size: 1.3rem !important; }
+            
+            .bottom-text-section p,
+            .bottom-text-section a { font-size: 1.5rem !important; }
         }
         
         @media (max-width: 768px) {
@@ -334,6 +342,11 @@
             
             .card-title a { font-size: 1.2rem !important; }
             
+            .bottom-text-section p,
+            .bottom-text-section a { 
+                font-size: 1.3rem !important;
+            }
+            
             footer p { font-size: 1.2rem !important; }
         }
         
@@ -358,9 +371,14 @@
             
             #why-us p { font-size: 1.1rem !important; }
             
-            section.container.py-4.text-center:last-of-type p,
-            section.container.py-4.text-center:last-of-type a {
-                font-size: 1.3rem !important;
+            .bottom-text-section { 
+                padding: 40px 15px !important;
+            }
+            
+            .bottom-text-section p,
+            .bottom-text-section a {
+                font-size: 1.1rem !important;
+                line-height: 1.5 !important;
             }
         }
     </style>
@@ -454,15 +472,17 @@
     </div>
 </section>
 
-<!-- Почему мы (ИСПРАВЛЕНО - как "Наши предложения") -->
+<!-- Почему мы -->
 <section class="container py-5" id="why-us">
     <h2 class="text-center mb-4">Почему мы?</h2>
     <p>Мы предлагаем индивидуальный подход к каждому пушистику, высокое качество ухода и профессиональные услуги по стрижке, спа-процедурам и аксессуарам.</p>
 </section>
 
-<!-- Текст внизу страницы (ИСПРАВЛЕНО - по центру) -->
-<section class="container py-4 text-center">
-    <p>Узнайте больше о наших <a href="breeds.html">стильных породах</a> или посетите <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.</p>
+<!-- Текст внизу страницы - ТОЧНО ПО ЦЕНТРУ -->
+<section class="bottom-text-section">
+    <div class="container text-center">
+        <p>Узнайте больше о наших <a href="breeds.html">стильных породах</a> или посетите <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.</p>
+    </div>
 </section>
 
 <!-- Футер -->

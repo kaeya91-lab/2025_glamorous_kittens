@@ -61,9 +61,13 @@
     </div>
 </section>
 
-<!-- Каталог котят -->
-<section class="container py-5">
-    <form id="catalog-form">
+<!-- Форма корзины -->
+<form id="cart-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+    <!-- Скрытые поля для заказа -->
+    <input type="hidden" name="order_id" value="CATALOG_ORDER">
+    <input type="hidden" name="page_source" value="catalog.html">
+    
+    <section class="container py-5">
         <div class="row g-4" id="catalog-cards">
 
             <!-- Карточки котят -->
@@ -76,7 +80,10 @@
                         <p class="card-text price-card-text">Цена: 5.000₽</p>
                         <div class="order">
                             <label>Количество:</label>
-                            <input type="number" class="form-control w-50 mx-auto" name="cat1" value="0" min="0">
+                            <input type="number" class="form-control w-50 mx-auto quantity-input" 
+                                   name="kitten_1_quantity" value="1" min="0" data-price="5000" data-name="Гламурный котёнок №1">
+                            <input type="hidden" name="kitten_1_name" value="Гламурный котёнок №1">
+                            <input type="hidden" name="kitten_1_price" value="5000">
                         </div>
                     </div>
                 </div>
@@ -91,7 +98,10 @@
                         <p class="card-text price-card-text">Цена: 6.200₽</p>
                         <div class="order">
                             <label>Количество:</label>
-                            <input type="number" class="form-control w-50 mx-auto" name="cat2" value="0" min="0">
+                            <input type="number" class="form-control w-50 mx-auto quantity-input" 
+                                   name="kitten_2_quantity" value="1" min="0" data-price="6200" data-name="Гламурный котёнок №2">
+                            <input type="hidden" name="kitten_2_name" value="Гламурный котёнок №2">
+                            <input type="hidden" name="kitten_2_price" value="6200">
                         </div>
                     </div>
                 </div>
@@ -106,7 +116,10 @@
                         <p class="card-text price-card-text">Цена: 5.800₽</p>
                         <div class="order">
                             <label>Количество:</label>
-                            <input type="number" class="form-control w-50 mx-auto" name="cat3" value="0" min="0">
+                            <input type="number" class="form-control w-50 mx-auto quantity-input" 
+                                   name="kitten_3_quantity" value="1" min="0" data-price="5800" data-name="Гламурный котёнок №3">
+                            <input type="hidden" name="kitten_3_name" value="Гламурный котёнок №3">
+                            <input type="hidden" name="kitten_3_price" value="5800">
                         </div>
                     </div>
                 </div>
@@ -122,7 +135,10 @@
                         <p class="card-text price-card-text">Цена: 7.000₽</p>
                         <div class="order">
                             <label>Количество:</label>
-                            <input type="number" class="form-control w-50 mx-auto" name="cat4" value="0" min="0">
+                            <input type="number" class="form-control w-50 mx-auto quantity-input" 
+                                   name="siberian_kitten_quantity" value="1" min="0" data-price="7000" data-name="Сибирский котёнок">
+                            <input type="hidden" name="siberian_kitten_name" value="Сибирский котёнок">
+                            <input type="hidden" name="siberian_kitten_price" value="7000">
                         </div>
                     </div>
                 </div>
@@ -137,7 +153,10 @@
                         <p class="card-text price-card-text">Цена: 6.500₽</p>
                         <div class="order">
                             <label>Количество:</label>
-                            <input type="number" class="form-control w-50 mx-auto" name="cat5" value="0" min="0">
+                            <input type="number" class="form-control w-50 mx-auto quantity-input" 
+                                   name="british_kitten_quantity" value="1" min="0" data-price="6500" data-name="Британский котёнок">
+                            <input type="hidden" name="british_kitten_name" value="Британский котёнок">
+                            <input type="hidden" name="british_kitten_price" value="6500">
                         </div>
                     </div>
                 </div>
@@ -152,7 +171,10 @@
                         <p class="card-text price-card-text">Цена: 7.200₽</p>
                         <div class="order">
                             <label>Количество:</label>
-                            <input type="number" class="form-control w-50 mx-auto" name="cat6" value="0" min="0">
+                            <input type="number" class="form-control w-50 mx-auto quantity-input" 
+                                   name="maine_coon_quantity" value="1" min="0" data-price="7200" data-name="Мейн-кун котёнок">
+                            <input type="hidden" name="maine_coon_name" value="Мейн-кун котёнок">
+                            <input type="hidden" name="maine_coon_price" value="7200">
                         </div>
                     </div>
                 </div>
@@ -167,7 +189,10 @@
                         <p class="card-text price-card-text">Цена: 4.800₽</p>
                         <div class="order">
                             <label>Количество:</label>
-                            <input type="number" class="form-control w-50 mx-auto" name="cat7" value="0" min="0">
+                            <input type="number" class="form-control w-50 mx-auto quantity-input" 
+                                   name="maine_coon_2_quantity" value="1" min="0" data-price="4800" data-name="Мейн-кун котёнок №2">
+                            <input type="hidden" name="maine_coon_2_name" value="Мейн-кун котёнок №2">
+                            <input type="hidden" name="maine_coon_2_price" value="4800">
                         </div>
                     </div>
                 </div>
@@ -182,7 +207,10 @@
                         <p class="card-text price-card-text">Цена: 5.300₽</p>
                         <div class="order">
                             <label>Количество:</label>
-                            <input type="number" class="form-control w-50 mx-auto" name="cat8" value="0" min="0">
+                            <input type="number" class="form-control w-50 mx-auto quantity-input" 
+                                   name="british_kitten_2_quantity" value="1" min="0" data-price="5300" data-name="Британский котёнок №2">
+                            <input type="hidden" name="british_kitten_2_name" value="Британский котёнок №2">
+                            <input type="hidden" name="british_kitten_2_price" value="5300">
                         </div>
                     </div>
                 </div>
@@ -197,7 +225,10 @@
                         <p class="card-text price-card-text">Цена: 5.900₽</p>
                         <div class="order">
                             <label>Количество:</label>
-                            <input type="number" class="form-control w-50 mx-auto" name="cat9" value="0" min="0">
+                            <input type="number" class="form-control w-50 mx-auto quantity-input" 
+                                   name="siberian_kitten_2_quantity" value="1" min="0" data-price="5900" data-name="Сибирский котёнок №2">
+                            <input type="hidden" name="siberian_kitten_2_name" value="Сибирский котёнок №2">
+                            <input type="hidden" name="siberian_kitten_2_price" value="5900">
                         </div>
                     </div>
                 </div>
@@ -206,12 +237,25 @@
         </div>
 
         <div class="text-center py-4">
-            <button type="submit" class="btn-order me-3">Сделать заказ🩷</button>
-            <!-- Кнопка с пустой ссылкой -->
-            <a href="" class="btn btn-section">Открыть корзину</a>
+            <!-- Кнопка перехода на страницу заказа -->
+            <a href="order.html" class="btn-order me-3">Сделать заказ🩷</a>
+            
+            <!-- Кнопка отправки корзины на сервер -->
+            <button type="submit" class="btn btn-section">Открыть корзину</button>
         </div>
-    </form>
-</section>
+        
+        <!-- Поля для расчета итоговой суммы -->
+        <input type="hidden" name="total_items" id="total-items" value="0">
+        <input type="hidden" name="total_price" id="total-price" value="0">
+    </section>
+</form>
+
+<!-- Информация о текущей корзине -->
+<div class="container text-center py-3">
+    <div class="cart-summary">
+        <p>Товаров в корзине: <span id="cart-count">9</span> | Общая сумма: <span id="cart-total">58,700</span>₽</p>
+    </div>
+</div>
 
 <!-- Текст внизу страницы -->
 <section class="bottom-text-section">
@@ -226,6 +270,7 @@
 </footer>
 
 <script>
+// Сортировка карточек
 const catalog = document.getElementById('catalog-cards');
 const cards = Array.from(catalog.children);
 const defaultOrder = cards.map(card => card.cloneNode(true));
@@ -265,6 +310,91 @@ function sortCards(type, order) {
     catalog.innerHTML = '';
     sorted.forEach(card => catalog.appendChild(card));
 }
+
+// Расчет корзины
+function calculateCart() {
+    let totalItems = 0;
+    let totalPrice = 0;
+    
+    const quantityInputs = document.querySelectorAll('.quantity-input');
+    quantityInputs.forEach(input => {
+        const quantity = parseInt(input.value) || 0;
+        const price = parseInt(input.dataset.price) || 0;
+        const name = input.dataset.name || '';
+        
+        if (quantity > 0) {
+            totalItems += quantity;
+            totalPrice += quantity * price;
+        }
+    });
+    
+    // Обновляем отображение
+    document.getElementById('cart-count').textContent = totalItems;
+    document.getElementById('cart-total').textContent = totalPrice.toLocaleString();
+    
+    // Обновляем скрытые поля формы
+    document.getElementById('total-items').value = totalItems;
+    document.getElementById('total-price').value = totalPrice;
+}
+
+// Обработчик изменения количества
+document.querySelectorAll('.quantity-input').forEach(input => {
+    input.addEventListener('change', calculateCart);
+});
+
+// Инициализация расчета корзины при загрузке
+document.addEventListener('DOMContentLoaded', calculateCart);
+
+// Обработчик отправки формы корзины
+document.getElementById('cart-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Собираем данные формы
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData.entries());
+    
+    // Проверяем, есть ли товары в корзине
+    const totalItems = parseInt(document.getElementById('total-items').value) || 0;
+    
+    if (totalItems === 0) {
+        alert('Добавьте хотя бы один товар в корзину!');
+        return;
+    }
+    
+    // Добавляем timestamp и дополнительные данные
+    data.timestamp = new Date().toISOString();
+    data.user_agent = navigator.userAgent;
+    
+    console.log('Отправка данных корзины:', data);
+    
+    // Отправляем данные на тестовый сервер (jsonplaceholder)
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Ошибка сети');
+        }
+        return response.json();
+    })
+    .then(result => {
+        alert(`Корзина успешно отправлена! Идентификатор заказа: ${result.id}\n\nТоваров: ${totalItems} на сумму ${document.getElementById('cart-total').textContent}₽`);
+        
+        // Можно очистить корзину после отправки
+        document.querySelectorAll('.quantity-input').forEach(input => {
+            input.value = '0';
+        });
+        calculateCart();
+    })
+    .catch(error => {
+        console.error('Ошибка:', error);
+        alert('Произошла ошибка при отправке корзины. Пожалуйста, попробуйте еще раз.');
+    });
+});
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

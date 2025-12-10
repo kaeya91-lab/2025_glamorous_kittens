@@ -6,21 +6,19 @@
     <title>Гламурные котята - Стильные породы</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- Заголовок по центру -->
-<header class="text-center py-5">
-    <h1>Гламурные котята</h1>
+<header class="main-header">
+    <h1 class="main-title">ГЛАМУРНЫЕ КОТЯТА</h1>
 </header>
 
-<!-- Белое пространство -->
-<div class="white-space"></div>
-
 <!-- Навигация -->
-<nav class="navbar navbar-expand-lg navbar-light py-3">
-    <div class="container justify-content-center">
-        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+<nav class="main-nav">
+    <div class="nav-container">
+        <ul class="nav-menu">
             <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
             <li class="nav-item"><a class="nav-link" href="breeds.html">Стильные породы</a></li>
             <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуары</a></li>
@@ -28,9 +26,9 @@
             <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button">Дополнительная информация</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+                    <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
                     <li><a class="dropdown-item" href="photoshoot.html">Записаться на фотосессию</a></li>
                 </ul>
             </li>
@@ -39,124 +37,159 @@
 </nav>
 
 <!-- Вводный текст -->
-<section class="intro-section text-center py-4">
+<section class="welcome-section">
     <div class="container">
-        <p>Познакомьтесь с пушистыми модниками разных пород</p>
+        <p class="welcome-text">Познакомьтесь с пушистыми модниками разных пород</p>
     </div>
 </section>
 
-<!-- Заголовок "Стильные породы котят" ВЫРОВНЕНО ПО ЦЕНТРУ -->
-<section class="container py-5 text-center">
+<!-- Заголовок "Стильные породы котят" -->
+<section class="container offers-section">
     <h2 class="section-title">Стильные породы котят</h2>
-    <div class="title-spacing"></div>
 </section>
 
 <!-- Навигация по разделам внутри страницы -->
-<section class="container text-center py-4">
-    <div class="section-buttons">
-        <a href="#section1" class="btn btn-section">Сибирский котёнок</a>
-        <a href="#section4" class="btn btn-section">Скандинавский котёнок</a>
-        <a href="#section5" class="btn btn-section">Норвежский лесной котёнок</a>
-        <a href="#section2" class="btn btn-section">Британский котёнок</a>
-        <a href="#section6" class="btn btn-section">Шотландский котёнок</a>
-        <a href="#section7" class="btn btn-section">Экзотический котёнок</a>
-        <a href="#section3" class="btn btn-section">Мейн-кун котёнок</a>
-        <a href="#section8" class="btn btn-section">Рэгдолл котёнок</a>
-        <a href="#section9" class="btn btn-section">Сомалийский котёнок</a>
+<section class="container cards-section">
+    <div class="cards-row">
+        <a href="#section1" class="card-link-btn">Сибирский котёнок</a>
+        <a href="#section2" class="card-link-btn">Британский котёнок</a>
+        <a href="#section3" class="card-link-btn">Мейн-кун котёнок</a>
+        <a href="#section4" class="card-link-btn">Скандинавский котёнок</a>
+        <a href="#section5" class="card-link-btn">Норвежский лесной котёнок</a>
+        <a href="#section6" class="card-link-btn">Шотландский котёнок</a>
+        <a href="#section7" class="card-link-btn">Экзотический котёнок</a>
+        <a href="#section8" class="card-link-btn">Рэгдолл котёнок</a>
+        <a href="#section9" class="card-link-btn">Сомалийский котёнок</a>
     </div>
 </section>
 
 <!-- Разделы с карточками -->
-<section id="section1" class="container py-5">
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="images/breed1.jpg" class="card-img-top" alt="Сибирский котёнок">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Сибирский котёнок</h5>
-                    <p class="card-text">Пушистый, добрый и настоящий гламурный красавец!</p>
+<section id="section1" class="container offers-section">
+    <div class="cards-row offers-cards">
+        <div class="offer-col">
+            <div class="glamour-card">
+                <img src="https://i.pinimg.com/1200x/07/ed/cb/07edcbcd92c5d20f6dba5530eb0f8bd7.jpg" 
+                     class="card-image" 
+                     alt="Сибирский котёнок">
+                <div class="card-content">
+                    <h5 class="card-title">
+                        <span class="card-link">Сибирский котёнок</span>
+                    </h5>
+                    <p class="card-description">Пушистый, добрый и настоящий гламурный красавец!</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4" id="section4">
-            <div class="card h-100">
-                <img src="images/breed4.jpg" class="card-img-top" alt="Скандинавский котёнок">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Скандинавский котёнок</h5>
-                    <p class="card-text">Элегантный пушистик с серебристой шерстью.</p>
+        <div class="offer-col" id="section2">
+            <div class="glamour-card">
+                <img src="https://i.pinimg.com/1200x/f4/f8/77/f4f8774b507796d925042acb16594985.jpg" 
+                     class="card-image" 
+                     alt="Британский котёнок">
+                <div class="card-content">
+                    <h5 class="card-title">
+                        <span class="card-link">Британский котёнок</span>
+                    </h5>
+                    <p class="card-description">Стильный, с красивой круглой мордочкой и плюшевой шерстью.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4" id="section5">
-            <div class="card h-100">
-                <img src="images/breed5.jpg" class="card-img-top" alt="Норвежский лесной котёнок">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Норвежский лесной котёнок</h5>
-                    <p class="card-text">Большой, активный и с роскошной шерстью.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="section2" class="container py-5">
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="images/breed2.jpg" class="card-img-top" alt="Британский котёнок">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Британский котёнок</h5>
-                    <p class="card-text">Стильный, с красивой круглой мордочкой и плюшевой шерстью.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4" id="section6">
-            <div class="card h-100">
-                <img src="images/breed6.jpg" class="card-img-top" alt="Шотландский котёнок">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Шотландский котёнок</h5>
-                    <p class="card-text">Милый и спокойный пушистик с короткими ушками.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4" id="section7">
-            <div class="card h-100">
-                <img src="images/breed7.jpg" class="card-img-top" alt="Экзотический котёнок">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Экзотический котёнок</h5>
-                    <p class="card-text">Мягкий, плюшевый и очаровательный красавец.</p>
+        <div class="offer-col" id="section3">
+            <div class="glamour-card">
+                <img src="https://i.pinimg.com/1200x/fd/89/c1/fd89c128e3b109f677a45243cdfef80f.jpg" 
+                     class="card-image" 
+                     alt="Мейн-кун котёнок">
+                <div class="card-content">
+                    <h5 class="card-title">
+                        <span class="card-link">Мейн-кун котёнок</span>
+                    </h5>
+                    <p class="card-description">Большой, пушистый и с гламурной гривой!</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="section3" class="container py-5">
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card h-100">
-                <img src="images/breed3.jpg" class="card-img-top" alt="Мейн-кун котёнок">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Мейн-кун котёнок</h5>
-                    <p class="card-text">Большой, пушистый и с гламурной гривой!</p>
+<section id="section4" class="container offers-section">
+    <div class="cards-row offers-cards">
+        <div class="offer-col">
+            <div class="glamour-card">
+                <img src="https://i.pinimg.com/736x/e2/aa/21/e2aa2138add3c9b6b98210d835bd9058.jpg" 
+                     class="card-image" 
+                     alt="Скандинавский котёнок">
+                <div class="card-content">
+                    <h5 class="card-title">
+                        <span class="card-link">Скандинавский котёнок</span>
+                    </h5>
+                    <p class="card-description">Элегантный пушистик с серебристой шерстью.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4" id="section8">
-            <div class="card h-100">
-                <img src="images/breed8.jpg" class="card-img-top" alt="Рэгдолл котёнок">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Рэгдолл котёнок</h5>
-                    <p class="card-text">Очень дружелюбный, мягкий и с красивой шерстью.</p>
+        <div class="offer-col" id="section5">
+            <div class="glamour-card">
+                <img src="https://i.pinimg.com/1200x/0c/51/6e/0c516e15cfbd006fc2f297d3cee37dc6.jpg" 
+                     class="card-image" 
+                     alt="Норвежский лесной котёнок">
+                <div class="card-content">
+                    <h5 class="card-title">
+                        <span class="card-link">Норвежский лесной котёнок</span>
+                    </h5>
+                    <p class="card-description">Большой, активный и с роскошной шерстью.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4" id="section9">
-            <div class="card h-100">
-                <img src="images/breed9.jpg" class="card-img-top" alt="Сомалийский котёнок">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Сомалийский котёнок</h5>
-                    <p class="card-text">Активный, игривый и с длинной блестящей шерстью.</p>
+        <div class="offer-col" id="section6">
+            <div class="glamour-card">
+                <img src="https://i.pinimg.com/1200x/d7/d6/b2/d7d6b2a3a59ed51a8b0785486207ba0f.jpg" 
+                     class="card-image" 
+                     alt="Шотландский котёнок">
+                <div class="card-content">
+                    <h5 class="card-title">
+                        <span class="card-link">Шотландский котёнок</span>
+                    </h5>
+                    <p class="card-description">Милый и спокойный пушистик с короткими ушками.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section7" class="container offers-section">
+    <div class="cards-row offers-cards">
+        <div class="offer-col">
+            <div class="glamour-card">
+                <img src="https://i.pinimg.com/736x/43/e7/4a/43e74a35620f999c2268b41db80722f6.jpg" 
+                     class="card-image" 
+                     alt="Экзотический котёнок">
+                <div class="card-content">
+                    <h5 class="card-title">
+                        <span class="card-link">Экзотический котёнок</span>
+                    </h5>
+                    <p class="card-description">Мягкий, плюшевый и очаровательный красавец.</p>
+                </div>
+            </div>
+        </div>
+        <div class="offer-col" id="section8">
+            <div class="glamour-card">
+                <img src="https://i.pinimg.com/1200x/3f/3f/58/3f3f58127b5b1d43da8ce85cbfd4f898.jpg" 
+                     class="card-image" 
+                     alt="Рэгдолл котёнок">
+                <div class="card-content">
+                    <h5 class="card-title">
+                        <span class="card-link">Рэгдолл котёнок</span>
+                    </h5>
+                    <p class="card-description">Очень дружелюбный, мягкий и с красивой шерстью.</p>
+                </div>
+            </div>
+        </div>
+        <div class="offer-col" id="section9">
+            <div class="glamour-card">
+                <img src="https://i.pinimg.com/736x/44/4e/a4/444ea42dbae4b69184989ff2d234d948.jpg" 
+                     class="card-image" 
+                     alt="Сомалийский котёнок">
+                <div class="card-content">
+                    <h5 class="card-title">
+                        <span class="card-link">Сомалийский котёнок</span>
+                    </h5>
+                    <p class="card-description">Активный, игривый и с длинной блестящей шерстью.</p>
                 </div>
             </div>
         </div>
@@ -164,22 +197,21 @@
 </section>
 
 <!-- Кнопка сделать заказ -->
-<div class="text-center py-5">
-    <a href="order.html" class="btn-order">Сделать заказ 🩷</a>
-</div>
+<section class="container bottom-section text-center">
+    <a href="order.html" class="order-btn">Сделать заказ 🩷</a>
+</section>
 
 <!-- Текст внизу страницы -->
-<section class="bottom-text-section">
-    <div class="container text-center">
-        <p>Узнайте больше о наших <a href="accessories.html">гламурных аксессуарах</a> или посетите <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.</p>
-    </div>
+<section class="container bottom-section">
+    <p class="bottom-text">Узнайте больше о наших <a href="accessories.html" class="green-link">гламурных аксессуарах</a> или посетите <a href="https://example.com" target="_blank" class="green-link">наш блог</a> для дополнительных советов.</p>
 </section>
 
 <!-- Футер -->
-<footer class="text-center py-4">
+<footer class="main-footer">
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

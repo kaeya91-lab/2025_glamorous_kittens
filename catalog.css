@@ -783,3 +783,34 @@ body.catalog-page {
         font-size: 1.1rem !important;
     }
 }
+
+/* Кнопка наверх - ДОБАВЛЕНО */
+.text-center.py-4 {
+    padding: 40px 0 !important;
+}
+
+/* Обновляем стили для .btn-section чтобы работали на кнопке "Наверх" */
+.btn-section {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    color: var(--color2) !important;
+    text-decoration: none !important;
+    padding: 15px 30px !important;
+    background-color: var(--color3) !important;
+    border-radius: 12px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 6px 18px rgba(218, 228, 152, 0.4) !important;
+    text-align: center !important;
+    min-width: 180px !important;
+    display: inline-block !important;
+}
+
+.btn-section:hover {
+    background-color: var(--color2) !important;
+    color: var(--white) !important;
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 25px rgba(225, 150, 169, 0.5) !important;
+}

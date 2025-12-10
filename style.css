@@ -1,3 +1,5 @@
+/* style.css - для главной страницы */
+
 * {
     margin: 0;
     padding: 0;
@@ -42,11 +44,11 @@ body {
     letter-spacing: 3px;
     display: inline-block;
     padding: 25px 60px;
-    background-color: var(--color2); /* ИЗМЕНЕНО: стал розовый */
+    background-color: var(--color2);
     border-radius: 15px;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ИЗМЕНЕНО: тень для розового */
+    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
 }
 
 /* Навигация */
@@ -77,17 +79,17 @@ body {
 
 .nav-link {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.7rem !important; /* ИЗМЕНЕНО: увеличил шрифт (было 1.5rem) */
-    font-weight: 900 !important; /* Осталось 900 (самый жирный) */
+    font-size: 1.7rem !important;
+    font-weight: 900 !important;
     color: var(--color2) !important;
     text-decoration: none;
-    padding: 22px 55px !important; /* ИЗМЕНЕНО: увеличил отступы для большего шрифта */
+    padding: 22px 55px !important;
     display: inline-block;
     transition: all 0.3s ease;
     background-color: var(--color3) !important;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(218, 228, 152, 0.4);
-    min-width: 240px !important; /* ИЗМЕНЕНО: увеличил минимальную ширину */
+    min-width: 240px !important;
     text-align: center;
 }
 
@@ -98,10 +100,16 @@ body {
     box-shadow: 0 10px 25px rgba(225, 150, 169, 0.5);
 }
 
+.nav-link.active {
+    background-color: var(--color2) !important;
+    color: var(--white) !important;
+    box-shadow: 0 10px 25px rgba(225, 150, 169, 0.5);
+}
+
 .heart-icon {
-    font-size: 1.8rem !important; /* ИЗМЕНЕНО: увеличил сердечко */
-    padding: 20px 40px !important; /* ИЗМЕНЕНО: увеличил отступы для сердечка */
-    min-width: 130px !important; /* ИЗМЕНЕНО: минимальная ширина для сердечка */
+    font-size: 1.8rem !important;
+    padding: 20px 40px !important;
+    min-width: 130px !important;
 }
 
 .dropdown-menu {
@@ -133,7 +141,7 @@ body {
 
 .welcome-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem; /* Немного увеличил */
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--color2);
     max-width: 900px;
@@ -142,9 +150,10 @@ body {
     padding: 0 20px;
 }
 
-/* Карточки */
+/* Карточки Узнать подробнее и Почему мы */
 .cards-section {
     padding: 60px 0;
+    text-align: center;
 }
 
 .cards-row {
@@ -154,13 +163,14 @@ body {
     flex-wrap: wrap;
 }
 
-.card-col, .offer-col {
-    flex: 0 1 400px;
-    max-width: 400px;
+.card-col {
+    flex: 0 1 500px;
+    max-width: 500px;
 }
 
+/* Карточки */
 .glamour-card {
-    background-color: var(--color3); /* Зеленый фон вместо рамки */
+    background-color: var(--color3);
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -177,46 +187,47 @@ body {
 
 .card-image {
     width: 100%;
-    height: 280px;
+    height: 350px;
     object-fit: cover;
     object-position: center;
 }
 
 .card-content {
-    padding: 30px;
+    padding: 40px;
     text-align: center;
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--color3); /* Зеленый фон */
+    background-color: var(--color3);
 }
 
 .card-title {
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 
 .card-link {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem; /* Увеличил немного */
+    font-size: 1.8rem;
     font-weight: 800;
-    color: var(--color2); /* Розовый текст */
+    color: var(--color2) !important;
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border-radius: 8px;
-    background-color: var(--white); /* Белый фон для текста */
+    background-color: var(--white);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-link:hover {
-    background-color: var(--color2); /* Розовый при наведении */
+    background-color: var(--color2) !important;
     color: var(--white) !important;
     transform: scale(1.05);
 }
 
-/* Секция Наши предложения */
+/* Наши предложения */
 .offers-section {
     padding: 60px 0;
     text-align: center;
@@ -226,273 +237,49 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--white); /* Белый текст */
+    color: var(--white);
     margin-bottom: 60px;
     display: inline-block;
     padding: 20px 50px;
-    background-color: var(--color2); /* ИЗМЕНЕНО: стал розовый */
+    background-color: var(--color2);
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ИЗМЕНЕНО: тень для розового */
+    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .offers-cards {
     gap: 30px;
 }
 
-.offers-cards .offer-col {
+.offer-col {
     flex: 0 1 350px;
     max-width: 350px;
 }
 
-/* Секция Почему мы */
+/* Почему мы */
 .why-us-section {
-    padding: 80px 0;
-    background-color: var(--white);
+    padding: 60px 0;
+    background-color: var(--color3);
     text-align: center;
 }
 
 .why-us-content {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 50px;
-    background-color: var(--color3); /* ИЗМЕНЕНО: вернули зеленый */
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3); /* ИЗМЕНЕНО: тень для зеленого */
 }
 
 .why-us-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem; /* Увеличил немного */
-    font-weight: 700;
-    color: var(--color2) !important; /* ИЗМЕНЕНО: стал розовый */
-    line-height: 1.8;
-}
-
-/* Нижний текст */
-.bottom-section {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.bottom-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--color2);
-    margin-bottom: 0;
+    line-height: 1.8;
+    padding: 0 20px;
 }
 
-.green-link {
-    color: var(--white) !important; /* Белый текст */
-    font-weight: 800;
-    text-decoration: none;
-    padding: 5px 15px;
-    background-color: var(--color3); /* Зеленый фон */
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(218, 228, 152, 0.3);
-}
-
-.green-link:hover {
-    background-color: var(--color2); /* Розовый при наведении */
-    color: var(--white) !important;
-    transform: translateY(-2px);
-}
-
-/* Футер */
-.main-footer {
-    background-color: var(--color2); /* ИЗМЕНЕНО: стал розовый (был зеленый) */
-    color: var(--white); /* ИЗМЕНЕНО: стал белый (был розовый) */
-    text-align: center;
-    padding: 30px 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700; /* Жирный шрифт */
-    font-size: 1.2rem; /* Увеличил шрифт */
-}
-
-.main-footer p {
-    margin: 0;
-}
-
-/* Адаптивность */
-@media (max-width: 992px) {
-    .main-title {
-        font-size: 3rem;
-        padding: 20px 40px;
-        background-color: var(--color2);
-    }
-    
-    .section-title {
-        font-size: 2rem;
-        padding: 15px 30px;
-        background-color: var(--color2);
-    }
-    
-    .nav-link {
-        font-size: 1.4rem;
-        padding: 18px 40px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
-        min-width: 200px !important; /* ИЗМЕНЕНО: сохраняем увеличенную ширину */
-        background-color: var(--color3) !important;
-    }
-    
-    .heart-icon {
-        font-size: 1.6rem !important; /* ИЗМЕНЕНО: увеличил для адаптива */
-        padding: 18px 35px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
-    }
-    
-    .welcome-text,
-    .why-us-text,
-    .bottom-text {
-        font-size: 1.3rem;
-    }
-    
-    .card-link {
-        font-size: 1.2rem;
-    }
-    
-    .cards-row {
-        gap: 30px;
-    }
-    
-    .card-col, .offer-col {
-        flex: 0 1 350px;
-    }
-    
-    .why-us-content {
-        padding: 40px;
-        background-color: var(--color3);
-        box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3);
-    }
-}
-
-@media (max-width: 768px) {
-    .main-title {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-        padding: 15px 30px;
-        background-color: var(--color2);
-    }
-    
-    .section-title {
-        font-size: 1.8rem;
-        padding: 12px 25px;
-        background-color: var(--color2);
-    }
-    
-    .nav-menu {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .nav-item {
-        margin: 5px 0;
-    }
-    
-    .nav-link {
-        width: 250px;
-        font-size: 1.3rem;
-        padding: 16px 45px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
-        min-width: 230px !important; /* ИЗМЕНЕНО: сохраняем увеличенную ширину */
-        background-color: var(--color3) !important;
-    }
-    
-    .heart-icon {
-        font-size: 1.5rem !important;
-        padding: 16px 40px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
-    }
-    
-    .cards-row {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .card-col, .offer-col {
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    .offers-cards .offer-col {
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    .card-image {
-        height: 250px;
-    }
-    
-    .why-us-content {
-        background-color: var(--color3);
-        box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3);
-    }
-}
-
-@media (max-width: 576px) {
-    .main-title {
-        font-size: 2rem;
-        padding: 12px 25px;
-        letter-spacing: 1px;
-        background-color: var(--color2);
-    }
-    
-    .section-title {
-        font-size: 1.6rem;
-        padding: 10px 20px;
-        background-color: var(--color2);
-    }
-    
-    .nav-link {
-        font-size: 1.2rem;
-        padding: 14px 40px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
-        min-width: 210px !important; /* ИЗМЕНЕНО: сохраняем увеличенную ширину */
-        background-color: var(--color3) !important;
-    }
-    
-    .heart-icon {
-        font-size: 1.4rem !important;
-        padding: 14px 35px !important; /* ИЗМЕНЕНО: сохраняем увеличенные отступы */
-    }
-    
-    .welcome-text,
-    .why-us-text,
-    .bottom-text {
-        font-size: 1.1rem;
-    }
-    
-    .welcome-section,
-    .cards-section,
-    .offers-section,
-    .why-us-section,
-    .bottom-section {
-        padding: 40px 0;
-    }
-    
-    .card-image {
-        height: 220px;
-    }
-    
-    .card-content {
-        padding: 20px;
-    }
-    
-    .card-link {
-        font-size: 1.1rem;
-        padding: 8px 16px;
-    }
-    
-    .why-us-content {
-        padding: 30px 20px;
-        background-color: var(--color3);
-        box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3);
-    }
-    
-    .main-footer {
-        font-size: 1.1rem;
-        padding: 25px 0;
-        background-color: var(--color2);
-        color: var(--white);
-    }
-
-    /* Кнопка наверх */
+/* Кнопка наверх - ДОБАВЛЕНО */
 .text-center.py-4 {
     padding: 40px 0;
 }
@@ -522,3 +309,306 @@ body {
     box-shadow: 0 10px 25px rgba(225, 150, 169, 0.5);
 }
 
+/* Нижний текст */
+.bottom-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.bottom-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color2);
+    margin-bottom: 0;
+}
+
+.green-link {
+    color: var(--white) !important;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 5px 15px;
+    background-color: var(--color3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(218, 228, 152, 0.3);
+}
+
+.green-link:hover {
+    background-color: var(--color2);
+    color: var(--white) !important;
+    transform: translateY(-2px);
+}
+
+/* Футер */
+.main-footer {
+    background-color: var(--color2);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.main-footer p {
+    margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+        padding: 0 30px;
+    }
+    
+    .card-col {
+        flex: 0 1 450px;
+        max-width: 450px;
+    }
+    
+    .offer-col {
+        flex: 0 1 320px;
+        max-width: 320px;
+    }
+    
+    .card-image {
+        height: 320px;
+    }
+    
+    .btn-section {
+        min-width: 170px;
+        padding: 14px 25px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-title {
+        font-size: 3rem;
+        padding: 20px 40px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        padding: 15px 30px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    
+    .nav-link {
+        font-size: 1.4rem;
+        padding: 18px 40px !important;
+        min-width: 200px !important;
+    }
+    
+    .heart-icon {
+        font-size: 1.6rem !important;
+        padding: 18px 35px !important;
+    }
+    
+    .welcome-text,
+    .bottom-text,
+    .why-us-text {
+        font-size: 1.3rem;
+    }
+    
+    .card-link {
+        font-size: 1.6rem;
+    }
+    
+    .card-col {
+        flex: 0 1 400px;
+        max-width: 400px;
+    }
+    
+    .offer-col {
+        flex: 0 1 300px;
+        max-width: 300px;
+    }
+    
+    .card-image {
+        height: 300px;
+    }
+    
+    .btn-section {
+        min-width: 160px;
+        padding: 12px 22px;
+        font-size: 1.1rem;
+    }
+    
+    .text-center.py-4 {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        padding: 15px 30px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        padding: 12px 25px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+    }
+    
+    .nav-link {
+        width: 250px;
+        font-size: 1.3rem;
+        padding: 16px 45px !important;
+        min-width: 230px !important;
+    }
+    
+    .heart-icon {
+        font-size: 1.5rem !important;
+        padding: 16px 40px !important;
+    }
+    
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .card-col,
+    .offer-col {
+        width: 100%;
+        max-width: 450px;
+    }
+    
+    .card-image {
+        height: 280px;
+    }
+    
+    .card-content {
+        padding: 30px;
+    }
+    
+    .btn-section {
+        width: 280px;
+        min-width: auto;
+        padding: 14px 20px;
+        font-size: 1.2rem;
+    }
+    
+    .text-center.py-4 {
+        padding: 25px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 2rem;
+        padding: 12px 25px;
+        letter-spacing: 1px;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+    
+    .nav-link {
+        font-size: 1.2rem;
+        padding: 14px 40px !important;
+        min-width: 210px !important;
+    }
+    
+    .heart-icon {
+        font-size: 1.4rem !important;
+        padding: 14px 35px !important;
+    }
+    
+    .welcome-text,
+    .bottom-text,
+    .why-us-text {
+        font-size: 1.1rem;
+    }
+    
+    .welcome-section,
+    .cards-section,
+    .offers-section,
+    .why-us-section,
+    .bottom-section {
+        padding: 40px 0;
+    }
+    
+    .card-image {
+        height: 250px;
+    }
+    
+    .card-content {
+        padding: 25px;
+    }
+    
+    .card-link {
+        font-size: 1.5rem;
+        padding: 12px 25px;
+    }
+    
+    .btn-section {
+        width: 250px;
+        padding: 12px 18px;
+        font-size: 1.1rem;
+    }
+    
+    .main-footer {
+        font-size: 1.1rem;
+        padding: 25px 0;
+    }
+    
+    .text-center.py-4 {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-title {
+        font-size: 1.8rem;
+        padding: 10px 20px;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+        padding: 8px 16px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    
+    .nav-link {
+        width: 220px;
+        font-size: 1.1rem;
+        padding: 12px 35px !important;
+        min-width: 200px !important;
+    }
+    
+    .card-link {
+        font-size: 1.4rem;
+        padding: 10px 20px;
+    }
+    
+    .btn-section {
+        width: 220px;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+    
+    .card-image {
+        height: 220px;
+    }
+}

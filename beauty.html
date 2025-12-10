@@ -10,7 +10,7 @@
 </head>
 <body>
 
-
+<!-- Заголовок по центру -->
 <header class="main-header">
     <h1 class="main-title">ГЛАМУРНЫЕ КОТЯТА</h1>
 </header>
@@ -28,8 +28,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
                 <ul class="dropdown-menu">
-                   <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
-                   <li><a class="dropdown-item" href="photoshoot.html">Записаться на фотосессию</a></li>
+                    <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
+                    <li><a class="dropdown-item" href="photoshoot.html">Записаться на фотосессию</a></li>
                 </ul>
             </li>
         </ul>
@@ -43,14 +43,12 @@
     </div>
 </section>
 
-<!-- Заголовок "Beauty-процедуры" -->
-<section class="container offers-section">
+<!-- Заголовок раздела -->
+<section class="container" id="offers">
     <h2 class="section-title">Beauty-процедуры для котят</h2>
-</section>
-
-<!-- Навигация по процедурам внутри страницы -->
-<section class="container">
-    <div class="section-buttons">
+    
+    <!-- Навигация по разделам внутри страницы -->
+    <div class="section-buttons text-center py-4">
         <a href="#beauty1" class="btn-section">Спа для котят</a>
         <a href="#beauty2" class="btn-section">Стрижка и укладка</a>
         <a href="#beauty3" class="btn-section">Мини-фотосессия</a>
@@ -60,100 +58,106 @@
     </div>
 </section>
 
-<!-- Раздел с beauty-процедурами -->
+<!-- Раздел с beauty-процедурами - СИММЕТРИЧНЫЕ КАРТОЧКИ -->
 <section class="container offers-section">
     <div class="cards-row offers-cards">
-        
-        <!-- Спа для котят -->
+        <!-- 1 ряд -->
         <div class="offer-col" id="beauty1">
             <div class="glamour-card">
                 <img src="https://i.pinimg.com/1200x/61/e5/d1/61e5d11b7146d44798ca459806f4c74e.jpg" 
                      class="card-image" 
                      alt="Спа для котят">
                 <div class="card-content">
-                    <h5 class="card-title">Спа для котят</h5>
-                    <p class="card-text">Расслабляющая ванночка с мягким шампунем и ароматерапией.</p>
+                    <h5 class="card-title">
+                        <a href="#" class="card-link">Спа для котят</a>
+                    </h5>
+                    <p class="card-description">Расслабляющая ванночка с мягким шампунем и ароматерапией.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Стрижка и укладка -->
         <div class="offer-col" id="beauty2">
             <div class="glamour-card">
                 <img src="https://i.pinimg.com/1200x/7c/6e/67/7c6e678f8378ed92904607b198f8a717.jpg" 
                      class="card-image" 
                      alt="Стрижка котёнка">
                 <div class="card-content">
-                    <h5 class="card-title">Стрижка и укладка</h5>
-                    <p class="card-text">Красивые стрижки и укладка, чтобы котёнок выглядел модно.</p>
+                    <h5 class="card-title">
+                        <a href="#" class="card-link">Стрижка и укладка</a>
+                    </h5>
+                    <p class="card-description">Красивые стрижки и укладка, чтобы котёнок выглядел модно.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Мини-фотосессия -->
         <div class="offer-col" id="beauty3">
             <div class="glamour-card">
                 <img src="https://i.pinimg.com/1200x/c7/b2/e6/c7b2e60d64497b82d07c84d886cf8d68.jpg" 
                      class="card-image" 
                      alt="Мини-фотосессия">
                 <div class="card-content">
-                    <h5 class="card-title">Мини-фотосессия</h5>
-                    <p class="card-text">Фотосессии для гламурных котят с яркими аксессуарами.</p>
+                    <h5 class="card-title">
+                        <a href="#" class="card-link">Мини-фотосессия</a>
+                    </h5>
+                    <p class="card-description">Фотосессии для гламурных котят с яркими аксессуарами.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Маникюр и педикюр -->
+        <!-- 2 ряд -->
         <div class="offer-col" id="beauty4">
             <div class="glamour-card">
                 <img src="https://i.pinimg.com/736x/3d/b1/28/3db1289a2a9e00b40674500df91be57a.jpg" 
                      class="card-image" 
                      alt="Маникюр и педикюр">
                 <div class="card-content">
-                    <h5 class="card-title">Маникюр и педикюр</h5>
-                    <p class="card-text">Уход за коготками и лапками для красоты и комфорта.</p>
+                    <h5 class="card-title">
+                        <a href="#" class="card-link">Маникюр и педикюр</a>
+                    </h5>
+                    <p class="card-description">Уход за коготками и лапками для красоты и комфорта.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Ароматерапия -->
         <div class="offer-col" id="beauty5">
             <div class="glamour-card">
                 <img src="https://i.pinimg.com/1200x/16/ed/e9/16ede99f29c8de3711249651ffe60051.jpg" 
                      class="card-image" 
                      alt="Ароматерапия">
                 <div class="card-content">
-                    <h5 class="card-title">Ароматерапия</h5>
-                    <p class="card-text">Расслабляющие ароматы для спокойствия и хорошего настроения.</p>
+                    <h5 class="card-title">
+                        <a href="#" class="card-link">Ароматерапия</a>
+                    </h5>
+                    <p class="card-description">Расслабляющие ароматы для спокойствия и хорошего настроения.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Расслабляющий массаж -->
         <div class="offer-col" id="beauty6">
             <div class="glamour-card">
                 <img src="https://i.pinimg.com/736x/2c/54/eb/2c54ebc9a1dad79933cb6e6d09859a3a.jpg" 
                      class="card-image" 
                      alt="Расслабляющий массаж">
                 <div class="card-content">
-                    <h5 class="card-title">Расслабляющий массаж</h5>
-                    <p class="card-text">Мягкий массаж для улучшения самочувствия и расслабления.</p>
+                    <h5 class="card-title">
+                        <a href="#" class="card-link">Расслабляющий массаж</a>
+                    </h5>
+                    <p class="card-description">Мягкий массаж для улучшения самочувствия и расслабления.</p>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 
 <!-- Кнопка сделать заказ -->
-<div class="text-center py-5">
+<section class="container text-center py-5">
     <a href="order.html" class="btn-order">Сделать заказ 🩷</a>
-</div>
+</section>
 
 <!-- Кнопка наверх -->
-<div class="text-center pb-5">
+<section class="container text-center py-4">
     <a href="#" class="btn-section">Наверх ⏏️</a>
-</div>
+</section>
 
 <!-- Текст внизу страницы -->
 <section class="container bottom-section">

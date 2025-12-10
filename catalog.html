@@ -5,131 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гламурные котята - Каталог</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        /* Стили для каталога */
-        .price-text {
-            color: #ff4081;
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-top: 10px;
-        }
-        
-        .order {
-            margin-top: 15px;
-        }
-        
-        .order label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 600;
-            color: #555;
-        }
-        
-        .sort-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-        
-        .btn-sort {
-            background-color: #f8f9fa;
-            border: 2px solid #ff4081;
-            color: #ff4081;
-            font-weight: 600;
-            padding: 8px 20px;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-sort:hover {
-            background-color: #ff4081;
-            color: white;
-        }
-        
-        .cart-summary {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            border: 2px solid #ff4081;
-        }
-        
-        .cart-summary p {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #333;
-            margin: 0;
-        }
-        
-        .cart-summary span {
-            color: #ff4081;
-        }
-        
-        .btn-order {
-            background-color: #ff4081;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: 2px solid #ff4081;
-        }
-        
-        .btn-order:hover {
-            background-color: white;
-            color: #ff4081;
-        }
-        
-        .btn-section {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 25px;
-            border: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: 2px solid #4CAF50;
-        }
-        
-        .btn-section:hover {
-            background-color: white;
-            color: #4CAF50;
-        }
-        
-        .glamour-card .card-content {
-            padding: 20px;
-        }
-        
-        .quantity-input {
-            text-align: center;
-            font-weight: bold;
-        }
-        
-        /* Стили для маленьких экранов */
-        @media (max-width: 768px) {
-            .sort-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn-sort {
-                width: 80%;
-            }
-            
-            .btn-order, .btn-section {
-                display: block;
-                width: 100%;
-                margin-bottom: 15px;
-            }
-        }
-    </style>
 </head>
-<body>
+<body class="catalog-page">
 
 <!-- Заголовок по центру -->
 <header class="main-header">
@@ -190,7 +70,7 @@
 
             <!-- 1. Сиамский котёнок -->
             <div class="col-md-4" data-price="5000" data-title="Сиамский котёнок">
-                <div class="glamour-card h-100">
+                <div class="catalog-card h-100">
                     <img src="https://i.pinimg.com/736x/c5/36/dd/c536dd9c215cf2d248262a1195876102.jpg" 
                          class="card-image" 
                          alt="Сиамский котёнок">
@@ -211,7 +91,7 @@
 
             <!-- 2. Бенгальский котёнок -->
             <div class="col-md-4" data-price="6200" data-title="Бенгальский котёнок">
-                <div class="glamour-card h-100">
+                <div class="catalog-card h-100">
                     <img src="https://i.pinimg.com/736x/0a/38/c5/0a38c56f0f61d6508dee6248c4073331.jpg" 
                          class="card-image" 
                          alt="Бенгальский котёнок">
@@ -232,7 +112,7 @@
 
             <!-- 3. Русская голубая -->
             <div class="col-md-4" data-price="5800" data-title="Русская голубая">
-                <div class="glamour-card h-100">
+                <div class="catalog-card h-100">
                     <img src="https://i.pinimg.com/1200x/bc/9e/d6/bc9ed64d80e77f4a78d079ae7ada8f30.jpg" 
                          class="card-image" 
                          alt="Русская голубая">
@@ -253,7 +133,7 @@
 
             <!-- 4. Сибирский котёнок -->
             <div class="col-md-4" data-price="7000" data-title="Сибирский котёнок">
-                <div class="glamour-card h-100">
+                <div class="catalog-card h-100">
                     <img src="https://i.pinimg.com/736x/1f/aa/9a/1faa9afb74f8adb8bf6d11a4ce4e91b2.jpg" 
                          class="card-image" 
                          alt="Сибирский котёнок">
@@ -274,7 +154,7 @@
 
             <!-- 5. Британский котёнок -->
             <div class="col-md-4" data-price="6500" data-title="Британский котёнок">
-                <div class="glamour-card h-100">
+                <div class="catalog-card h-100">
                     <img src="https://i.pinimg.com/1200x/fb/8d/58/fb8d5849189f3034d380a3e6d122b826.jpg" 
                          class="card-image" 
                          alt="Британский котёнок">
@@ -295,7 +175,7 @@
 
             <!-- 6. Мейн-кун котёнок -->
             <div class="col-md-4" data-price="7200" data-title="Мейн-кун котёнок">
-                <div class="glamour-card h-100">
+                <div class="catalog-card h-100">
                     <img src="https://i.pinimg.com/1200x/fd/89/c1/fd89c128e3b109f677a45243cdfef80f.jpg" 
                          class="card-image" 
                          alt="Мейн-кун котёнок">
@@ -316,7 +196,7 @@
 
             <!-- 7. Сфинкс котёнок -->
             <div class="col-md-4" data-price="4800" data-title="Сфинкс котёнок">
-                <div class="glamour-card h-100">
+                <div class="catalog-card h-100">
                     <img src="https://i.pinimg.com/1200x/a8/94/b0/a894b00a1fb5826cbd01aceace20ad06.jpg" 
                          class="card-image" 
                          alt="Сфинкс котёнок">
@@ -337,7 +217,7 @@
 
             <!-- 8. Персидский котёнок -->
             <div class="col-md-4" data-price="5300" data-title="Персидский котёнок">
-                <div class="glamour-card h-100">
+                <div class="catalog-card h-100">
                     <img src="https://i.pinimg.com/1200x/a8/94/b0/a894b00a1fb5826cbd01aceace20ad06.jpg" 
                          class="card-image" 
                          alt="Персидский котёнок">
@@ -358,7 +238,7 @@
 
             <!-- 9. Норвежский лесной -->
             <div class="col-md-4" data-price="5900" data-title="Норвежский лесной">
-                <div class="glamour-card h-100">
+                <div class="catalog-card h-100">
                     <img src="https://i.pinimg.com/736x/8d/8c/50/8d8c507e1923fde5649ad231fd97531b.jpg" 
                          class="card-image" 
                          alt="Норвежский лесной котёнок">
@@ -379,12 +259,12 @@
 
         </div>
 
-        <div class="text-center py-5">
+        <div class="text-center py-5 catalog-buttons">
             <!-- Кнопка перехода на страницу заказа -->
-            <a href="order.html" class="btn-order me-3">Сделать заказ🩷</a>
+            <a href="order.html" class="btn-order">Сделать заказ🩷</a>
             
             <!-- Кнопка отправки корзины на сервер -->
-            <button type="submit" class="btn btn-section">Открыть корзину</button>
+            <button type="submit" class="btn-section">Открыть корзину</button>
         </div>
         
         <!-- Поля для расчета итоговой суммы -->
@@ -409,6 +289,11 @@
 <footer class="main-footer">
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
+
+<!-- Эффект загрузки -->
+<div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner"></div>
+</div>
 
 <script>
 // Сортировка карточек
@@ -490,6 +375,9 @@ document.addEventListener('DOMContentLoaded', calculateCart);
 document.getElementById('cart-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
+    // Показываем эффект загрузки
+    document.getElementById('loadingOverlay').style.display = 'flex';
+    
     // Собираем данные формы
     const formData = new FormData(this);
     const data = Object.fromEntries(formData.entries());
@@ -498,6 +386,7 @@ document.getElementById('cart-form').addEventListener('submit', function(e) {
     const totalItems = parseInt(document.getElementById('total-items').value) || 0;
     
     if (totalItems === 0) {
+        document.getElementById('loadingOverlay').style.display = 'none';
         alert('Добавьте хотя бы один товар в корзину!');
         return;
     }
@@ -523,6 +412,7 @@ document.getElementById('cart-form').addEventListener('submit', function(e) {
         return response.json();
     })
     .then(result => {
+        document.getElementById('loadingOverlay').style.display = 'none';
         alert(`Корзина успешно отправлена! Идентификатор заказа: ${result.id}\n\nТоваров: ${totalItems} на сумму ${document.getElementById('cart-total').textContent}₽`);
         
         // Можно очистить корзину после отправки
@@ -533,6 +423,7 @@ document.getElementById('cart-form').addEventListener('submit', function(e) {
     })
     .catch(error => {
         console.error('Ошибка:', error);
+        document.getElementById('loadingOverlay').style.display = 'none';
         alert('Произошла ошибка при отправке корзины. Пожалуйста, попробуйте еще раз.');
     });
 });

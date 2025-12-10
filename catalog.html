@@ -28,25 +28,24 @@
     <p class="lead">Выберите своего пушистого модника!</p>
 </header>
 
-<!-- Кнопки сортировки -->
-<section class="container text-center py-4">
-    <button class="btn btn-pink m-2" id="sort-price-desc">🔼 По цене</button>
-    <button class="btn btn-pink m-2" id="sort-price-asc">🔽 По цене</button>
-    <button class="btn btn-pink m-2" id="sort-alphabet">По алфавиту</button>
-    <button class="btn btn-pink m-2" id="reset-sort">Сбросить</button>
+<section class="container py-3 text-center">
+    <button class="btn btn-pink me-2" id="sort-price-asc">🔼 по цене</button>
+    <button class="btn btn-pink me-2" id="sort-price-desc">🔽 по цене</button>
+    <button class="btn btn-pink me-2" id="sort-alphabet">по алфавиту</button>
+    <button class="btn btn-pink" id="reset-sort">Сбросить</button>
 </section>
 
 <section class="container py-5">
     <form id="catalog-form">
-        <div class="row g-4">
+        <div class="row g-4" id="catalog-cards">
 
             <!-- Карточки котят -->
-            <div class="col-md-4" data-price="5000" data-name="Сибирский котёнок">
+            <div class="col-md-4" data-price="5000" data-title="Гламурный котёнок №1">
                 <div class="card h-100">
-                    <img src="images/breed1.jpg" class="card-img-top" alt="Сибирский котёнок">
+                    <img src="images/cat1.jpg" class="card-img-top" alt="Котёнок №1">
                     <div class="card-body">
-                        <h5 class="card-title">Сибирский котёнок</h5>
-                        <p class="card-text">Пушистый, добрый и настоящий гламурный красавец!</p>
+                        <h5 class="card-title">Гламурный котёнок №1</h5>
+                        <p class="card-text">Пушистый, с модным бантиком и мягкой шерсткой.</p>
                         <p class="card-text price-card-text">Цена: 5.000₽</p>
                         <div class="order">
                             <label>Количество:</label>
@@ -56,12 +55,12 @@
                 </div>
             </div>
 
-            <div class="col-md-4" data-price="6200" data-name="Британский котёнок">
+            <div class="col-md-4" data-price="6200" data-title="Гламурный котёнок №2">
                 <div class="card h-100">
-                    <img src="images/breed2.jpg" class="card-img-top" alt="Британский котёнок">
+                    <img src="images/cat2.jpg" class="card-img-top" alt="Котёнок №2">
                     <div class="card-body">
-                        <h5 class="card-title">Британский котёнок</h5>
-                        <p class="card-text">Стильный, с красивой круглой мордочкой и плюшевой шерстью.</p>
+                        <h5 class="card-title">Гламурный котёнок №2</h5>
+                        <p class="card-text">Очаровательный котёнок с пушистой шерстью.</p>
                         <p class="card-text price-card-text">Цена: 6.200₽</p>
                         <div class="order">
                             <label>Количество:</label>
@@ -71,12 +70,12 @@
                 </div>
             </div>
 
-            <div class="col-md-4" data-price="5800" data-name="Мейн-кун котёнок">
+            <div class="col-md-4" data-price="5800" data-title="Гламурный котёнок №3">
                 <div class="card h-100">
-                    <img src="images/breed3.jpg" class="card-img-top" alt="Мейн-кун котёнок">
+                    <img src="images/cat3.jpg" class="card-img-top" alt="Котёнок №3">
                     <div class="card-body">
-                        <h5 class="card-title">Мейн-кун котёнок</h5>
-                        <p class="card-text">Большой, пушистый и с гламурной гривой!</p>
+                        <h5 class="card-title">Гламурный котёнок №3</h5>
+                        <p class="card-text">Стильный котёнок с пушистой гривой и блестящим бантиком.</p>
                         <p class="card-text price-card-text">Цена: 5.800₽</p>
                         <div class="order">
                             <label>Количество:</label>
@@ -86,14 +85,14 @@
                 </div>
             </div>
 
-            <!-- Новые карточки -->
-            <div class="col-md-4" data-price="5600" data-name="Манчкин">
+            <!-- Новые котята -->
+            <div class="col-md-4" data-price="7000" data-title="Сибирский котёнок">
                 <div class="card h-100">
-                    <img src="images/breed4.jpg" class="card-img-top" alt="Манчкин">
+                    <img src="images/cat4.jpg" class="card-img-top" alt="Сибирский котёнок">
                     <div class="card-body">
-                        <h5 class="card-title">Манчкин</h5>
-                        <p class="card-text">Коротконогий котёнок с энергичным характером.</p>
-                        <p class="card-text price-card-text">Цена: 5.600₽</p>
+                        <h5 class="card-title">Сибирский котёнок</h5>
+                        <p class="card-text">Пушистый, добрый и настоящий гламурный красавец!</p>
+                        <p class="card-text price-card-text">Цена: 7.000₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50" name="cat4" value="0" min="0">
@@ -102,13 +101,13 @@
                 </div>
             </div>
 
-            <div class="col-md-4" data-price="6100" data-name="Скоттиш-фолд">
+            <div class="col-md-4" data-price="6500" data-title="Британский котёнок">
                 <div class="card h-100">
-                    <img src="images/breed5.jpg" class="card-img-top" alt="Скоттиш-фолд">
+                    <img src="images/cat5.jpg" class="card-img-top" alt="Британский котёнок">
                     <div class="card-body">
-                        <h5 class="card-title">Скоттиш-фолд</h5>
-                        <p class="card-text">Котёнок с необычными сложенными ушками и мягкой шерстью.</p>
-                        <p class="card-text price-card-text">Цена: 6.100₽</p>
+                        <h5 class="card-title">Британский котёнок</h5>
+                        <p class="card-text">Стильный, с красивой круглой мордочкой и плюшевой шерстью.</p>
+                        <p class="card-text price-card-text">Цена: 6.500₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50" name="cat5" value="0" min="0">
@@ -117,13 +116,13 @@
                 </div>
             </div>
 
-            <div class="col-md-4" data-price="5700" data-name="Русская голубая">
+            <div class="col-md-4" data-price="7200" data-title="Мейн-кун котёнок">
                 <div class="card h-100">
-                    <img src="images/breed6.jpg" class="card-img-top" alt="Русская голубая">
+                    <img src="images/cat6.jpg" class="card-img-top" alt="Мейн-кун котёнок">
                     <div class="card-body">
-                        <h5 class="card-title">Русская голубая</h5>
-                        <p class="card-text">Элегантный котёнок с голубой короткой шерстью.</p>
-                        <p class="card-text price-card-text">Цена: 5.700₽</p>
+                        <h5 class="card-title">Мейн-кун котёнок</h5>
+                        <p class="card-text">Большой, пушистый и с гламурной гривой!</p>
+                        <p class="card-text price-card-text">Цена: 7.200₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50" name="cat6" value="0" min="0">
@@ -132,13 +131,13 @@
                 </div>
             </div>
 
-            <div class="col-md-4" data-price="5900" data-name="Бенгальский">
+            <div class="col-md-4" data-price="4800" data-title="Мейн-кун котёнок №2">
                 <div class="card h-100">
-                    <img src="images/breed7.jpg" class="card-img-top" alt="Бенгальский">
+                    <img src="images/cat7.jpg" class="card-img-top" alt="Мейн-кун котёнок №2">
                     <div class="card-body">
-                        <h5 class="card-title">Бенгальский</h5>
-                        <p class="card-text">Пёстрый котёнок с яркими пятнами и активным характером.</p>
-                        <p class="card-text price-card-text">Цена: 5.900₽</p>
+                        <h5 class="card-title">Мейн-кун котёнок №2</h5>
+                        <p class="card-text">Пушистый котёнок с забавной гривой.</p>
+                        <p class="card-text price-card-text">Цена: 4.800₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50" name="cat7" value="0" min="0">
@@ -147,12 +146,12 @@
                 </div>
             </div>
 
-            <div class="col-md-4" data-price="5300" data-name="Сиамский">
+            <div class="col-md-4" data-price="5300" data-title="Британский котёнок №2">
                 <div class="card h-100">
-                    <img src="images/breed8.jpg" class="card-img-top" alt="Сиамский">
+                    <img src="images/cat8.jpg" class="card-img-top" alt="Британский котёнок №2">
                     <div class="card-body">
-                        <h5 class="card-title">Сиамский</h5>
-                        <p class="card-text">Грациозный котёнок с выразительными голубыми глазами.</p>
+                        <h5 class="card-title">Британский котёнок №2</h5>
+                        <p class="card-text">Очаровательный британец с мягкой шерстью.</p>
                         <p class="card-text price-card-text">Цена: 5.300₽</p>
                         <div class="order">
                             <label>Количество:</label>
@@ -162,13 +161,13 @@
                 </div>
             </div>
 
-            <div class="col-md-4" data-price="5400" data-name="Бурманский">
+            <div class="col-md-4" data-price="5900" data-title="Сибирский котёнок №2">
                 <div class="card h-100">
-                    <img src="images/breed9.jpg" class="card-img-top" alt="Бурманский">
+                    <img src="images/cat9.jpg" class="card-img-top" alt="Сибирский котёнок №2">
                     <div class="card-body">
-                        <h5 class="card-title">Бурманский</h5>
-                        <p class="card-text">Котёнок с мягкой шелковистой шерстью и дружелюбным характером.</p>
-                        <p class="card-text price-card-text">Цена: 5.400₽</p>
+                        <h5 class="card-title">Сибирский котёнок №2</h5>
+                        <p class="card-text">Пушистый и стильный котёнок с мягкой шерстью.</p>
+                        <p class="card-text price-card-text">Цена: 5.900₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50" name="cat9" value="0" min="0">
@@ -189,6 +188,48 @@
 <footer class="text-center py-4 bg-dark text-white">
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
+
+<script>
+const catalog = document.getElementById('catalog-cards');
+const cards = Array.from(catalog.children);
+const defaultOrder = cards.map(card => card.cloneNode(true));
+
+document.getElementById('sort-price-asc').addEventListener('click', () => {
+    sortCards('price', 'asc');
+});
+
+document.getElementById('sort-price-desc').addEventListener('click', () => {
+    sortCards('price', 'desc');
+});
+
+document.getElementById('sort-alphabet').addEventListener('click', () => {
+    sortCards('title', 'asc');
+});
+
+document.getElementById('reset-sort').addEventListener('click', () => {
+    catalog.innerHTML = '';
+    defaultOrder.forEach(card => catalog.appendChild(card.cloneNode(true)));
+});
+
+function sortCards(type, order) {
+    let sorted = Array.from(catalog.children);
+    sorted.sort((a,b) => {
+        if(type === 'price') {
+            let priceA = parseFloat(a.dataset.price);
+            let priceB = parseFloat(b.dataset.price);
+            return order === 'asc' ? priceA - priceB : priceB - priceA;
+        } else if(type === 'title') {
+            let titleA = a.dataset.title.toLowerCase();
+            let titleB = b.dataset.title.toLowerCase();
+            if(titleA < titleB) return -1;
+            if(titleA > titleB) return 1;
+            return 0;
+        }
+    });
+    catalog.innerHTML = '';
+    sorted.forEach(card => catalog.appendChild(card));
+}
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>

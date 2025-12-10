@@ -19,9 +19,9 @@ body {
 
 
 :root {
-    --color1: #F0EEE9;  /* Светлый бежевый */
-    --color2: #E196A9;  /* Розовый */
-    --color3: #DAE498;  /* Зеленый */
+    --color1: #F0EEE9;  
+    --color2: #E196A9;  
+    --color3: #DAE498;  
     --white: #FFFFFF;
     --black: #000000;
 }

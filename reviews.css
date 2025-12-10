@@ -1,6 +1,3 @@
-/* Общие стили для страницы отзывов */
-
-/* Заголовок по центру */
 header.text-center {
     padding: 60px 20px;
     background-color: #FFFFFF;
@@ -15,20 +12,20 @@ header h1 {
     letter-spacing: 3px;
     display: inline-block;
     padding: 25px 60px;
-    background-color: #E196A9; /* Розовый */
+    background-color: #E196A9; 
     border-radius: 15px;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
 }
 
-/* Белое пространство */
+
 .white-space {
     height: 40px;
     background-color: #FFFFFF;
 }
 
-/* Навигация - стили идентичны главной странице */
+
 .navbar {
     padding: 60px 0 40px !important;
     background-color: #FFFFFF !important;
@@ -107,7 +104,7 @@ header h1 {
     color: #FFFFFF !important;
 }
 
-/* Вводный текст */
+
 .intro-section {
     padding: 60px 0;
     background-color: #FFFFFF;
@@ -125,7 +122,7 @@ header h1 {
     padding: 0 20px;
 }
 
-/* Заголовок "Отзывы" */
+
 .section-title {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
@@ -142,7 +139,7 @@ header h1 {
     height: 40px;
 }
 
-/* Форма добавления отзыва */
+
 .review-form-container {
     background-color: #DAE498;
     border-radius: 20px;
@@ -190,7 +187,7 @@ header h1 {
     box-shadow: 0 0 0 0.25rem rgba(225, 150, 169, 0.25) !important;
 }
 
-/* Стили для рейтинговых звезд */
+
 .rating-stars {
     background-color: #FFFFFF;
     padding: 15px;
@@ -222,7 +219,7 @@ header h1 {
     font-size: 1rem;
 }
 
-/* Карточки отзывов */
+
 .review-card {
     border: none !important;
     border-radius: 15px !important;
@@ -320,7 +317,7 @@ header h1 {
     gap: 5px;
 }
 
-/* Статистика отзывов */
+
 .review-stats {
     background-color: #DAE498;
     border-radius: 20px;
@@ -368,7 +365,7 @@ header h1 {
     font-size: 1rem;
 }
 
-/* Кнопка отправки отзыва */
+
 .btn-order {
     font-family: 'Poppins', sans-serif !important;
     font-size: 1.3rem !important;
@@ -395,7 +392,7 @@ header h1 {
     transform: translateY(-2px);
 }
 
-/* Текст внизу страницы */
+
 .bottom-text-section {
     padding: 60px 0;
     text-align: center;
@@ -427,7 +424,7 @@ header h1 {
     transform: translateY(-2px);
 }
 
-/* Футер */
+
 footer {
     background-color: #E196A9;
     color: #FFFFFF;
@@ -442,7 +439,7 @@ footer p {
     margin: 0;
 }
 
-/* Адаптивность */
+
 @media (max-width: 992px) {
     header h1 {
         font-size: 3rem;

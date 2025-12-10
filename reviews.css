@@ -1,0 +1,638 @@
+/* Общие стили для страницы отзывов */
+
+/* Заголовок по центру */
+header.text-center {
+    padding: 60px 20px;
+    background-color: #FFFFFF;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    padding: 25px 60px;
+    background-color: #E196A9; /* Розовый */
+    border-radius: 15px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
+}
+
+/* Белое пространство */
+.white-space {
+    height: 40px;
+    background-color: #FFFFFF;
+}
+
+/* Навигация - стили идентичны главной странице */
+.navbar {
+    padding: 60px 0 40px !important;
+    background-color: #FFFFFF !important;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.7rem !important;
+    font-weight: 900 !important;
+    color: #E196A9 !important;
+    text-decoration: none !important;
+    padding: 22px 55px !important;
+    display: inline-block;
+    transition: all 0.3s ease !important;
+    background-color: #DAE498 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 18px rgba(218, 228, 152, 0.4);
+    min-width: 240px !important;
+    text-align: center;
+    border: none !important;
+}
+
+.nav-link:hover {
+    background-color: #E196A9 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(225, 150, 169, 0.5);
+}
+
+.nav-link.heart-icon {
+    font-size: 1.8rem !important;
+    padding: 20px 40px !important;
+    min-width: 130px !important;
+}
+
+.nav-link.active {
+    background-color: #E196A9 !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 6px 18px rgba(225, 150, 169, 0.4);
+}
+
+.dropdown-menu {
+    background-color: #DAE498 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 10px 0 !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15) !important;
+}
+
+.dropdown-item {
+    color: #E196A9 !important;
+    font-weight: 700 !important;
+    font-family: 'Poppins', sans-serif !important;
+    padding: 15px 30px !important;
+    transition: all 0.3s ease !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+    background-color: #E196A9 !important;
+    color: #FFFFFF !important;
+}
+
+/* Вводный текст */
+.intro-section {
+    padding: 60px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.intro-section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #E196A9;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+/* Заголовок "Отзывы" */
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: #E196A9;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
+}
+
+.title-spacing {
+    height: 40px;
+}
+
+/* Форма добавления отзыва */
+.review-form-container {
+    background-color: #DAE498;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3);
+    margin-bottom: 60px;
+}
+
+.review-form-container h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #E196A9;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #E196A9;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.1rem !important;
+    border: 2px solid #E196A9 !important;
+    border-radius: 10px !important;
+    padding: 12px 20px !important;
+    transition: all 0.3s ease !important;
+    background-color: #FFFFFF !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #DAE498 !important;
+    box-shadow: 0 0 0 0.25rem rgba(225, 150, 169, 0.25) !important;
+}
+
+/* Стили для рейтинговых звезд */
+.rating-stars {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-inline {
+    margin-right: 15px !important;
+}
+
+.form-check-input {
+    width: 1.3em !important;
+    height: 1.3em !important;
+    margin-top: 0.2em !important;
+    margin-right: 5px !important;
+    border: 2px solid #E196A9 !important;
+}
+
+.form-check-input:checked {
+    background-color: #E196A9 !important;
+    border-color: #E196A9 !important;
+}
+
+.form-check-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #E196A9;
+    font-size: 1rem;
+}
+
+/* Карточки отзывов */
+.review-card {
+    border: none !important;
+    border-radius: 15px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 6px 18px rgba(218, 228, 152, 0.3);
+    border-left: 5px solid #DAE498 !important;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(218, 228, 152, 0.4);
+    border-left-color: #E196A9 !important;
+}
+
+.card-body {
+    padding: 25px !important;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #DAE498;
+    padding-bottom: 10px;
+}
+
+.review-author {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #E196A9 !important;
+    font-size: 1.3rem;
+    margin: 0;
+    flex: 1;
+}
+
+.review-rating {
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin: 0 10px;
+}
+
+.review-date {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.review-product {
+    background-color: #DAE498;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #E196A9;
+    font-weight: 600;
+}
+
+.review-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333 !important;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.review-footer {
+    display: flex;
+    gap: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.review-helpful,
+.review-comments {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #E196A9;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Статистика отзывов */
+.review-stats {
+    background-color: #DAE498;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3);
+}
+
+.review-stats h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #E196A9;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.stat-item {
+    background-color: #FFFFFF;
+    padding: 25px 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.stat-number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #E196A9;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Кнопка отправки отзыва */
+.btn-order {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.3rem !important;
+    font-weight: 800 !important;
+    color: #FFFFFF !important;
+    background-color: #E196A9 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 15px 50px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 6px 18px rgba(225, 150, 169, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-order:hover {
+    background-color: #DAE498 !important;
+    color: #E196A9 !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(218, 228, 152, 0.5);
+}
+
+.btn-order:active {
+    transform: translateY(-2px);
+}
+
+/* Текст внизу страницы */
+.bottom-text-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.bottom-text-section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #E196A9;
+    margin-bottom: 0;
+}
+
+.bottom-text-section a {
+    color: #FFFFFF !important;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 5px 15px;
+    background-color: #DAE498;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(218, 228, 152, 0.3);
+}
+
+.bottom-text-section a:hover {
+    background-color: #E196A9;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}
+
+/* Футер */
+footer {
+    background-color: #E196A9;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 3rem;
+        padding: 20px 40px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        padding: 15px 30px;
+    }
+    
+    .nav-link {
+        font-size: 1.4rem !important;
+        padding: 18px 40px !important;
+        min-width: 200px !important;
+    }
+    
+    .nav-link.heart-icon {
+        font-size: 1.6rem !important;
+        padding: 18px 35px !important;
+    }
+    
+    .intro-section p {
+        font-size: 1.3rem;
+    }
+    
+    .review-form-container h3 {
+        font-size: 1.6rem;
+    }
+    
+    .review-stats h3 {
+        font-size: 1.8rem;
+        padding: 12px 30px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .bottom-text-section p {
+        font-size: 1.3rem;
+    }
+    
+    .review-form-container,
+    .review-stats {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+        padding: 15px 30px;
+        letter-spacing: 2px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        padding: 12px 25px;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-link {
+        width: 250px;
+        font-size: 1.3rem !important;
+        padding: 16px 45px !important;
+        min-width: 230px !important;
+    }
+    
+    .nav-link.heart-icon {
+        font-size: 1.5rem !important;
+        padding: 16px 40px !important;
+    }
+    
+    .review-form-container,
+    .review-stats {
+        padding: 25px;
+    }
+    
+    .review-form-container h3 {
+        font-size: 1.4rem;
+    }
+    
+    .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .review-author,
+    .review-rating,
+    .review-date {
+        width: 100%;
+    }
+    
+    .btn-order {
+        font-size: 1.2rem !important;
+        padding: 12px 40px !important;
+    }
+    
+    .review-stats h3 {
+        font-size: 1.6rem;
+        padding: 10px 25px;
+    }
+    
+    .bottom-text-section p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2rem;
+        padding: 12px 25px;
+        letter-spacing: 1px;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        padding: 10px 20px;
+    }
+    
+    .nav-link {
+        font-size: 1.2rem !important;
+        padding: 14px 40px !important;
+        min-width: 210px !important;
+    }
+    
+    .nav-link.heart-icon {
+        font-size: 1.4rem !important;
+        padding: 14px 35px !important;
+    }
+    
+    .intro-section p {
+        font-size: 1.1rem;
+    }
+    
+    .review-form-container,
+    .review-stats {
+        padding: 20px;
+    }
+    
+    .review-form-container h3 {
+        font-size: 1.3rem;
+        padding: 12px;
+    }
+    
+    .form-label,
+    .form-control,
+    .form-select,
+    .form-check-label,
+    .review-text {
+        font-size: 1rem !important;
+    }
+    
+    .rating-stars {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .form-check-inline {
+        margin-right: 5px !important;
+    }
+    
+    .btn-order {
+        font-size: 1.1rem !important;
+        padding: 10px 35px !important;
+    }
+    
+    .review-stats h3 {
+        font-size: 1.4rem;
+        padding: 10px 20px;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .bottom-text-section p {
+        font-size: 1.1rem;
+    }
+    
+    footer {
+        font-size: 1.1rem;
+        padding: 25px 0;
+    }
+}

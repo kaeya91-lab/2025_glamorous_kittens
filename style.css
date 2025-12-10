@@ -79,7 +79,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem; /* Увеличил шрифт */
     font-weight: 700;
-    color: var(--white) !important; /* Белый текст */
+    color: var(--color2) !important; /* ИЗМЕНЕНО: стал розовый текст */
     text-decoration: none;
     padding: 15px 30px; /* Увеличил отступы */
     display: inline-block;
@@ -90,10 +90,10 @@ body {
 }
 
 .nav-link:hover {
-    background-color: var(--color2); /* Розовый при наведении */
+    background-color: #ff0000 !important; /* ИЗМЕНЕНО: стал красный при наведении */
     color: var(--white) !important;
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3); /* ИЗМЕНЕНО: тень для красного */
 }
 
 .heart-icon {
@@ -110,14 +110,14 @@ body {
 }
 
 .dropdown-item {
-    color: var(--white) !important; /* Белый текст */
+    color: var(--color2) !important; /* ИЗМЕНЕНО: стал розовый текст */
     font-weight: 600;
     padding: 12px 25px;
     transition: all 0.3s ease;
 }
 
 .dropdown-item:hover {
-    background-color: var(--color2); /* Розовый при наведении */
+    background-color: #ff0000 !important; /* ИЗМЕНЕНО: стал красный при наведении */
     color: var(--white) !important;
 }
 
@@ -261,7 +261,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem; /* Увеличил немного */
     font-weight: 700;
-    color: var(--white); /* Белый текст вместо розового */
+    color: var(--color2) !important; /* ИЗМЕНЕНО: стал розовый */
     line-height: 1.8;
 }
 
@@ -328,6 +328,7 @@ body {
     .nav-link {
         font-size: 1.2rem;
         padding: 12px 25px;
+        color: var(--color2) !important; /* ДОБАВЛЕНО: розовый текст */
     }
     
     .welcome-text,
@@ -382,6 +383,7 @@ body {
         width: 220px;
         text-align: center;
         font-size: 1.2rem;
+        color: var(--color2) !important; /* ДОБАВЛЕНО: розовый текст */
     }
     
     .cards-row {
@@ -426,6 +428,7 @@ body {
     .nav-link {
         font-size: 1.1rem;
         padding: 10px 20px;
+        color: var(--color2) !important; /* ДОБАВЛЕНО: розовый текст */
     }
     
     .welcome-text,

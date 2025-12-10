@@ -1,5 +1,3 @@
-/* style.css - для главной страницы */
-
 * {
     margin: 0;
     padding: 0;
@@ -19,16 +17,16 @@ body {
     padding: 0 20px;
 }
 
-/* Цветовая палитра */
+
 :root {
-    --color1: #F0EEE9;  /* Светлый бежевый */
-    --color2: #E196A9;  /* Розовый */
-    --color3: #DAE498;  /* Зеленый */
+    --color1: #F0EEE9;  
+    --color2: #E196A9;  
+    --color3: #DAE498;  
     --white: #FFFFFF;
     --black: #000000;
 }
 
-/* Главный заголовок */
+
 .main-header {
     text-align: center;
     padding: 60px 20px;
@@ -51,7 +49,7 @@ body {
     box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
 }
 
-/* Навигация */
+
 .main-nav {
     padding: 60px 0 40px;
     background-color: var(--white);
@@ -132,7 +130,7 @@ body {
     color: var(--white) !important;
 }
 
-/* Приветственный текст */
+
 .welcome-section {
     padding: 60px 0;
     background-color: var(--white);
@@ -150,7 +148,7 @@ body {
     padding: 0 20px;
 }
 
-/* Карточки Узнать подробнее и Почему мы */
+
 .cards-section {
     padding: 60px 0;
     text-align: center;
@@ -168,7 +166,7 @@ body {
     max-width: 500px;
 }
 
-/* Карточки */
+
 .glamour-card {
     background-color: var(--color3);
     border-radius: 20px;
@@ -227,7 +225,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Наши предложения */
+
 .offers-section {
     padding: 60px 0;
     text-align: center;
@@ -258,7 +256,7 @@ body {
     max-width: 350px;
 }
 
-/* Почему мы */
+
 .why-us-section {
     padding: 60px 0;
     background-color: var(--color3);
@@ -279,7 +277,7 @@ body {
     padding: 0 20px;
 }
 
-/* Кнопка наверх - ДОБАВЛЕНО */
+
 .text-center.py-4 {
     padding: 40px 0;
 }
@@ -309,7 +307,7 @@ body {
     box-shadow: 0 10px 25px rgba(225, 150, 169, 0.5);
 }
 
-/* Нижний текст */
+
 .bottom-section {
     padding: 60px 0;
     text-align: center;
@@ -340,7 +338,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Футер */
+
 .main-footer {
     background-color: var(--color2);
     color: var(--white);
@@ -355,7 +353,7 @@ body {
     margin: 0;
 }
 
-/* Адаптивность */
+
 @media (max-width: 1200px) {
     .container {
         max-width: 1000px;

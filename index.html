@@ -1,3 +1,4 @@
+мя, [10.12.2025 4:57]
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -9,7 +10,7 @@
 </head>
 <body>
 
-
+<!-- Навигация -->
 <nav class="navbar navbar-expand-lg navbar-light bg-pink py-3">
     <div class="container">
         <a class="navbar-brand" href="index.html">Гламурные котята</a>
@@ -20,26 +21,84 @@
             <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
             <li class="nav-item"><a class="nav-link" href="photoshoot.html">Фотосессия</a></li>
+
+            <!-- Новая кнопка с выпадающим меню -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+                    <li><a class="dropdown-item" href="#book-photoshoot">Записаться на фотосессию</a></li>
+                </ul>
+            </li>
+
+            <!-- Иконка 🩷 -->
+            <li class="nav-item">
+                <a class="nav-link text-pink fs-4" href="order.html">🩷</a>
+            </li>
         </ul>
     </div>
 </nav>
 
-
+<!-- Хедер -->
 <header class="text-center py-5 bg-gradient">
     <h1>Добро пожаловать в мир гламурных котят!</h1>
     <p class="lead">Стиль. Красота. Пушистое совершенство.</p>
 </header>
 
-
+<!-- Вводный текст -->
 <section class="text-center py-4">
     <p>Добро пожаловать в наш гламурный журнал о котиках! 
     Здесь вы найдёте стильные породы, модные аксессуары и лучшие beauty-процедуры для пушистых модников.</p>
 </section>
 
+<!-- Наши предложения и Почему мы -->
+<section class="container py-5 text-center" id="offers">
+    <h2>Наши предложения</h2>
+    <div class="row justify-content-center g-4">
+        <div class="col-md-5">
+            <div class="card h-100">
+                <img src="images/offer1.jpg" class="card-img-top" alt="Предложение 1">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#offer1-detail" class="text-decoration-none">Узнать подробнее</a></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="card h-100">
+                <img src="images/offer2.jpg" class="card-img-top" alt="Предложение 2">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#offer2-detail" class="text-decoration-none">Почему мы?</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Блоки с подробным описанием -->
+<section class="container py-4">
+    <div id="offer1-detail" class="my-5">
+        <h3>Наши предложения</h3>
+        <p>Описание предложения, преимущества, уникальные особенности наших котят и услуг.</p>
+    </div>
+    <div id="offer2-detail" class="my-5">
+        <h3>Почему мы?</h3>
+        <p>Здесь рассказ о том, чем мы отличаемся: качество ухода, профессионализм, индивидуальный подход.</p>
+    </div>
+</section>
+
+<!-- Текст с ссылками на страницы и сторонние ресурсы -->
+<section class="container py-4 text-center">
+    <p>
+        Узнайте больше о наших <a href="breeds.html">стильных породах</a> или посетите <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.
+    </p>
+</section>
+
+<!-- Основные карточки разделов -->
 <section class="container py-5">
     <div class="row justify-content-center g-4">
-        <div class="col-md-4">
+
+мя, [10.12.2025 4:57]
+<div class="col-md-4">
             <div class="card h-100">
                 <img src="images/cat1.jpg" class="card-img-top" alt="Стильные породы">
                 <div class="card-body">
@@ -74,7 +133,19 @@
     </div>
 </section>
 
+<!-- Отзывы -->
+<section class="container py-4" id="reviews">
+    <h3>Отзывы</h3>
+    <p>Здесь будут реальные отзывы клиентов.</p>
+</section>
 
+<!-- Запись на фотосессию -->
+<section class="container py-4" id="book-photoshoot">
+    <h3>Записаться на фотосессию</h3>
+    <p>Форма или информация о записи на фотосессию.</p>
+</section>
+
+<!-- Футер -->
 <footer class="text-center py-4 bg-dark text-white">
     <div class="mb-2">
         <a href="index.html" class="text-white me-3">Наверх ⏏️</a>

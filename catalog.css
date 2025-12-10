@@ -1,0 +1,781 @@
+/* catalog.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.catalog-page {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Цветовая палитра */
+:root {
+    --color1: #F0EEE9;  /* Светлый бежевый */
+    --color2: #E196A9;  /* Розовый */
+    --color3: #DAE498;  /* Зеленый */
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/* Главный заголовок */
+.main-header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--white);
+}
+
+.main-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    padding: 25px 60px;
+    background-color: var(--color2);
+    border-radius: 15px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
+}
+
+/* Навигация */
+.main-nav {
+    padding: 60px 0 40px;
+    background-color: var(--white);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem !important;
+    font-weight: 900 !important;
+    color: var(--color2) !important;
+    text-decoration: none;
+    padding: 22px 55px !important;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background-color: var(--color3) !important;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(218, 228, 152, 0.4);
+    min-width: 240px !important;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: var(--color2) !important;
+    color: var(--white) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(225, 150, 169, 0.5);
+}
+
+.nav-link.active {
+    background-color: var(--color2) !important;
+    color: var(--white) !important;
+    box-shadow: 0 10px 25px rgba(225, 150, 169, 0.5);
+}
+
+.heart-icon {
+    font-size: 1.8rem !important;
+    padding: 20px 40px !important;
+    min-width: 130px !important;
+}
+
+.dropdown-menu {
+    background-color: var(--color3) !important;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+    color: var(--color2) !important;
+    font-weight: 700;
+    padding: 15px 30px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color2) !important;
+    color: var(--white) !important;
+}
+
+/* Приветственный текст */
+.welcome-section {
+    padding: 60px 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.welcome-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color2);
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+/* Заголовок раздела */
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 40px;
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: var(--color2);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Секция каталога */
+.offers-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Кнопки сортировки */
+.sort-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+    padding: 0 10px;
+}
+
+.btn-sort {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color2) !important;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: var(--color3);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(218, 228, 152, 0.4);
+    text-align: center;
+    min-width: 180px;
+}
+
+.btn-sort:hover {
+    background-color: var(--color2) !important;
+    color: var(--white) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(225, 150, 169, 0.5);
+}
+
+/* Карточки каталога */
+.catalog-card {
+    background-color: var(--color3);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(218, 228, 152, 0.2);
+    margin-bottom: 30px;
+}
+
+.catalog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(218, 228, 152, 0.4);
+}
+
+.card-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 3px solid var(--white);
+}
+
+.card-content {
+    padding: 30px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color3);
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--color2);
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color2);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.price-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--color2);
+    background-color: var(--white);
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.order label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color2);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.quantity-input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid var(--color2);
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--white);
+    color: var(--color2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-input:focus {
+    outline: none;
+    border-color: var(--color3);
+    box-shadow: 0 0 0 3px rgba(225, 150, 169, 0.2);
+}
+
+/* Кнопки внизу */
+.catalog-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.btn-order {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--white) !important;
+    text-decoration: none;
+    padding: 20px 60px;
+    background-color: var(--color2);
+    border-radius: 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
+    margin: 20px 0;
+}
+
+.btn-order:hover {
+    background-color: var(--color3);
+    color: var(--color2) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(218, 228, 152, 0.4);
+}
+
+/* Кнопка отправки корзины */
+.btn-section {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--white) !important;
+    text-decoration: none;
+    padding: 20px 60px;
+    background-color: var(--color3);
+    border-radius: 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(218, 228, 152, 0.3);
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-section:hover {
+    background-color: var(--color2);
+    color: var(--white) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(225, 150, 169, 0.4);
+}
+
+/* Сводка корзины */
+.cart-summary {
+    background-color: var(--color3);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(218, 228, 152, 0.3);
+}
+
+.cart-summary .bottom-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--color2);
+    margin: 0;
+}
+
+#cart-count, #cart-total {
+    color: var(--white);
+    background-color: var(--color2);
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin: 0 5px;
+    box-shadow: 0 4px 10px rgba(225, 150, 169, 0.3);
+}
+
+/* Нижний текст */
+.bottom-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.bottom-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color2);
+    margin-bottom: 0;
+}
+
+.green-link {
+    color: var(--white) !important;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 5px 15px;
+    background-color: var(--color3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(218, 228, 152, 0.3);
+}
+
+.green-link:hover {
+    background-color: var(--color2);
+    color: var(--white) !important;
+    transform: translateY(-2px);
+}
+
+/* Футер */
+.main-footer {
+    background-color: var(--color2);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.main-footer p {
+    margin: 0;
+}
+
+/* Эффект загрузки */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid var(--color3);
+    border-top: 6px solid var(--color2);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+        padding: 0 30px;
+    }
+    
+    .sort-buttons {
+        gap: 12px;
+    }
+    
+    .btn-sort {
+        min-width: 170px;
+        padding: 14px 25px;
+        font-size: 1.2rem;
+    }
+    
+    .card-title {
+        font-size: 1.6rem;
+    }
+    
+    .price-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-title {
+        font-size: 3rem;
+        padding: 20px 40px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        padding: 15px 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .nav-link {
+        font-size: 1.4rem;
+        padding: 18px 40px !important;
+        min-width: 200px !important;
+    }
+    
+    .heart-icon {
+        font-size: 1.6rem !important;
+        padding: 18px 35px !important;
+    }
+    
+    .welcome-text,
+    .bottom-text {
+        font-size: 1.3rem;
+    }
+    
+    .card-title {
+        font-size: 1.5rem;
+    }
+    
+    .card-text {
+        font-size: 1rem;
+    }
+    
+    .price-text {
+        font-size: 1.2rem;
+    }
+    
+    .btn-order,
+    .btn-section {
+        font-size: 1.6rem;
+        padding: 18px 50px;
+    }
+    
+    .sort-buttons {
+        gap: 10px;
+        margin: 25px 0;
+    }
+    
+    .btn-sort {
+        min-width: 160px;
+        padding: 12px 22px;
+        font-size: 1.1rem;
+    }
+    
+    .card-image {
+        height: 250px;
+    }
+    
+    .catalog-buttons {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        padding: 15px 30px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        padding: 12px 25px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+    }
+    
+    .nav-link {
+        width: 250px;
+        font-size: 1.3rem;
+        padding: 16px 45px !important;
+        min-width: 230px !important;
+    }
+    
+    .heart-icon {
+        font-size: 1.5rem !important;
+        padding: 16px 40px !important;
+    }
+    
+    .sort-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .btn-sort {
+        width: 280px;
+        min-width: auto;
+        padding: 14px 20px;
+        font-size: 1.2rem;
+    }
+    
+    .card-image {
+        height: 230px;
+    }
+    
+    .card-content {
+        padding: 25px;
+    }
+    
+    .card-title {
+        font-size: 1.4rem;
+    }
+    
+    .btn-order,
+    .btn-section {
+        font-size: 1.5rem;
+        padding: 16px 40px;
+        width: 280px;
+        text-align: center;
+    }
+    
+    .catalog-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cart-summary {
+        padding: 20px;
+        max-width: 90%;
+    }
+    
+    .cart-summary .bottom-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 2rem;
+        padding: 12px 25px;
+        letter-spacing: 1px;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    
+    .nav-link {
+        font-size: 1.2rem;
+        padding: 14px 40px !important;
+        min-width: 210px !important;
+    }
+    
+    .heart-icon {
+        font-size: 1.4rem !important;
+        padding: 14px 35px !important;
+    }
+    
+    .welcome-text,
+    .bottom-text {
+        font-size: 1.1rem;
+    }
+    
+    .welcome-section,
+    .offers-section,
+    .bottom-section {
+        padding: 40px 0;
+    }
+    
+    .card-image {
+        height: 220px;
+    }
+    
+    .card-content {
+        padding: 20px;
+    }
+    
+    .card-title {
+        font-size: 1.3rem;
+        padding: 8px 16px;
+    }
+    
+    .card-text {
+        font-size: 1rem;
+    }
+    
+    .price-text {
+        font-size: 1.1rem;
+        padding: 8px 20px;
+    }
+    
+    .btn-order,
+    .btn-section {
+        font-size: 1.4rem;
+        padding: 14px 35px;
+        width: 250px;
+    }
+    
+    .sort-buttons {
+        margin: 20px 0;
+    }
+    
+    .btn-sort {
+        width: 250px;
+        padding: 12px 18px;
+        font-size: 1.1rem;
+    }
+    
+    .order label {
+        font-size: 1.1rem;
+    }
+    
+    .main-footer {
+        font-size: 1.1rem;
+        padding: 25px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-title {
+        font-size: 1.8rem;
+        padding: 10px 20px;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+        padding: 8px 16px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+    .nav-link {
+        width: 220px;
+        font-size: 1.1rem;
+        padding: 12px 35px !important;
+        min-width: 200px !important;
+    }
+    
+    .btn-sort {
+        width: 220px;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+    
+    .btn-order,
+    .btn-section {
+        font-size: 1.3rem;
+        padding: 12px 30px;
+        width: 220px;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .card-text {
+        font-size: 0.95rem;
+    }
+    
+    .price-text {
+        font-size: 1rem;
+    }
+    
+    .cart-summary .bottom-text {
+        font-size: 1.1rem;
+    }
+}

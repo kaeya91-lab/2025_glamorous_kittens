@@ -6,19 +6,21 @@
     <title>Гламурные котята - Каталог</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- Заголовок по центру -->
-<header class="main-header">
-    <h1 class="main-title">ГЛАМУРНЫЕ КОТЯТА</h1>
+<header class="text-center py-5">
+    <h1>Гламурные котята</h1>
 </header>
 
+<!-- Белое пространство -->
+<div class="white-space"></div>
+
 <!-- Навигация -->
-<nav class="main-nav">
-    <div class="nav-container">
-        <ul class="nav-menu">
+<nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container justify-content-center">
+        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
             <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
             <li class="nav-item"><a class="nav-link" href="breeds.html">Стильные породы</a></li>
             <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуары</a></li>
@@ -26,9 +28,9 @@
             <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button">Дополнительная информация</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
+                    <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
                     <li><a class="dropdown-item" href="photoshoot.html">Записаться на фотосессию</a></li>
                 </ul>
             </li>
@@ -37,19 +39,20 @@
 </nav>
 
 <!-- Вводный текст -->
-<section class="welcome-section">
+<section class="intro-section text-center py-4">
     <div class="container">
-        <p class="welcome-text">Выберите своего пушистого модника!</p>
+        <p>Выберите своего пушистого модника!</p>
     </div>
 </section>
 
 <!-- Заголовок "Каталог гламурных котят" -->
-<section class="container offers-section">
+<section class="container py-5 text-center">
     <h2 class="section-title">Каталог гламурных котят</h2>
+    <div class="title-spacing"></div>
 </section>
 
 <!-- Кнопки сортировки -->
-<section class="container text-center py-4">
+<section class="container py-3 text-center">
     <div class="sort-buttons">
         <button class="btn btn-sort" id="sort-price-asc">🔼 По цене</button>
         <button class="btn btn-sort" id="sort-price-desc">🔽 По цене</button>
@@ -69,14 +72,12 @@
 
             <!-- Карточки котят -->
             <div class="col-md-4" data-price="5000" data-title="Сиамский котёнок">
-                <div class="glamour-card h-100">
-                    <img src="https://i.pinimg.com/736x/c5/36/dd/c536dd9c215cf2d248262a1195876102.jpg" 
-                         class="card-image" 
-                         alt="Сиамский котёнок">
-                    <div class="card-content">
+                <div class="card h-100">
+                    <img src="images/cat1.jpg" class="card-img-top" alt="Сиамский котёнок">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Сиамский котёнок</h5>
                         <p class="card-text">Элегантный и грациозный котёнок с ярко-голубыми глазами и характерным окрасом.</p>
-                        <p class="price-text">Цена: 5.000₽</p>
+                        <p class="card-text price-card-text">Цена: 5.000₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50 mx-auto quantity-input" 
@@ -89,14 +90,12 @@
             </div>
 
             <div class="col-md-4" data-price="6200" data-title="Бенгальский котёнок">
-                <div class="glamour-card h-100">
-                    <img src="https://i.pinimg.com/736x/0a/38/c5/0a38c56f0f61d6508dee6248c4073331.jpg" 
-                         class="card-image" 
-                         alt="Бенгальский котёнок">
-                    <div class="card-content">
+                <div class="card h-100">
+                    <img src="images/cat2.jpg" class="card-img-top" alt="Бенгальский котёнок">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Бенгальский котёнок</h5>
                         <p class="card-text">Экзотический красавец с леопардовым окрасом и дикой грацией.</p>
-                        <p class="price-text">Цена: 6.200₽</p>
+                        <p class="card-text price-card-text">Цена: 6.200₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50 mx-auto quantity-input" 
@@ -109,14 +108,12 @@
             </div>
 
             <div class="col-md-4" data-price="5800" data-title="Русская голубая">
-                <div class="glamour-card h-100">
-                    <img src="https://i.pinimg.com/1200x/bc/9e/d6/bc9ed64d80e77f4a78d079ae7ada8f30.jpg" 
-                         class="card-image" 
-                         alt="Русская голубая">
-                    <div class="card-content">
+                <div class="card h-100">
+                    <img src="images/cat3.jpg" class="card-img-top" alt="Русская голубая">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Русская голубая</h5>
                         <p class="card-text">Аристократичная кошка с серебристо-голубой шерстью и изумрудными глазами.</p>
-                        <p class="price-text">Цена: 5.800₽</p>
+                        <p class="card-text price-card-text">Цена: 5.800₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50 mx-auto quantity-input" 
@@ -130,14 +127,12 @@
 
             <!-- Новые котята -->
             <div class="col-md-4" data-price="7000" data-title="Сибирский котёнок">
-                <div class="glamour-card h-100">
-                    <img src="https://i.pinimg.com/736x/1f/aa/9a/1faa9afb74f8adb8bf6d11a4ce4e91b2.jpg" 
-                         class="card-image" 
-                         alt="Сибирский котёнок">
-                    <div class="card-content">
+                <div class="card h-100">
+                    <img src="images/cat4.jpg" class="card-img-top" alt="Сибирский котёнок">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Сибирский котёнок</h5>
                         <p class="card-text">Пушистый, добрый и настоящий гламурный красавец с гипоаллергенной шерстью!</p>
-                        <p class="price-text">Цена: 7.000₽</p>
+                        <p class="card-text price-card-text">Цена: 7.000₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50 mx-auto quantity-input" 
@@ -150,14 +145,12 @@
             </div>
 
             <div class="col-md-4" data-price="6500" data-title="Британский котёнок">
-                <div class="glamour-card h-100">
-                    <img src="https://i.pinimg.com/1200x/fb/8d/58/fb8d5849189f3034d380a3e6d122b826.jpg" 
-                         class="card-image" 
-                         alt="Британский котёнок">
-                    <div class="card-content">
+                <div class="card h-100">
+                    <img src="images/cat5.jpg" class="card-img-top" alt="Британский котёнок">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Британский котёнок</h5>
                         <p class="card-text">Стильный, с красивой круглой мордочкой и плюшевой шерстью, настоящий джентльмен.</p>
-                        <p class="price-text">Цена: 6.500₽</p>
+                        <p class="card-text price-card-text">Цена: 6.500₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50 mx-auto quantity-input" 
@@ -170,14 +163,12 @@
             </div>
 
             <div class="col-md-4" data-price="7200" data-title="Мейн-кун котёнок">
-                <div class="glamour-card h-100">
-                    <img src="https://i.pinimg.com/1200x/fd/89/c1/fd89c128e3b109f677a45243cdfef80f.jpg" 
-                         class="card-image" 
-                         alt="Мейн-кун котёнок">
-                    <div class="card-content">
+                <div class="card h-100">
+                    <img src="images/cat6.jpg" class="card-img-top" alt="Мейн-кун котёнок">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Мейн-кун котёнок</h5>
                         <p class="card-text">Большой, пушистый и с гламурной гривой! Будущий король среди кошек.</p>
-                        <p class="price-text">Цена: 7.200₽</p>
+                        <p class="card-text price-card-text">Цена: 7.200₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50 mx-auto quantity-input" 
@@ -190,14 +181,12 @@
             </div>
 
             <div class="col-md-4" data-price="4800" data-title="Сфинкс котёнок">
-                <div class="glamour-card h-100">
-                    <img src="https://i.pinimg.com/1200x/a8/94/b0/a894b00a1fb5826cbd01aceace20ad06.jpg" 
-                         class="card-image" 
-                         alt="Сфинкс котёнок">
-                    <div class="card-content">
+                <div class="card h-100">
+                    <img src="images/cat7.jpg" class="card-img-top" alt="Сфинкс котёнок">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Сфинкс котёнок</h5>
                         <p class="card-text">Экстравагантный бесшерстный котёнок с невероятно мягкой кожей и большими ушами.</p>
-                        <p class="price-text">Цена: 4.800₽</p>
+                        <p class="card-text price-card-text">Цена: 4.800₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50 mx-auto quantity-input" 
@@ -210,14 +199,12 @@
             </div>
 
             <div class="col-md-4" data-price="5300" data-title="Персидский котёнок">
-                <div class="glamour-card h-100">
-                    <img src="https://i.pinimg.com/1200x/a8/94/b0/a894b00a1fb5826cbd01aceace20ad06.jpg" 
-                         class="card-image" 
-                         alt="Персидский котёнок">
-                    <div class="card-content">
+                <div class="card h-100">
+                    <img src="images/cat8.jpg" class="card-img-top" alt="Персидский котёнок">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Персидский котёнок</h5>
                         <p class="card-text">Роскошный котёнок с шикарной длинной шерстью и очаровательной приплюснутой мордочкой.</p>
-                        <p class="price-text">Цена: 5.300₽</p>
+                        <p class="card-text price-card-text">Цена: 5.300₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50 mx-auto quantity-input" 
@@ -230,14 +217,12 @@
             </div>
 
             <div class="col-md-4" data-price="5900" data-title="Норвежский лесной">
-                <div class="glamour-card h-100">
-                    <img src="https://i.pinimg.com/736x/8d/8c/50/8d8c507e1923fde5649ad231fd97531b.jpg" 
-                         class="card-image" 
-                         alt="Норвежский лесной котёнок">
-                    <div class="card-content">
+                <div class="card h-100">
+                    <img src="images/cat9.jpg" class="card-img-top" alt="Норвежский лесной котёнок">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Норвежский лесной</h5>
                         <p class="card-text">Крупный и мощный котёнок с густой водонепроницаемой шерстью и кисточками на ушах.</p>
-                        <p class="price-text">Цена: 5.900₽</p>
+                        <p class="card-text price-card-text">Цена: 5.900₽</p>
                         <div class="order">
                             <label>Количество:</label>
                             <input type="number" class="form-control w-50 mx-auto quantity-input" 
@@ -251,7 +236,7 @@
 
         </div>
 
-        <div class="text-center py-5">
+        <div class="text-center py-4">
             <!-- Кнопка перехода на страницу заказа -->
             <a href="order.html" class="btn-order me-3">Сделать заказ🩷</a>
             
@@ -266,19 +251,21 @@
 </form>
 
 <!-- Информация о текущей корзине -->
-<div class="container text-center py-4">
+<div class="container text-center py-3">
     <div class="cart-summary">
-        <p class="bottom-text">Товаров в корзине: <span id="cart-count">9</span> | Общая сумма: <span id="cart-total">58,700</span>₽</p>
+        <p>Товаров в корзине: <span id="cart-count">9</span> | Общая сумма: <span id="cart-total">58,700</span>₽</p>
     </div>
 </div>
 
 <!-- Текст внизу страницы -->
-<section class="container bottom-section">
-    <p class="bottom-text">Узнайте больше о наших <a href="breeds.html" class="green-link">стильных породах</a> или посетите <a href="https://example.com" target="_blank" class="green-link">наш блог</a> для дополнительных советов.</p>
+<section class="bottom-text-section">
+    <div class="container text-center">
+        <p>Узнайте больше о наших <a href="breeds.html">стильных породах</a> или посетите <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.</p>
+    </div>
 </section>
 
 <!-- Футер -->
-<footer class="main-footer">
+<footer class="text-center py-4">
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
 

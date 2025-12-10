@@ -32,32 +32,32 @@ body {
     text-align: center;
     padding: 60px 20px;
     background-color: var(--white);
+    border-bottom: 5px solid var(--color3);
 }
 
 .main-title {
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     font-weight: 800;
-    color: var(--white);
+    color: var(--color2);
     text-transform: uppercase;
     letter-spacing: 3px;
     display: inline-block;
-    padding: 25px 60px;
-    background-color: var(--color3); /* Зеленый фон */
-    border-radius: 15px;
+    padding: 20px 50px;
+    border: 3px solid var(--color3);
+    border-radius: 10px;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 8px 20px rgba(218, 228, 152, 0.3);
 }
 
 /* Навигация */
 .main-nav {
-    padding: 60px 0 40px;
+    padding: 50px 0;
     background-color: var(--white);
 }
 
 .nav-container {
-    max-width: 1400px; /* Увеличил ширину */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -69,60 +69,52 @@ body {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    gap: 25px; /* Увеличил расстояние между кнопками */
 }
 
 .nav-item {
+    margin: 0 15px;
     position: relative;
 }
 
 .nav-link {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem; /* Увеличил шрифт */
+    font-size: 1.1rem;
     font-weight: 700;
-    color: var(--white) !important; /* Белый текст */
+    color: var(--color2) !important;
     text-decoration: none;
-    padding: 18px 35px; /* Увеличил отступы (высота и ширина) */
+    padding: 10px 20px;
     display: inline-block;
     transition: all 0.3s ease;
-    background-color: var(--color2); /* Розовый фон (красный) */
-    border-radius: 12px; /* Немного увеличил скругление */
-    box-shadow: 0 5px 15px rgba(225, 150, 169, 0.3);
-    min-width: 180px; /* Минимальная ширина кнопки */
-    text-align: center;
+    border: 2px solid var(--color3);
+    border-radius: 5px;
+    background-color: var(--white);
 }
 
 .nav-link:hover {
-    background-color: var(--color2); /* Остается розовым при наведении */
+    background-color: var(--color3);
     color: var(--white) !important;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.4);
+    transform: translateY(-2px);
 }
 
 .heart-icon {
-    font-size: 1.6rem; /* Увеличил сердечко */
-    padding: 18px 25px; /* Увеличил отступы */
+    font-size: 1.3rem;
+    padding: 10px 15px;
 }
 
 .dropdown-menu {
-    background-color: var(--color2); /* Розовый фон для выпадающего меню */
-    border: none;
-    border-radius: 12px;
-    padding: 10px 0;
-    box-shadow: 0 5px 15px rgba(225, 150, 169, 0.3);
-    min-width: 250px; /* Ширина выпадающего меню */
+    background-color: var(--white);
+    border: 2px solid var(--color3);
+    border-radius: 5px;
 }
 
 .dropdown-item {
-    color: var(--white) !important; /* Белый текст */
+    color: var(--color2) !important;
     font-weight: 600;
-    font-size: 1.1rem; /* Увеличил шрифт в выпадающем меню */
-    padding: 12px 25px;
-    transition: all 0.3s ease;
+    padding: 10px 20px;
 }
 
 .dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный белый при наведении */
+    background-color: var(--color3);
     color: var(--white) !important;
 }
 
@@ -135,13 +127,12 @@ body {
 
 .welcome-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--color2);
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
-    padding: 0 20px;
 }
 
 /* Карточки */
@@ -162,19 +153,19 @@ body {
 }
 
 .glamour-card {
-    background-color: var(--color3); /* Зеленый фон */
-    border-radius: 20px;
+    background-color: var(--white);
+    border: 3px solid var(--color3);
+    border-radius: 15px;
     overflow: hidden;
     transition: all 0.3s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 10px 25px rgba(218, 228, 152, 0.2);
 }
 
 .glamour-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(218, 228, 152, 0.4);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
@@ -185,13 +176,12 @@ body {
 }
 
 .card-content {
-    padding: 30px;
+    padding: 25px;
     text-align: center;
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color3); /* Зеленый фон */
 }
 
 .card-title {
@@ -200,22 +190,15 @@ body {
 
 .card-link {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 800;
-    color: var(--color2); /* Розовый текст */
+    color: var(--color2);
     text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: var(--white); /* Белый фон для текста */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease;
 }
 
 .card-link:hover {
-    background-color: var(--color2); /* Розовый при наведении */
-    color: var(--white) !important;
-    transform: scale(1.05);
+    color: var(--color3);
 }
 
 /* Секция Наши предложения */
@@ -228,13 +211,12 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--white); /* Белый текст */
+    color: var(--color2);
     margin-bottom: 60px;
     display: inline-block;
-    padding: 20px 50px;
-    background-color: var(--color2); /* Розовый фон вместо зеленого */
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
+    padding: 15px 40px;
+    border: 3px solid var(--color3);
+    border-radius: 10px;
 }
 
 .offers-cards {
@@ -254,19 +236,19 @@ body {
 }
 
 .why-us-content {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 50px;
-    background-color: var(--color2); /* Розовый фон вместо зеленого */
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(225, 150, 169, 0.3);
+    padding: 40px;
+    border: 3px solid var(--color3);
+    border-radius: 15px;
+    background-color: var(--white);
 }
 
 .why-us-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    color: var(--white); /* Белый текст */
+    color: var(--color2);
     line-height: 1.8;
 }
 
@@ -274,109 +256,64 @@ body {
 .bottom-section {
     padding: 60px 0;
     text-align: center;
-    background-color: var(--white);
 }
 
 .bottom-text {
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--color2); /* Розовый текст */
+    color: var(--color2);
     margin-bottom: 0;
-    max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.8;
 }
 
 .green-link {
-    color: var(--color3) !important; /* Зеленый шрифт (без прямоугольника) */
+    color: var(--color3) !important;
     font-weight: 800;
     text-decoration: none;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid var(--color3);
     padding-bottom: 2px;
+    transition: all 0.3s ease;
 }
 
 .green-link:hover {
-    color: var(--color2) !important; /* Розовый при наведении */
+    color: var(--color2) !important;
     border-bottom-color: var(--color2);
-}
-
-/* Текст "Мы предлагаем..." - розовый на белом фоне */
-.offer-text-section {
-    padding: 60px 0;
-    background-color: var(--white);
-    text-align: center;
-}
-
-.offer-text-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px;
-}
-
-.offer-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color2); /* Розовый текст на белом фоне */
-    line-height: 1.8;
 }
 
 /* Футер */
 .main-footer {
-    background-color: var(--color3); /* Зеленый фон */
-    color: var(--color2); /* Розовый текст в футере */
+    background-color: var(--color3);
+    color: var(--white);
     text-align: center;
     padding: 30px 0;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .main-footer p {
     margin: 0;
+    font-size: 1.1rem;
 }
 
 /* Адаптивность */
-@media (max-width: 1200px) {
-    .nav-link {
-        font-size: 1.3rem;
-        padding: 16px 30px;
-        min-width: 160px;
-    }
-}
-
 @media (max-width: 992px) {
     .main-title {
         font-size: 3rem;
-        padding: 20px 40px;
+        padding: 15px 30px;
     }
     
     .section-title {
         font-size: 2rem;
-        padding: 15px 30px;
-    }
-    
-    .nav-link {
-        font-size: 1.2rem;
-        padding: 14px 25px;
-        min-width: 150px;
-    }
-    
-    .nav-menu {
-        gap: 20px;
     }
     
     .welcome-text,
     .why-us-text,
-    .offer-text,
     .bottom-text {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .card-link {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .cards-row {
@@ -386,17 +323,13 @@ body {
     .card-col, .offer-col {
         flex: 0 1 350px;
     }
-    
-    .why-us-content {
-        padding: 40px;
-    }
 }
 
 @media (max-width: 768px) {
     .main-title {
         font-size: 2.5rem;
         letter-spacing: 2px;
-        padding: 15px 30px;
+        padding: 12px 25px;
     }
     
     .section-title {
@@ -414,11 +347,8 @@ body {
     }
     
     .nav-link {
-        width: 250px; /* Широкие кнопки на мобильных */
+        width: 200px;
         text-align: center;
-        font-size: 1.2rem;
-        padding: 16px 20px;
-        min-width: auto;
     }
     
     .cards-row {
@@ -435,37 +365,22 @@ body {
         width: 100%;
         max-width: 400px;
     }
-    
-    .card-image {
-        height: 250px;
-    }
-    
-    .dropdown-menu {
-        min-width: 200px;
-    }
 }
 
 @media (max-width: 576px) {
     .main-title {
         font-size: 2rem;
-        padding: 12px 25px;
+        padding: 10px 20px;
         letter-spacing: 1px;
     }
     
     .section-title {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         padding: 10px 20px;
-    }
-    
-    .nav-link {
-        font-size: 1.1rem;
-        padding: 14px 18px;
-        width: 220px;
     }
     
     .welcome-text,
     .why-us-text,
-    .offer-text,
     .bottom-text {
         font-size: 1.1rem;
     }
@@ -474,8 +389,7 @@ body {
     .cards-section,
     .offers-section,
     .why-us-section,
-    .bottom-section,
-    .offer-text-section {
+    .bottom-section {
         padding: 40px 0;
     }
     
@@ -485,19 +399,5 @@ body {
     
     .card-content {
         padding: 20px;
-    }
-    
-    .card-link {
-        font-size: 1.1rem;
-        padding: 8px 16px;
-    }
-    
-    .why-us-content {
-        padding: 30px 20px;
-    }
-    
-    .main-footer {
-        font-size: 1.1rem;
-        padding: 25px 0;
     }
 }

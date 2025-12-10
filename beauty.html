@@ -3,41 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty-процедуры для котят</title>
+    <title>Гламурные котята - Beauty-процедуры</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-pink py-3">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Гламурные котята</a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<!-- Заголовок по центру -->
+<header class="text-center py-5">
+    <h1>Гламурные котята</h1>
+</header>
+
+<!-- Белое пространство -->
+<div class="white-space"></div>
+
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container justify-content-center">
+        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
             <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
             <li class="nav-item"><a class="nav-link" href="breeds.html">Стильные породы</a></li>
             <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуары</a></li>
             <li class="nav-item"><a class="nav-link active" href="beauty.html">Beauty-процедуры</a></li>
+            <li class="nav-item"><a class="nav-link heart-icon" href="order.html">🩷</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-            <li class="nav-item"><a class="nav-link" href="photoshoot.html">Фотосессия</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+                    <li><a class="dropdown-item" href="#book-photoshoot">Записаться на фотосессию</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </nav>
 
-<header class="text-center py-5 bg-gradient">
-    <h1>Beauty-процедуры для котят</h1>
-    <p class="lead">Спа, стрижки и мини-фотосессии для ваших пушистых моделей</p>
-</header>
+<!-- Вводный текст -->
+<section class="intro-section text-center py-4">
+    <div class="container">
+        <p>Спа, стрижки и мини-фотосессии для ваших пушистых моделей</p>
+    </div>
+</section>
+
+<!-- Заголовок "Beauty-процедуры" -->
+<section class="container py-5 text-center">
+    <h2 class="section-title">Beauty-процедуры для котят</h2>
+    <div class="title-spacing"></div>
+</section>
 
 <!-- Навигация по процедурам внутри страницы -->
 <section class="container text-center py-4">
-    <a href="#beauty1" class="btn btn-pink m-2">Спа для котят</a>
-    <a href="#beauty2" class="btn btn-pink m-2">Стрижка и укладка</a>
-    <a href="#beauty3" class="btn btn-pink m-2">Мини-фотосессия</a>
-    <a href="#beauty4" class="btn btn-pink m-2">Маникюр и педикюр</a>
-    <a href="#beauty5" class="btn btn-pink m-2">Ароматерапия</a>
-    <a href="#beauty6" class="btn btn-pink m-2">Расслабляющий массаж</a>
+    <div class="section-buttons">
+        <a href="#beauty1" class="btn btn-section">Спа для котят</a>
+        <a href="#beauty2" class="btn btn-section">Стрижка и укладка</a>
+        <a href="#beauty3" class="btn btn-section">Мини-фотосессия</a>
+        <a href="#beauty4" class="btn btn-section">Маникюр и педикюр</a>
+        <a href="#beauty5" class="btn btn-section">Ароматерапия</a>
+        <a href="#beauty6" class="btn btn-section">Расслабляющий массаж</a>
+    </div>
 </section>
 
+<!-- Раздел с beauty-процедурами -->
 <section class="container py-5">
     <div class="row g-4">
 
@@ -45,7 +71,7 @@
         <div class="col-md-4" id="beauty1">
             <div class="card h-100">
                 <img src="images/beauty1.jpg" class="card-img-top" alt="Спа-процедура">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">Спа для котят</h5>
                     <p class="card-text">Расслабляющая ванночка с мягким шампунем и ароматерапией.</p>
                 </div>
@@ -55,7 +81,7 @@
         <div class="col-md-4" id="beauty2">
             <div class="card h-100">
                 <img src="images/beauty2.jpg" class="card-img-top" alt="Стрижка котёнка">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">Стрижка и укладка</h5>
                     <p class="card-text">Красивые стрижки и укладка, чтобы котёнок выглядел модно.</p>
                 </div>
@@ -65,7 +91,7 @@
         <div class="col-md-4" id="beauty3">
             <div class="card h-100">
                 <img src="images/beauty3.jpg" class="card-img-top" alt="Мини-фотосессия">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">Мини-фотосессия</h5>
                     <p class="card-text">Фотосессии для гламурных котят с яркими аксессуарами.</p>
                 </div>
@@ -76,7 +102,7 @@
         <div class="col-md-4" id="beauty4">
             <div class="card h-100">
                 <img src="images/beauty4.jpg" class="card-img-top" alt="Маникюр и педикюр">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">Маникюр и педикюр</h5>
                     <p class="card-text">Уход за коготками и лапками для красоты и комфорта.</p>
                 </div>
@@ -86,7 +112,7 @@
         <div class="col-md-4" id="beauty5">
             <div class="card h-100">
                 <img src="images/beauty5.jpg" class="card-img-top" alt="Ароматерапия">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">Ароматерапия</h5>
                     <p class="card-text">Расслабляющие ароматы для спокойствия и хорошего настроения.</p>
                 </div>
@@ -96,7 +122,7 @@
         <div class="col-md-4" id="beauty6">
             <div class="card h-100">
                 <img src="images/beauty6.jpg" class="card-img-top" alt="Расслабляющий массаж">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">Расслабляющий массаж</h5>
                     <p class="card-text">Мягкий массаж для улучшения самочувствия и расслабления.</p>
                 </div>
@@ -106,15 +132,28 @@
     </div>
 </section>
 
-<div class="text-center py-4">
-    <a href="#top" class="btn btn-pink">Наверх ⏏️</a>
+<!-- Кнопка сделать заказ -->
+<div class="text-center py-5">
+    <a href="order.html" class="btn-order">Сделать заказ 🩷</a>
 </div>
 
-<footer class="text-center py-4 bg-dark text-white">
+<!-- Кнопка наверх -->
+<div class="text-center py-4">
+    <a href="#" class="btn btn-section">Наверх ⏏️</a>
+</div>
+
+<!-- Текст внизу страницы -->
+<section class="bottom-text-section">
+    <div class="container text-center">
+        <p>Узнайте больше о наших <a href="catalog.html">товарах в каталоге</a> или посетите <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.</p>
+    </div>
+</section>
+
+<!-- Футер -->
+<footer class="text-center py-4">
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>

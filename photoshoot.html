@@ -1,90 +1,292 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Запись на фотосессию</title>
+    <title>Гламурные котята - Фотосессия</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
+<!-- Заголовок по центру -->
+<header class="text-center py-5">
+    <h1>Гламурные котята</h1>
+</header>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-pink py-3">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Гламурные котята</a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<!-- Белое пространство -->
+<div class="white-space"></div>
+
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container justify-content-center">
+        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
             <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
             <li class="nav-item"><a class="nav-link" href="breeds.html">Стильные породы</a></li>
             <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуары</a></li>
+            <li class="nav-item"><a class="nav-link heart-icon" href="order.html">🩷</a></li>
             <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-            <li class="nav-item"><a class="nav-link active" href="photoshoot.html">Фотосессия</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+                    <li><a class="dropdown-item active" href="photoshoot.html">Записаться на фотосессию</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </nav>
 
-
-<header class="text-center py-5 bg-gradient">
-    <h1>Запись на фотосессию</h1>
-    <p class="lead">Заполните форму и выберите услугу для вашего котёнка</p>
-</header>
-
-
-<section class="container py-5">
-    <form action="https://example.com/submit" method="POST">
-        
-        <div class="mb-3">
-            <label for="ownerName" class="form-label">Ваше имя</label>
-            <input type="text" class="form-control" id="ownerName" name="ownerName" placeholder="Иван Иванов" required>
-        </div>
-
-       
-        <div class="mb-3">
-            <label for="catName" class="form-label">Имя котёнка</label>
-            <input type="text" class="form-control" id="catName" name="catName" placeholder="Барсик" required>
-        </div>
-
-        
-        <div class="mb-3">
-            <label for="catAge" class="form-label">Возраст котёнка (месяцы)</label>
-            <input type="number" class="form-control" id="catAge" name="catAge" value="1" min="1" required>
-        </div>
-
-        
-        <div class="mb-3">
-            <label class="form-label">Выберите услугу</label><br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="service" id="service1" value="mini-session" checked>
-                <label class="form-check-label" for="service1">Мини-фотосессия</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="service" id="service2" value="spa-session">
-                <label class="form-check-label" for="service2">Фотосессия со спа</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="service" id="service3" value="full-session">
-                <label class="form-check-label" for="service3">Полная фотосессия</label>
-            </div>
-        </div>
-
-        
-        <div class="mb-3">
-            <label for="comment" class="form-label">Комментарий</label>
-            <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Особые пожелания"></textarea>
-        </div>
-
-        
-        <button type="submit" class="btn btn-pink">Записаться</button>
-    </form>
+<!-- Вводный текст -->
+<section class="intro-section text-center py-4">
+    <div class="container">
+        <p>Профессиональная фотосессия для ваших гламурных котят</p>
+    </div>
 </section>
 
+<!-- Заголовок "Фотосессия" -->
+<section class="container py-5 text-center">
+    <h2 class="section-title">Запись на фотосессию</h2>
+    <div class="title-spacing"></div>
+</section>
 
-<footer class="text-center py-4 bg-dark text-white">
+<!-- Описание фотосессии -->
+<section class="container py-4">
+    <div class="photoshoot-info text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h3 class="mb-4">Почему выбирают наши фотосессии?</h3>
+                <ul class="photoshoot-features">
+                    <li>Профессиональный фотограф с опытом работы с животными</li>
+                    <li>Разнообразные гламурные декорации и реквизит</li>
+                    <li>Безопасная и комфортная обстановка для котят</li>
+                    <li>Обработка фото и создание стильного альбома</li>
+                    <li>Возможность выбрать тему фотосессии</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Форма записи на фотосессию -->
+<section class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="photoshoot-form-container">
+                <form id="photoshoot-form">
+                    <div class="mb-4">
+                        <h4 class="form-section-title">Личные данные</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="photoshoot-name" class="form-label">Имя и Фамилия *</label>
+                                <input type="text" class="form-control" id="photoshoot-name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="photoshoot-phone" class="form-label">Телефон *</label>
+                                <input type="tel" class="form-control" id="photoshoot-phone" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="photoshoot-email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="photoshoot-email" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="form-section-title">Информация о питомце</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="pet-name" class="form-label">Имя питомца *</label>
+                                <input type="text" class="form-control" id="pet-name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="pet-breed" class="form-label">Порода *</label>
+                                <input type="text" class="form-control" id="pet-breed" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="pet-age" class="form-label">Возраст питомца</label>
+                                <input type="text" class="form-control" id="pet-age" placeholder="Например: 2 года">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="form-section-title">Детали фотосессии</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="photoshoot-date" class="form-label">Предпочитаемая дата *</label>
+                                <input type="date" class="form-control" id="photoshoot-date" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="photoshoot-time" class="form-label">Предпочитаемое время *</label>
+                                <select class="form-select" id="photoshoot-time" required>
+                                    <option value="" selected disabled>Выберите время</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="18:00">18:00</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="photoshoot-theme" class="form-label">Тема фотосессии</label>
+                                <select class="form-select" id="photoshoot-theme">
+                                    <option value="" selected>Любая тема (на усмотрение фотографа)</option>
+                                    <option value="glamour">Гламурная</option>
+                                    <option value="natural">Природная</option>
+                                    <option value="holiday">Праздничная</option>
+                                    <option value="studio">Студийная</option>
+                                    <option value="outdoor">На улице</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="photoshoot-package" class="form-label">Пакет фотосессии</label>
+                                <select class="form-select" id="photoshoot-package">
+                                    <option value="basic" selected>Базовый (10 фото) - 3.000₽</option>
+                                    <option value="standard">Стандартный (20 фото + альбом) - 5.000₽</option>
+                                    <option value="premium">Премиум (30 фото + альбом + обрабтка) - 8.000₽</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="special-requests" class="form-label">Особые пожелания</label>
+                                <textarea class="form-control" id="special-requests" rows="3" placeholder="Например: Любимая игрушка питомца, особые аксессуары и т.д."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="photoshoot-agree" required>
+                        <label class="form-check-label" for="photoshoot-agree">
+                            Я согласен с <a href="#" class="terms-link">правилами фотосессии</a> и даю согласие на обработку персональных данных *
+                        </label>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn-order btn-lg">Записаться на фотосессию</button>
+                        <p class="mt-3 small">* - обязательные поля для заполнения</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Примеры работ -->
+<section class="container py-5 text-center">
+    <h3 class="mb-5">Примеры наших работ</h3>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="images/photoshoot1.jpg" class="card-img-top" alt="Фотосессия 1">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Гламурная фотосессия</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="images/photoshoot2.jpg" class="card-img-top" alt="Фотосессия 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Праздничная тема</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="images/photoshoot3.jpg" class="card-img-top" alt="Фотосессия 3">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Природная стилистика</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контактная информация -->
+<section class="container py-5 text-center">
+    <div class="contact-info">
+        <h3 class="mb-4">Контакты для записи</h3>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="contact-item">
+                    <h5>Телефон фотографа</h5>
+                    <p>+7 (999) 987-65-43</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="contact-item">
+                    <h5>Студия</h5>
+                    <p>г. Москва, ул. Фотографов, д. 5</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="contact-item">
+                    <h5>График</h5>
+                    <p>Ежедневно 10:00-20:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Текст внизу страницы -->
+<section class="bottom-text-section">
+    <div class="container text-center">
+        <p>Посмотрите также наши <a href="accessories.html">гламурные аксессуары</a> или <a href="beauty.html">beauty-процедуры</a> для подготовки к фотосессии.</p>
+    </div>
+</section>
+
+<!-- Футер -->
+<footer class="text-center py-4">
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
 
+<script>
+document.getElementById('photoshoot-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Получаем данные формы
+    const formData = {
+        name: document.getElementById('photoshoot-name').value,
+        phone: document.getElementById('photoshoot-phone').value,
+        email: document.getElementById('photoshoot-email').value,
+        petName: document.getElementById('pet-name').value,
+        petBreed: document.getElementById('pet-breed').value,
+        petAge: document.getElementById('pet-age').value,
+        date: document.getElementById('photoshoot-date').value,
+        time: document.getElementById('photoshoot-time').value,
+        theme: document.getElementById('photoshoot-theme').value,
+        package: document.getElementById('photoshoot-package').value,
+        requests: document.getElementById('special-requests').value,
+        agree: document.getElementById('photoshoot-agree').checked
+    };
+    
+    // Проверка согласия с условиями
+    if (!formData.agree) {
+        alert('Пожалуйста, согласитесь с правилами фотосессии');
+        return;
+    }
+    
+    // Проверка даты (нельзя выбрать прошедшую дату)
+    const selectedDate = new Date(formData.date);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    
+    if (selectedDate < today) {
+        alert('Пожалуйста, выберите будущую дату');
+        return;
+    }
+    
+    // Здесь обычно отправка данных на сервер
+    // Вместо этого покажем сообщение об успехе
+    alert('Заявка на фотосессию успешно отправлена! Мы свяжемся с вами в течение 24 часов для подтверждения записи.\n\nВаш номер заявки: #PS' + Math.floor(Math.random() * 1000));
+    
+    // Очистка формы (опционально)
+    // this.reset();
+});
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>

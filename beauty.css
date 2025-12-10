@@ -1,1 +1,432 @@
+/* ===== БАЗОВЫЕ СТИЛИ ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== ЗАГОЛОВОК ===== */
+.main-header {
+    background: linear-gradient(135deg, #ffafcc 0%, #ffc8dd 50%, #cdb4db 100%);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 3px 3px 0 #ff4d8d;
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 3px 3px 0 #ff4d8d, 0 0 10px #ffafcc;
+    }
+    to {
+        text-shadow: 3px 3px 0 #ff4d8d, 0 0 20px #ffafcc, 0 0 30px #ffafcc;
+    }
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+.main-nav {
+    background: linear-gradient(to right, #ffafcc, #ffc8dd, #cdb4db);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link.active {
+    background-color: #ff4d8d;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 77, 141, 0.4);
+}
+
+.heart-icon {
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    background-color: #ff4d8d;
+    border-radius: 50%;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Выпадающее меню */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 10px 0;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #ffc8dd;
+    color: #ff4d8d;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* ===== ВВОДНЫЙ ТЕКСТ ===== */
+.welcome-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 40px 20px;
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-text {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ff4d8d;
+    margin: 0;
+    text-shadow: 2px 2px 0 #ffafcc;
+}
+
+/* ===== ЗАГОЛОВОК РАЗДЕЛА ===== */
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #ff4d8d;
+    text-align: center;
+    margin: 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #ffafcc, #ff4d8d, #cdb4db);
+    border-radius: 2px;
+}
+
+/* ===== КНОПКИ НАВИГАЦИИ ПО ПРОЦЕДУРАМ ===== */
+.section-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.btn-section {
+    background: linear-gradient(135deg, #ffafcc 0%, #ffc8dd 100%);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 175, 204, 0.3);
+}
+
+.btn-section:hover {
+    background: linear-gradient(135deg, #ff4d8d 0%, #ff8fab 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 77, 141, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+/* ===== КАРТОЧКИ ПРОЦЕДУР ===== */
+.offers-section {
+    padding: 40px 0;
+}
+
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.offer-col {
+    flex: 0 0 calc(33.333% - 30px);
+    max-width: calc(33.333% - 30px);
+    margin-bottom: 30px;
+}
+
+.glamour-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.glamour-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 77, 141, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #ffafcc;
+}
+
+.card-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff4d8d;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card-text {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* ===== КНОПКА ЗАКАЗА ===== */
+.btn-order {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff4d8d 0%, #ff8fab 100%);
+    color: white;
+    padding: 18px 45px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(255, 77, 141, 0.4);
+    border: none;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+.btn-order:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(255, 77, 141, 0.6);
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 8px 20px rgba(255, 77, 141, 0.4); }
+    50% { box-shadow: 0 8px 25px rgba(255, 77, 141, 0.7); }
+    100% { box-shadow: 0 8px 20px rgba(255, 77, 141, 0.4); }
+}
+
+/* ===== НИЖНИЙ ТЕКСТ ===== */
+.bottom-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+}
+
+.bottom-text {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0;
+}
+
+.green-link {
+    color: #ff4d8d;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px dotted #ffafcc;
+}
+
+.green-link:hover {
+    color: #cdb4db;
+    text-decoration: none;
+    border-bottom: 2px solid #cdb4db;
+}
+
+/* ===== ФУТЕР ===== */
+.main-footer {
+    background: linear-gradient(135deg, #ffafcc 0%, #ffc8dd 50%, #cdb4db 100%);
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 992px) {
+    .main-title {
+        font-size: 2.8rem;
+    }
+    
+    .welcome-text {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .offer-col {
+        flex: 0 0 calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .welcome-text {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-section {
+        width: 80%;
+    }
+    
+    .offer-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .glamour-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .welcome-text {
+        font-size: 1.3rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .btn-order {
+        padding: 15px 35px;
+        font-size: 1.1rem;
+    }
+}

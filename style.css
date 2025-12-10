@@ -42,11 +42,11 @@ body {
     letter-spacing: 3px;
     display: inline-block;
     padding: 25px 60px;
-    background-color: var(--color2); /* ← ИЗМЕНЕНО: был green (color3), стал pink (color2) */
+    background-color: var(--color2); /* ИЗМЕНЕНО: стал розовый */
     border-radius: 15px;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ← ИЗМЕНЕНО: цвет тени */
+    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ИЗМЕНЕНО: тень для розового */
 }
 
 /* Навигация */
@@ -77,32 +77,32 @@ body {
 
 .nav-link {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.3rem; /* Увеличил шрифт */
     font-weight: 700;
-    color: var(--white) !important;
+    color: var(--white) !important; /* Белый текст */
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 15px 30px; /* Увеличил отступы */
     display: inline-block;
     transition: all 0.3s ease;
-    background-color: var(--color3);
+    background-color: var(--color3); /* Зеленый фон */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(218, 228, 152, 0.2);
 }
 
 .nav-link:hover {
-    background-color: var(--color2);
+    background-color: var(--color2); /* Розовый при наведении */
     color: var(--white) !important;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
 }
 
 .heart-icon {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Увеличил сердечко */
     padding: 15px 20px;
 }
 
 .dropdown-menu {
-    background-color: var(--color3);
+    background-color: var(--color3); /* Зеленый фон */
     border: none;
     border-radius: 10px;
     padding: 10px 0;
@@ -110,14 +110,14 @@ body {
 }
 
 .dropdown-item {
-    color: var(--white) !important;
+    color: var(--white) !important; /* Белый текст */
     font-weight: 600;
     padding: 12px 25px;
     transition: all 0.3s ease;
 }
 
 .dropdown-item:hover {
-    background-color: var(--color2);
+    background-color: var(--color2); /* Розовый при наведении */
     color: var(--white) !important;
 }
 
@@ -130,7 +130,7 @@ body {
 
 .welcome-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.6rem; /* Немного увеличил */
     font-weight: 700;
     color: var(--color2);
     max-width: 900px;
@@ -157,7 +157,7 @@ body {
 }
 
 .glamour-card {
-    background-color: var(--color3);
+    background-color: var(--color3); /* Зеленый фон вместо рамки */
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -186,7 +186,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color3);
+    background-color: var(--color3); /* Зеленый фон */
 }
 
 .card-title {
@@ -195,20 +195,20 @@ body {
 
 .card-link {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* Увеличил немного */
     font-weight: 800;
-    color: var(--color2);
+    color: var(--color2); /* Розовый текст */
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
     padding: 10px 20px;
     border-radius: 8px;
-    background-color: var(--white);
+    background-color: var(--white); /* Белый фон для текста */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-link:hover {
-    background-color: var(--color2);
+    background-color: var(--color2); /* Розовый при наведении */
     color: var(--white) !important;
     transform: scale(1.05);
 }
@@ -223,13 +223,13 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--white);
+    color: var(--white); /* Белый текст */
     margin-bottom: 60px;
     display: inline-block;
     padding: 20px 50px;
-    background-color: var(--color2); /* ← ИЗМЕНЕНО: был green (color3), стал pink (color2) */
+    background-color: var(--color2); /* ИЗМЕНЕНО: стал розовый */
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ← ИЗМЕНЕНО: цвет тени */
+    box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ИЗМЕНЕНО: тень для розового */
 }
 
 .offers-cards {
@@ -252,16 +252,16 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 50px;
-    background-color: var(--color2); /* ← ИЗМЕНЕНО: был green (color3), стал pink (color2) */
+    background-color: var(--color2); /* ИЗМЕНЕНО: стал розовый */
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(225, 150, 169, 0.3); /* ← ИЗМЕНЕНО: цвет тени */
+    box-shadow: 0 10px 30px rgba(225, 150, 169, 0.3); /* ИЗМЕНЕНО: тень для розового */
 }
 
 .why-us-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Увеличил немного */
     font-weight: 700;
-    color: var(--white);
+    color: var(--white); /* Белый текст вместо розового */
     line-height: 1.8;
 }
 
@@ -280,31 +280,31 @@ body {
 }
 
 .green-link {
-    color: var(--white) !important;
+    color: var(--white) !important; /* Белый текст */
     font-weight: 800;
     text-decoration: none;
     padding: 5px 15px;
-    background-color: var(--color3);
+    background-color: var(--color3); /* Зеленый фон */
     border-radius: 8px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(218, 228, 152, 0.3);
 }
 
 .green-link:hover {
-    background-color: var(--color2);
+    background-color: var(--color2); /* Розовый при наведении */
     color: var(--white) !important;
     transform: translateY(-2px);
 }
 
 /* Футер */
 .main-footer {
-    background-color: var(--color2); /* ← ИЗМЕНЕНО: был green (color3), стал pink (color2) */
-    color: var(--white); /* ← ИЗМЕНЕНО: был pink (color2), стал white */
+    background-color: var(--color3); /* Зеленый фон */
+    color: var(--color2); /* Розовый текст в футере */
     text-align: center;
     padding: 30px 0;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 700; /* Жирный шрифт */
+    font-size: 1.2rem; /* Увеличил шрифт */
 }
 
 .main-footer p {
@@ -316,15 +316,13 @@ body {
     .main-title {
         font-size: 3rem;
         padding: 20px 40px;
-        background-color: var(--color2); /* ← ДОБАВЛЕНО для адаптивности */
-        box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ← ДОБАВЛЕНО */
+        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
     }
     
     .section-title {
         font-size: 2rem;
         padding: 15px 30px;
-        background-color: var(--color2); /* ← ДОБАВЛЕНО для адаптивности */
-        box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ← ДОБАВЛЕНО */
+        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
     }
     
     .nav-link {
@@ -352,8 +350,7 @@ body {
     
     .why-us-content {
         padding: 40px;
-        background-color: var(--color2); /* ← ДОБАВЛЕНО для адаптивности */
-        box-shadow: 0 10px 30px rgba(225, 150, 169, 0.3); /* ← ДОБАВЛЕНО */
+        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
     }
 }
 
@@ -362,15 +359,13 @@ body {
         font-size: 2.5rem;
         letter-spacing: 2px;
         padding: 15px 30px;
-        background-color: var(--color2); /* ← ДОБАВЛЕНО для адаптивности */
-        box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ← ДОБАВЛЕНО */
+        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
     }
     
     .section-title {
         font-size: 1.8rem;
         padding: 12px 25px;
-        background-color: var(--color2); /* ← ДОБАВЛЕНО для адаптивности */
-        box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ← ДОБАВЛЕНО */
+        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
     }
     
     .nav-menu {
@@ -408,8 +403,7 @@ body {
     }
     
     .why-us-content {
-        background-color: var(--color2); /* ← ДОБАВЛЕНО для адаптивности */
-        box-shadow: 0 10px 30px rgba(225, 150, 169, 0.3); /* ← ДОБАВЛЕНО */
+        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
     }
 }
 
@@ -418,15 +412,13 @@ body {
         font-size: 2rem;
         padding: 12px 25px;
         letter-spacing: 1px;
-        background-color: var(--color2); /* ← ДОБАВЛЕНО для адаптивности */
-        box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ← ДОБАВЛЕНО */
+        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
     }
     
     .section-title {
         font-size: 1.6rem;
         padding: 10px 20px;
-        background-color: var(--color2); /* ← ДОБАВЛЕНО для адаптивности */
-        box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3); /* ← ДОБАВЛЕНО */
+        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
     }
     
     .nav-link {
@@ -463,14 +455,11 @@ body {
     
     .why-us-content {
         padding: 30px 20px;
-        background-color: var(--color2); /* ← ДОБАВЛЕНО для адаптивности */
-        box-shadow: 0 10px 30px rgba(225, 150, 169, 0.3); /* ← ДОБАВЛЕНО */
+        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
     }
     
     .main-footer {
         font-size: 1.1rem;
         padding: 25px 0;
-        background-color: var(--color2); /* ← ДОБАВЛЕНО для адаптивности */
-        color: var(--white); /* ← ДОБАВЛЕНО для адаптивности */
     }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гламурные котята - Аксессуары</title>
-    <link rel="stylesheet" href="accessories.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -26,7 +26,7 @@
             <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button">Дополнительная информация</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
                     <li><a class="dropdown-item" href="photoshoot.html">Записаться на фотосессию</a></li>
@@ -43,96 +43,104 @@
     </div>
 </section>
 
-<!-- Заголовок "Гламурные аксессуары" -->
-<section class="container offers-section">
+<!-- Заголовок раздела -->
+<section class="container" id="offers">
     <h2 class="section-title">Гламурные аксессуары для котят</h2>
-</section>
-
-<!-- Навигация по разделам внутри страницы -->
-<section class="container cards-section">
-    <div class="cards-row">
-        <a href="#accessory1" class="card-link-btn">Розовый бантик</a>
-        <a href="#accessory2" class="card-link-btn">Гламурный ошейник</a>
-        <a href="#accessory3" class="card-link-btn">Модное платье</a>
-        <a href="#accessory4" class="card-link-btn">Синий бантик</a>
-        <a href="#accessory5" class="card-link-btn">Блестящий ошейник</a>
-        <a href="#accessory6" class="card-link-btn">Футболка для котёнка</a>
+    
+    <!-- Навигация по разделам внутри страницы -->
+    <div class="section-buttons text-center py-4">
+        <a href="#accessory1" class="btn-section">Розовый бантик</a>
+        <a href="#accessory2" class="btn-section">Гламурный ошейник</a>
+        <a href="#accessory3" class="btn-section">Модное платье</a>
+        <a href="#accessory4" class="btn-section">Синий бантик</a>
+        <a href="#accessory5" class="btn-section">Блестящий ошейник</a>
+        <a href="#accessory6" class="btn-section">Футболка для котёнка</a>
     </div>
 </section>
 
-<!-- Разделы с аксессуарами -->
-<section id="accessory1" class="container offers-section">
+<!-- Раздел с аксессуарами - СИММЕТРИЧНЫЕ КАРТОЧКИ -->
+<section class="container offers-section">
     <div class="cards-row offers-cards">
-        <div class="offer-col">
+        <!-- 1 ряд -->
+        <div class="offer-col" id="accessory1">
             <div class="glamour-card">
-                <img src="https://i.pinimg.com/1200x/21/ac/a0/21aca00b9bc5268f8376cf525ba8cdc4.jpg" class="card-image" alt="Розовый бантик">
+                <img src="https://i.pinimg.com/1200x/21/ac/a0/21aca00b9bc5268f8376cf525ba8cdc4.jpg" 
+                     class="card-image" 
+                     alt="Розовый бантик">
                 <div class="card-content">
                     <h5 class="card-title">
-                        <span class="card-link">Розовый бантик</span>
+                        <a href="#" class="card-link">Розовый бантик</a>
                     </h5>
                     <p class="card-description">Красивый розовый бантик, чтобы котёнок выглядел как модная звезда.</p>
                 </div>
             </div>
         </div>
-        
+
         <div class="offer-col" id="accessory2">
             <div class="glamour-card">
-                <img src="https://i.pinimg.com/1200x/6b/31/76/6b3176376959747c4240c3101ac949e6.jpg" class="card-image" alt="Гламурный ошейник">
+                <img src="https://i.pinimg.com/1200x/6b/31/76/6b3176376959747c4240c3101ac949e6.jpg" 
+                     class="card-image" 
+                     alt="Гламурный ошейник">
                 <div class="card-content">
                     <h5 class="card-title">
-                        <span class="card-link">Гламурный ошейник</span>
+                        <a href="#" class="card-link">Гламурный ошейник</a>
                     </h5>
                     <p class="card-description">Яркий ошейник со стразами для стильного образа.</p>
                 </div>
             </div>
         </div>
-        
+
         <div class="offer-col" id="accessory3">
             <div class="glamour-card">
-                <img src="https://i.pinimg.com/1200x/4e/64/ab/4e64ab8b24a05064f6d6abad034840a7.jpg" class="card-image" alt="Модное платье">
+                <img src="https://i.pinimg.com/1200x/4e/64/ab/4e64ab8b24a05064f6d6abad034840a7.jpg" 
+                     class="card-image" 
+                     alt="Модное платье">
                 <div class="card-content">
                     <h5 class="card-title">
-                        <span class="card-link">Модное платье</span>
+                        <a href="#" class="card-link">Модное платье</a>
                     </h5>
                     <p class="card-description">Очаровательное платье для фотосессий и гламурных прогулок.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<section id="accessory4" class="container offers-section">
-    <div class="cards-row offers-cards">
-        <div class="offer-col">
+        <!-- 2 ряд -->
+        <div class="offer-col" id="accessory4">
             <div class="glamour-card">
-                <img src="https://i.pinimg.com/1200x/a3/12/87/a312878419192d7626c1d4d987ef8902.jpg" class="card-image" alt="Синий бантик">
+                <img src="https://i.pinimg.com/1200x/a3/12/87/a312878419192d7626c1d4d987ef8902.jpg" 
+                     class="card-image" 
+                     alt="Синий бантик">
                 <div class="card-content">
                     <h5 class="card-title">
-                        <span class="card-link">Синий бантик</span>
+                        <a href="#" class="card-link">Синий бантик</a>
                     </h5>
                     <p class="card-description">Элегантный синий бантик для стильных прогулок.</p>
                 </div>
             </div>
         </div>
-        
+
         <div class="offer-col" id="accessory5">
             <div class="glamour-card">
-                <img src="https://i.pinimg.com/1200x/91/95/df/9195df3ebf0fcaeb42328ebae2811639.jpg" class="card-image" alt="Блестящий ошейник">
+                <img src="https://i.pinimg.com/1200x/91/95/df/9195df3ebf0fcaeb42328ebae2811639.jpg" 
+                     class="card-image" 
+                     alt="Блестящий ошейник">
                 <div class="card-content">
                     <h5 class="card-title">
-                        <span class="card-link">Блестящий ошейник</span>
+                        <a href="#" class="card-link">Блестящий ошейник</a>
                     </h5>
                     <p class="card-description">Ошейник со стразами и блестками для фотосессий.</p>
                 </div>
             </div>
         </div>
-        
+
         <div class="offer-col" id="accessory6">
             <div class="glamour-card">
-                <img src="https://i.pinimg.com/1200x/18/15/1d/18151dd6a764c53ea052671348911425.jpg" class="card-image" alt="Футболка для котёнка">
+                <img src="https://i.pinimg.com/1200x/18/15/1d/18151dd6a764c53ea052671348911425.jpg" 
+                     class="card-image" 
+                     alt="Футболка для котёнка">
                 <div class="card-content">
                     <h5 class="card-title">
-                        <span class="card-link">Футболка для котёнка</span>
+                        <a href="#" class="card-link">Футболка для котёнка</a>
                     </h5>
                     <p class="card-description">Мягкая футболка для котят, чтобы быть стильным и уютным.</p>
                 </div>
@@ -142,13 +150,13 @@
 </section>
 
 <!-- Кнопка сделать заказ -->
-<section class="container bottom-section text-center">
-    <a href="order.html" class="order-btn">Сделать заказ 🩷</a>
+<section class="container text-center py-5">
+    <a href="order.html" class="btn-order">Сделать заказ 🩷</a>
 </section>
 
 <!-- Кнопка наверх -->
 <section class="container text-center py-4">
-    <a href="#" class="card-link-btn">Наверх ⏏️</a>
+    <a href="#" class="btn-section">Наверх ⏏️</a>
 </section>
 
 <!-- Текст внизу страницы -->
@@ -162,5 +170,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -4,8 +4,427 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гламурные котята</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inline CSS -->
+    <style>
+        /* Сброс */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Подключение шрифта */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif !important;
+            background-color: white !important;
+            color: #E196A9 !important;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* ===== HEADER ===== */
+        header.bg-gradient {
+            background: white !important;
+            padding: 80px 20px 40px 20px !important;
+            text-align: center;
+            width: 100%;
+        }
+        
+        header h1 {
+            color: #E196A9 !important;
+            font-weight: 900 !important;
+            font-size: 4.5rem !important;
+            display: inline-block;
+            padding: 30px 60px !important;
+            border: 6px solid #DAE498 !important;
+            border-radius: 20px !important;
+            margin: 0 auto !important;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-family: 'Poppins', sans-serif !important;
+            background: white !important;
+            box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3);
+            animation: pulse 2s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.03); }
+        }
+        
+        /* Белое пространство после заголовка */
+        .white-space {
+            height: 60px;
+            background: white;
+            width: 100%;
+        }
+        
+        /* ===== NAVIGATION ===== */
+        nav.navbar {
+            background: white !important;
+            border-top: 5px solid #DAE498 !important;
+            border-bottom: 5px solid #DAE498 !important;
+            padding: 25px 0 !important;
+            margin: 0 !important;
+            width: 100%;
+        }
+        
+        .navbar .container {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+        }
+        
+        .navbar-nav {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 30px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .nav-item {
+            list-style: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .nav-link {
+            color: #E196A9 !important;
+            font-weight: 900 !important;
+            font-size: 1.4rem !important;
+            padding: 15px 25px !important;
+            text-transform: uppercase;
+            transition: all 0.3s ease !important;
+            font-family: 'Poppins', sans-serif !important;
+            background: none !important;
+            border: none !important;
+            text-decoration: none !important;
+            position: relative;
+            display: block !important;
+        }
+        
+        .nav-link:hover,
+        .nav-link:focus {
+            background-color: #F0EEE9 !important;
+            border-radius: 12px !important;
+            transform: translateY(-5px) !important;
+            color: #E196A9 !important;
+            box-shadow: 0 10px 20px rgba(225, 150, 169, 0.2);
+        }
+        
+        .nav-link.active {
+            background-color: #DAE498 !important;
+            border-radius: 12px !important;
+            color: #E196A9 !important;
+            font-weight: 900 !important;
+        }
+        
+        .nav-link.text-pink.fs-4 {
+            font-size: 2rem !important;
+            color: #E196A9 !important;
+        }
+        
+        /* ===== ВВОДНЫЙ ТЕКСТ ===== */
+        section.text-center.py-4 {
+            background: white !important;
+            padding: 80px 20px !important;
+            margin: 40px 0 !important;
+            width: 100%;
+        }
+        
+        section.text-center.py-4 p {
+            color: #E196A9 !important;
+            font-size: 2.2rem !important;
+            font-weight: 900 !important;
+            max-width: 1000px;
+            margin: 0 auto !important;
+            line-height: 1.8;
+            font-family: 'Poppins', sans-serif !important;
+            text-shadow: 2px 2px 4px rgba(225, 150, 169, 0.1);
+        }
+        
+        /* ===== КАРТОЧКИ ===== */
+        .container.py-5 {
+            padding: 60px 20px !important;
+        }
+        
+        .row.justify-content-center {
+            max-width: 1200px;
+            margin: 0 auto !important;
+        }
+        
+        .card {
+            background: #DAE498 !important;
+            border: 5px solid #DAE498 !important;
+            border-radius: 20px !important;
+            overflow: hidden;
+            transition: all 0.4s ease !important;
+            height: 100% !important;
+            margin-bottom: 30px !important;
+            box-shadow: 0 15px 35px rgba(218, 228, 152, 0.4);
+        }
+        
+        .card:hover {
+            transform: translateY(-15px) scale(1.05) !important;
+            box-shadow: 0 25px 50px rgba(225, 150, 169, 0.4) !important;
+        }
+        
+        .card-img-top {
+            height: 300px !important;
+            object-fit: cover !important;
+            width: 100% !important;
+        }
+        
+        .card-body {
+            padding: 35px 25px !important;
+            text-align: center !important;
+            background: #DAE498 !important;
+        }
+        
+        .card-title {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .card-title a {
+            color: #E196A9 !important;
+            font-weight: 900 !important;
+            font-size: 1.8rem !important;
+            text-transform: uppercase;
+            text-decoration: none !important;
+            display: block;
+            padding: 20px 15px !important;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif !important;
+            border-radius: 10px;
+        }
+        
+        .card-title a:hover {
+            background: rgba(225, 150, 169, 0.2) !important;
+            transform: scale(1.05);
+        }
+        
+        /* ===== НАШИ ПРЕДЛОЖЕНИЯ ===== */
+        #offers {
+            padding: 100px 20px 80px 20px !important;
+            text-align: center;
+            width: 100%;
+        }
+        
+        #offers h2 {
+            color: #E196A9 !important;
+            font-weight: 900 !important;
+            font-size: 3.5rem !important;
+            text-transform: uppercase;
+            padding: 30px 50px !important;
+            border: 6px solid #DAE498 !important;
+            border-radius: 20px !important;
+            display: inline-block;
+            margin-bottom: 80px !important;
+            font-family: 'Poppins', sans-serif !important;
+            background: white !important;
+            box-shadow: 0 15px 35px rgba(218, 228, 152, 0.3);
+        }
+        
+        /* ===== ПОЧЕМУ МЫ ===== */
+        #why-us {
+            background: #DAE498 !important;
+            padding: 80px 40px !important;
+            border-radius: 25px !important;
+            margin: 100px auto 80px auto !important;
+            max-width: 1100px !important;
+            width: 90% !important;
+            text-align: center !important;
+            border: 6px solid #DAE498 !important;
+            box-shadow: 0 20px 40px rgba(218, 228, 152, 0.4);
+        }
+        
+        #why-us h2 {
+            color: #E196A9 !important;
+            font-weight: 900 !important;
+            font-size: 3.2rem !important;
+            text-transform: uppercase;
+            margin-bottom: 50px !important;
+            font-family: 'Poppins', sans-serif !important;
+        }
+        
+        #why-us p {
+            color: #E196A9 !important;
+            font-size: 1.8rem !important;
+            font-weight: 900 !important;
+            max-width: 1000px;
+            margin: 0 auto !important;
+            line-height: 1.9;
+            font-family: 'Poppins', sans-serif !important;
+        }
+        
+        /* ===== ТЕКСТ С ССЫЛКАМИ ===== */
+        section.container.py-4.text-center:last-of-type {
+            padding: 60px 20px !important;
+            margin: 50px 0 !important;
+            text-align: center;
+        }
+        
+        section.container.py-4.text-center:last-of-type p {
+            color: #E196A9 !important;
+            font-size: 1.8rem !important;
+            font-weight: 900 !important;
+            margin-bottom: 30px !important;
+            font-family: 'Poppins', sans-serif !important;
+        }
+        
+        section.container.py-4.text-center:last-of-type a {
+            color: #DAE498 !important;
+            font-weight: 900 !important;
+            text-decoration: none !important;
+            border-bottom: 4px solid #DAE498 !important;
+            padding-bottom: 5px !important;
+            transition: all 0.3s ease !important;
+            font-size: 1.8rem !important;
+            font-family: 'Poppins', sans-serif !important;
+            background: none !important;
+        }
+        
+        section.container.py-4.text-center:last-of-type a:hover {
+            background: rgba(218, 228, 152, 0.2) !important;
+            padding: 10px 20px !important;
+            border-radius: 12px !important;
+            border-bottom: none !important;
+        }
+        
+        /* ===== ФУТЕР ===== */
+        footer.bg-dark {
+            background: #DAE498 !important;
+            padding: 50px 0 !important;
+            margin-top: 100px !important;
+            border-top: 6px solid #DAE498 !important;
+            width: 100%;
+            text-align: center;
+        }
+        
+        footer p {
+            color: #E196A9 !important;
+            font-weight: 900 !important;
+            font-size: 1.6rem !important;
+            margin: 0 !important;
+            font-family: 'Poppins', sans-serif !important;
+        }
+        
+        /* ===== УБИРАЕМ СТИЛИ BOOTSTRAP ===== */
+        .bg-dark {
+            background-color: #DAE498 !important;
+        }
+        
+        .text-white {
+            color: #E196A9 !important;
+        }
+        
+        .bg-gradient {
+            background: white !important;
+        }
+        
+        /* ===== МЕДИА-ЗАПРОСЫ ===== */
+        @media (max-width: 1200px) {
+            header h1 { font-size: 3.8rem !important; padding: 25px 45px !important; }
+            .nav-link { font-size: 1.3rem !important; }
+        }
+        
+        @media (max-width: 992px) {
+            header h1 { 
+                font-size: 3rem !important; 
+                padding: 20px 35px !important;
+                letter-spacing: 3px !important;
+            }
+            
+            .navbar-nav { gap: 20px !important; }
+            .nav-link { font-size: 1.2rem !important; padding: 12px 20px !important; }
+            section.text-center.py-4 p { font-size: 1.9rem !important; }
+            #offers h2 { font-size: 3rem !important; }
+            #why-us h2 { font-size: 2.8rem !important; }
+            .card-title a { font-size: 1.6rem !important; }
+        }
+        
+        @media (max-width: 768px) {
+            header h1 { 
+                font-size: 2.5rem !important; 
+                padding: 18px 30px !important;
+                letter-spacing: 2px !important;
+            }
+            
+            .navbar-nav { 
+                flex-direction: column !important;
+                gap: 15px !important;
+            }
+            
+            .nav-link { 
+                width: 90% !important;
+                margin: 0 auto 10px auto !important;
+                text-align: center !important;
+            }
+            
+            section.text-center.py-4 p { 
+                font-size: 1.6rem !important;
+                padding: 0 15px !important;
+            }
+            
+            #offers h2 { 
+                font-size: 2.5rem !important;
+                padding: 20px 35px !important;
+                margin-bottom: 60px !important;
+            }
+            
+            #why-us h2 { font-size: 2.3rem !important; }
+            #why-us p { font-size: 1.5rem !important; }
+            .card-title a { font-size: 1.4rem !important; }
+            footer p { font-size: 1.4rem !important; }
+        }
+        
+        @media (max-width: 576px) {
+            header h1 { 
+                font-size: 2rem !important; 
+                padding: 15px 25px !important;
+                border-width: 4px !important;
+            }
+            
+            section.text-center.py-4 p { 
+                font-size: 1.4rem !important;
+            }
+            
+            #offers h2 { 
+                font-size: 2rem !important;
+                padding: 18px 30px !important;
+                border-width: 4px !important;
+            }
+            
+            #why-us { 
+                padding: 50px 25px !important;
+                margin: 60px auto 50px auto !important;
+            }
+            
+            #why-us h2 { font-size: 2rem !important; }
+            #why-us p { font-size: 1.3rem !important; }
+            
+            section.container.py-4.text-center:last-of-type p,
+            section.container.py-4.text-center:last-of-type a {
+                font-size: 1.4rem !important;
+            }
+            
+            .card {
+                border-width: 4px !important;
+            }
+        }
+        
+        /* ДЕБАГ - видимые границы для отладки */
+        /* * { border: 1px solid red !important; } */
+    </style>
 </head>
 <body>
 
@@ -13,6 +432,9 @@
 <header class="text-center py-5 bg-gradient">
     <h1>Гламурные котята</h1>
 </header>
+
+<!-- Белое пространство -->
+<div class="white-space"></div>
 
 <!-- Навигация -->
 <nav class="navbar navbar-expand-lg navbar-light bg-pink py-3">
@@ -45,7 +467,7 @@
     <div class="row justify-content-center g-4">
         <div class="col-md-5">
             <div class="card h-100">
-                <img src="images/cat1.jpg" class="card-img-top" alt="Стильные породы">
+                <img src="https://placekitten.com/400/300" class="card-img-top" alt="Стильные породы">
                 <div class="card-body">
                     <h5 class="card-title"><a href="#offers" class="text-decoration-none">Узнать подробнее</a></h5>
                 </div>
@@ -53,7 +475,7 @@
         </div>
         <div class="col-md-5">
             <div class="card h-100">
-                <img src="images/cat2.jpg" class="card-img-top" alt="Почему мы">
+                <img src="https://placekitten.com/400/301" class="card-img-top" alt="Почему мы">
                 <div class="card-body">
                     <h5 class="card-title"><a href="#why-us" class="text-decoration-none">Почему мы?</a></h5>
                 </div>
@@ -68,7 +490,7 @@
     <div class="row justify-content-center g-4">
         <div class="col-md-4">
             <div class="card h-100">
-                <img src="images/cat1.jpg" class="card-img-top" alt="Стильные породы">
+                <img src="https://placekitten.com/400/302" class="card-img-top" alt="Стильные породы">
                 <div class="card-body">
                     <h5 class="card-title"><a href="breeds.html" class="text-decoration-none">Стильные породы</a></h5>
                 </div>
@@ -76,7 +498,7 @@
         </div>
         <div class="col-md-4">
             <div class="card h-100">
-                <img src="images/cat2.jpg" class="card-img-top" alt="Гламурные аксессуары">
+                <img src="https://placekitten.com/400/303" class="card-img-top" alt="Гламурные аксессуары">
                 <div class="card-body">
                     <h5 class="card-title"><a href="accessories.html" class="text-decoration-none">Гламурные аксессуары</a></h5>
                 </div>
@@ -84,7 +506,7 @@
         </div>
         <div class="col-md-4">
             <div class="card h-100">
-                <img src="images/cat3.jpg" class="card-img-top" alt="Beauty-процедуры">
+                <img src="https://placekitten.com/400/304" class="card-img-top" alt="Beauty-процедуры">
                 <div class="card-body">
                     <h5 class="card-title"><a href="beauty.html" class="text-decoration-none">Beauty-процедуры</a></h5>
                 </div>
@@ -93,7 +515,7 @@
     </div>
 </section>
 
-<!-- Почему мы (ВЫРОВНЕНО ПО ЦЕНТРУ) -->
+<!-- Почему мы -->
 <section class="container py-5 text-center" id="why-us">
     <h2 class="text-center">Почему мы?</h2>
     <p>Мы предлагаем индивидуальный подход к каждому пушистику, высокое качество ухода и профессиональные услуги по стрижке, спа-процедурам и аксессуарам.</p>
@@ -110,6 +532,5 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>

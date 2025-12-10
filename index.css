@@ -1,4 +1,13 @@
-/* Шрифт Poppins */
+/* Подключение шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
@@ -6,76 +15,140 @@ body {
     line-height: 1.6;
 }
 
-/* Заголовок */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+header.text-center.py-5 {
+    background-color: white;
+    padding: 60px 20px 30px 20px;
+    text-align: center;
+}
+
 header h1 {
     color: #E196A9;
     font-weight: 900;
     font-size: 4rem;
+    display: inline-block;
     padding: 25px 50px;
     border: 5px solid #DAE498;
     border-radius: 15px;
-    display: inline-block;
+    margin: 0 auto;
     text-transform: uppercase;
     letter-spacing: 3px;
     background-color: white;
 }
 
-/* Белое пространство */
+/* Белое пространство после заголовка */
 .white-space {
     height: 50px;
+    background-color: white;
+    width: 100%;
 }
 
-/* Навигация */
-.navbar {
+/* ===== NAVIGATION ===== */
+nav.navbar {
     background-color: white;
     border-top: 4px solid #DAE498;
     border-bottom: 4px solid #DAE498;
+    padding: 20px 0;
+}
+
+.navbar .container {
+    padding: 0 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    list-style: none;
 }
 
 .nav-link {
-    color: #E196A9;
+    color: #E196A9 !important;
     font-weight: 700;
     font-size: 1.2rem;
     padding: 12px 24px;
     text-transform: uppercase;
     transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    display: block;
 }
 
 .nav-link:hover {
     background-color: #F0EEE9;
     border-radius: 8px;
+    transform: translateY(-3px);
 }
 
 .nav-link.active {
     background-color: #DAE498;
     border-radius: 8px;
+    color: #E196A9;
+}
+
+.heart-icon {
+    font-size: 1.8rem;
+    padding: 8px 20px;
 }
 
 /* Выпадающее меню */
 .dropdown-menu {
     background-color: white;
     border: 3px solid #DAE498;
+    border-radius: 8px;
 }
 
 .dropdown-item {
     color: #E196A9;
     font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 20px;
 }
 
-/* Вводный текст */
-section.text-center.py-4 p {
+.dropdown-item:hover {
+    background-color: #F0EEE9;
+}
+
+/* ===== ВВОДНЫЙ ТЕКСТ ===== */
+.intro-section {
+    background-color: white;
+    padding: 50px 20px;
+}
+
+.intro-section p {
     color: #E196A9;
     font-size: 1.8rem;
     font-weight: 700;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
-/* Карточки */
+/* ===== КАРТОЧКИ (БЕЛЫЙ ТЕКСТ) ===== */
+.container.py-5 {
+    padding: 40px 20px;
+}
+
 .card {
     background-color: #DAE498;
     border: 4px solid #DAE498;
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.3s ease;
+    height: 100%;
 }
 
 .card:hover {
@@ -83,19 +156,45 @@ section.text-center.py-4 p {
     box-shadow: 0 20px 40px rgba(225, 150, 169, 0.3);
 }
 
-.card-title a {
-    color: #E196A9;
-    font-weight: 700;
-    font-size: 1.4rem;
-    text-decoration: none;
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
 }
 
-/* Наши предложения и Почему мы */
-#offers h2,
-#why-us h2 {
+.card-body {
+    padding: 25px;
+    text-align: center;
+    background-color: #DAE498;
+}
+
+.card-title a {
+    color: white; /* БЕЛЫЙ ТЕКСТ */
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.card-title a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+/* ===== НАШИ ПРЕДЛОЖЕНИЯ ===== */
+#offers {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
     color: #E196A9;
     font-weight: 700;
     font-size: 3rem;
+    text-transform: uppercase;
     padding: 25px 45px;
     border: 5px solid #DAE498;
     border-radius: 15px;
@@ -104,38 +203,177 @@ section.text-center.py-4 p {
     margin-bottom: 60px;
 }
 
-#why-us p {
+/* ===== ПОЧЕМУ МЫ ===== */
+#why-us {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.why-us-text {
     color: #E196A9;
     font-size: 1.6rem;
     font-weight: 700;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
-/* Нижний текст */
+/* ===== ТЕКСТ ВНИЗУ ===== */
+.bottom-text-section {
+    padding: 60px 20px;
+    margin: 40px 0;
+    background-color: white;
+    width: 100%;
+}
+
+.bottom-text-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .bottom-text-section p {
     color: #E196A9;
+    font-size: 1.7rem;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
 }
 
 .bottom-text-section a {
     color: #DAE498;
-    text-decoration: none;
     font-weight: 700;
+    text-decoration: none;
     border-bottom: 3px solid #DAE498;
+    padding-bottom: 3px;
+    transition: all 0.3s ease;
+    font-size: 1.7rem;
+    display: inline;
 }
 
-/* Футер */
+.bottom-text-section a:hover {
+    background-color: rgba(218, 228, 152, 0.15);
+    padding: 8px 15px;
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+/* ===== ФУТЕР (БЕЛЫЙ ТЕКСТ) ===== */
 footer {
     background-color: #DAE498;
+    padding: 40px 0;
+    margin-top: 60px;
 }
 
 footer p {
-    color: #E196A9;
+    color: white; /* БЕЛЫЙ ТЕКСТ */
     font-weight: 700;
     font-size: 1.4rem;
+    margin: 0;
 }
 
-/* Адаптив */
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 1200px) {
+    header h1 { font-size: 3.5rem; }
+}
+
+@media (max-width: 992px) {
+    header h1 { 
+        font-size: 2.8rem; 
+        padding: 20px 35px;
+    }
+    
+    .nav-link { 
+        font-size: 1.1rem;
+        padding: 10px 18px;
+    }
+    
+    .intro-section p { font-size: 1.6rem; }
+    
+    .section-title { font-size: 2.5rem; }
+    
+    .card-title a { font-size: 1.3rem; }
+    
+    .bottom-text-section p,
+    .bottom-text-section a { font-size: 1.5rem; }
+}
+
 @media (max-width: 768px) {
-    header h1 { font-size: 2.5rem; padding: 20px 30px; }
-    .nav-link { font-size: 1rem; padding: 8px 12px; }
+    header h1 { 
+        font-size: 2.2rem; 
+        padding: 15px 25px;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-item {
+        width: 100%;
+    }
+    
+    .nav-link {
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto 10px auto;
+    }
+    
+    .intro-section p { 
+        font-size: 1.4rem;
+        padding: 0 15px;
+    }
+    
+    .section-title { 
+        font-size: 2rem;
+        padding: 18px 30px;
+        margin-bottom: 50px;
+    }
+    
+    .why-us-text { font-size: 1.3rem; }
+    
+    .card-title a { font-size: 1.2rem; }
+    
+    .bottom-text-section p,
+    .bottom-text-section a { 
+        font-size: 1.3rem;
+    }
+    
+    footer p { font-size: 1.2rem; }
+}
+
+@media (max-width: 576px) {
+    header h1 { 
+        font-size: 1.8rem; 
+        padding: 12px 20px;
+    }
+    
+    .intro-section p { 
+        font-size: 1.2rem;
+    }
+    
+    .section-title { 
+        font-size: 1.6rem;
+        padding: 15px 25px;
+    }
+    
+    #why-us { 
+        padding: 60px 20px;
+    }
+    
+    .why-us-text { font-size: 1.1rem; }
+    
+    .bottom-text-section { 
+        padding: 40px 15px;
+    }
+    
+    .bottom-text-section p,
+    .bottom-text-section a {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
 }

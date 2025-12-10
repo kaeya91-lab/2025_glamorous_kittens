@@ -1,157 +1,127 @@
-html {
-    min-height: 100%;
-    position: relative;
+/* -----------------------------------
+   БАЗОВЫЕ ЦВЕТА
+----------------------------------- */
+:root {
+    --pink: #ffb6da;
+    --pink-dark: #ff8fc7;
+    --gradient-start: #ffc4e1;
+    --gradient-end: #ff97cb;
 }
 
-body {
-    background-color: #FFFFFF; /* белый фон */
-    font-family: "Programme Pan", sans-serif;
-    color: #E196A9; /* розовый текст */
-    margin: 0;
-    padding: 0;
+/* -----------------------------------
+   ФОНЫ
+----------------------------------- */
+
+/* Градиентная шапка */
+.bg-gradient {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: #fff;
 }
 
-/* Центровка всех больших заголовков */
-.section-title {
-    text-align: center;
-    font-weight: 900;
-    color: #E196A9;
-    border: 4px solid #DAE498;
-    display: inline-block;
-    padding: 10px 25px;
-    margin: 40px auto 20px;
+/* Розовый фон навигации */
+.bg-pink {
+    background-color: var(--pink);
 }
 
-/* ====== ГЛАВНЫЙ ТИТУЛ «Гламурные котята» ====== */
-
-.main-title {
-    font-size: 48px;
-    font-weight: 900;
-    color: #E196A9;
-    border: 6px solid #DAE498;
-    padding: 15px 40px;
-    display: inline-block;
-    margin: 40px auto 50px;
-    text-align: center;
+/* Розовый текст */
+.text-pink {
+    color: var(--pink-dark);
 }
 
-/* ====== ГЛАВНОЕ МЕНЮ ====== */
-
-nav {
-    border: 3px solid #DAE498;
-    padding: 10px 0;
-    width: 90%;
-    margin: 0 auto 50px;
-    text-align: center;
+/* -----------------------------------
+   НАВИГАЦИЯ
+----------------------------------- */
+.navbar .nav-link {
+    font-size: 18px;
+    color: #4a4a4a;
+    transition: 0.3s;
 }
 
-nav a {
-    margin: 0 20px;
-    font-size: 22px;
-    color: #E196A9;
-    font-weight: 800;
-    text-decoration: none;
+.navbar .nav-link:hover {
+    color: var(--pink-dark);
 }
 
-nav a:hover {
-    color: #DAE498;
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: var(--pink-dark);
 }
 
-/* Сердечко в меню */
-nav .heart-icon {
-    font-size: 26px;
-    font-weight: 900;
-    cursor: pointer;
+/* Выпадающее меню */
+.dropdown-menu {
+    border-radius: 10px;
 }
 
-/* ====== ТЕКСТ «Добро пожаловать…» ====== */
-
-.welcome-text {
-    text-align: center;
-    font-size: 26px;
-    font-weight: 800;
-    margin: 20px 0 40px;
-    color: #E196A9;
+/* -----------------------------------
+   КАРТОЧКИ
+----------------------------------- */
+.custom-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
 }
 
-/* ====== КАРТОЧКИ (УЗНАТЬ ПОДРОБНЕЕ / ПРЕДЛОЖЕНИЯ) ====== */
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+.custom-card img {
+    height: 300px;
+    object-fit: cover;
 }
 
-.card {
-    width: 280px;
-    background-color: #DAE498;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    font-weight: 800;
-    color: #E196A9;
-    font-size: 20px;
-    cursor: pointer;
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card:hover {
-    background-color: #d2dc8a;
+/* Текст ссылок в карточках */
+.custom-card .card-title a {
+    color: var(--pink-dark);
+    transition: 0.3s;
 }
 
-/* ====== «Наши предложения» ====== */
-
-.offer-title {
-    font-size: 36px;
-    font-weight: 900;
-    color: #E196A9;
-    border: 4px solid #DAE498;
-    padding: 10px 25px;
-    display: inline-block;
-    margin: 60px auto 30px;
-    text-align: center;
+.custom-card .card-title a:hover {
+    color: #d60075;
 }
 
-/* ====== «Почему мы» ====== */
-
-.why-title {
-    font-size: 32px;
-    font-weight: 900;
-    color: #E196A9;
-    border: 4px solid #DAE498;
-    padding: 10px 25px;
-    display: inline-block;
-    margin: 60px auto 30px;
-    text-align: center;
+/* -----------------------------------
+   ТЕКСТ
+----------------------------------- */
+p {
+    font-size: 18px;
+    color: #444;
 }
 
-.why-text {
-    width: 80%;
-    margin: 0 auto 40px;
-    font-size: 20px;
-    color: #E196A9;
-    text-align: center;
+/* Заголовки */
+h1, h2, h3, h4, h5 {
+    color: #333;
 }
 
-/* ====== ГИПЕРССЫЛКИ ====== */
-
-a {
-    color: #DAE498;
-    font-weight: 700;
+/* -----------------------------------
+   СЕКЦИИ
+----------------------------------- */
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-a:hover {
-    color: #c5d676;
-}
-
-/* ====== ФУТЕР ====== */
-
+/* -----------------------------------
+   ФУТЕР
+----------------------------------- */
 footer {
-    margin-top: 60px;
-    padding: 20px;
-    background-color: #DAE498;
-    text-align: center;
-    color: #E196A9;
-    font-weight: 900;
+    background-color: #222 !important;
+    color: white;
+}
+
+/* -----------------------------------
+   КНОПКИ (если будут)
+----------------------------------- */
+.btn-pink {
+    background-color: var(--pink-dark);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-pink:hover {
+    background-color: #d60075;
 }

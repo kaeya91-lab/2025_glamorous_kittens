@@ -31,7 +31,8 @@
             <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button">Дополнительная информация</a>
+                <!-- Добавлен data-bs-toggle для работы дропдауна -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
                     <li><a class="dropdown-item" href="photoshoot.html">Записаться на фотосессию</a></li>
@@ -267,8 +268,8 @@
             <!-- Кнопка перехода на страницу заказа -->
             <a href="order.html" class="btn-order">Сделать заказ🩷</a>
             
-            <!-- Кнопка отправки корзины на сервер -->
-            <button type="submit" class="btn-section">Открыть корзину</button>
+            <!-- Кнопка открытия корзины (теперь открывает Instagram) -->
+            <button type="button" class="btn-section" id="open-cart-btn">Открыть корзину</button>
         </div>
         
         <!-- Поля для расчета итоговой суммы -->
@@ -283,6 +284,11 @@
         <p class="bottom-text">Товаров в корзине: <span id="cart-count">9</span> | Общая сумма: <span id="cart-total">58,700</span>₽</p>
     </div>
 </div>
+
+<!-- Кнопка наверх -->
+<section class="container text-center py-4">
+    <a href="#" class="btn-section">Наверх ⏏️</a>
+</section>
 
 <!-- Текст внизу страницы -->
 <section class="container bottom-section">
@@ -375,7 +381,7 @@ document.querySelectorAll('.quantity-input').forEach(input => {
 // Инициализация расчета корзины при загрузке
 document.addEventListener('DOMContentLoaded', calculateCart);
 
-// Обработчик отправки формы корзины
+// Обработчик отправки формы корзины (теперь для Instagram)
 document.getElementById('cart-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
@@ -429,6 +435,35 @@ document.getElementById('cart-form').addEventListener('submit', function(e) {
         console.error('Ошибка:', error);
         document.getElementById('loadingOverlay').style.display = 'none';
         alert('Произошла ошибка при отправке корзины. Пожалуйста, попробуйте еще раз.');
+    });
+});
+
+// Обработчик для кнопки "Открыть корзину" - открывает Instagram
+document.getElementById('open-cart-btn').addEventListener('click', function() {
+    // Открываем Instagram в новой вкладке
+    window.open('https://instagram.com/nmiiyyaa', '_blank');
+});
+
+// Плавная прокрутка к якорям (для кнопки Наверх)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') {
+            // Прокрутка наверх
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
     });
 });
 </script>

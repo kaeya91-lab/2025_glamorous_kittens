@@ -252,9 +252,9 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 50px;
-    background-color: var(--color2); /* ИЗМЕНЕНО: стал розовый */
+    background-color: var(--color3); /* ИЗМЕНЕНО: вернули зеленый */
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(225, 150, 169, 0.3); /* ИЗМЕНЕНО: тень для розового */
+    box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3); /* ИЗМЕНЕНО: тень для зеленого */
 }
 
 .why-us-text {
@@ -298,8 +298,8 @@ body {
 
 /* Футер */
 .main-footer {
-    background-color: var(--color3); /* Зеленый фон */
-    color: var(--color2); /* Розовый текст в футере */
+    background-color: var(--color2); /* ИЗМЕНЕНО: стал розовый (был зеленый) */
+    color: var(--white); /* ИЗМЕНЕНО: стал белый (был розовый) */
     text-align: center;
     padding: 30px 0;
     font-family: 'Poppins', sans-serif;
@@ -350,7 +350,8 @@ body {
     
     .why-us-content {
         padding: 40px;
-        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
+        background-color: var(--color3); /* ДОБАВЛЕНО: сохраняем зеленый фон */
+        box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3); /* ИЗМЕНЕНО: тень для зеленого */
     }
 }
 
@@ -403,7 +404,8 @@ body {
     }
     
     .why-us-content {
-        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
+        background-color: var(--color3); /* ДОБАВЛЕНО: сохраняем зеленый фон */
+        box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3); /* ИЗМЕНЕНО: тень для зеленого */
     }
 }
 
@@ -455,11 +457,14 @@ body {
     
     .why-us-content {
         padding: 30px 20px;
-        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
+        background-color: var(--color3); /* ДОБАВЛЕНО: сохраняем зеленый фон */
+        box-shadow: 0 10px 30px rgba(218, 228, 152, 0.3); /* ИЗМЕНЕНО: тень для зеленого */
     }
     
     .main-footer {
         font-size: 1.1rem;
         padding: 25px 0;
+        background-color: var(--color2); /* ДОБАВЛЕНО: сохраняем розовый фон */
+        color: var(--white); /* ДОБАВЛЕНО: сохраняем белый текст */
     }
 }

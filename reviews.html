@@ -10,15 +10,15 @@
 </head>
 <body>
 
-<!-- Заголовок по центру -->
+
 <header class="text-center py-5">
     <h1>Гламурные котята</h1>
 </header>
 
-<!-- Белое пространство -->
+
 <div class="white-space"></div>
 
-<!-- Навигация -->
+
 <nav class="navbar navbar-expand-lg navbar-light py-3">
     <div class="container justify-content-center">
         <ul class="navbar-nav mb-2 mb-lg-0 text-center">
@@ -39,27 +39,27 @@
     </div>
 </nav>
 
-<!-- Вводный текст -->
+
 <section class="intro-section text-center py-4">
     <div class="container">
         <p>Что говорят наши клиенты о гламурных котятах</p>
     </div>
 </section>
 
-<!-- Заголовок "Отзывы" -->
+
 <section class="container py-5 text-center">
     <h2 class="section-title">Отзывы клиентов</h2>
     <div class="title-spacing"></div>
 </section>
 
-<!-- Форма добавления отзыва -->
+
 <section class="container py-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="review-form-container">
                 <h3 class="text-center mb-4">Оставить отзыв</h3>
                 <form id="review-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                    <!-- Скрытые поля -->
+                    
                     <input type="hidden" name="review_type" value="customer_feedback">
                     <input type="hidden" name="page_source" value="reviews.html">
                     
@@ -146,12 +146,12 @@
     </div>
 </section>
 
-<!-- Существующие отзывы -->
+
 <section class="container py-5">
     <h3 class="text-center mb-5">Отзывы наших клиентов</h3>
     <div class="row g-4">
         
-        <!-- Отзыв 1 -->
+    
         <div class="col-md-6">
             <div class="card review-card h-100">
                 <div class="card-body">
@@ -173,7 +173,7 @@
             </div>
         </div>
 
-        <!-- Отзыв 2 -->
+
         <div class="col-md-6">
             <div class="card review-card h-100">
                 <div class="card-body">
@@ -195,7 +195,7 @@
             </div>
         </div>
 
-        <!-- Отзыв 3 -->
+    
         <div class="col-md-6">
             <div class="card review-card h-100">
                 <div class="card-body">
@@ -217,7 +217,7 @@
             </div>
         </div>
 
-        <!-- Отзыв 4 -->
+     
         <div class="col-md-6">
             <div class="card review-card h-100">
                 <div class="card-body">
@@ -239,7 +239,7 @@
             </div>
         </div>
 
-        <!-- Отзыв 5 -->
+     
         <div class="col-md-6">
             <div class="card review-card h-100">
                 <div class="card-body">
@@ -261,7 +261,7 @@
             </div>
         </div>
 
-        <!-- Отзыв 6 -->
+     
         <div class="col-md-6">
             <div class="card review-card h-100">
                 <div class="card-body">
@@ -286,7 +286,7 @@
     </div>
 </section>
 
-<!-- Статистика отзывов -->
+
 <section class="container py-5 text-center">
     <div class="review-stats">
         <h3 class="mb-4">Наша статистика</h3>
@@ -319,24 +319,24 @@
     </div>
 </section>
 
-<!-- Текст внизу страницы -->
+
 <section class="bottom-text-section">
     <div class="container text-center">
         <p>Посмотрите наших <a href="breeds.html">стильных котят</a> или <a href="catalog.html">оформите заказ</a> прямо сейчас!</p>
     </div>
 </section>
 
-<!-- Футер -->
+
 <footer class="text-center py-4">
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
 
 <script>
-// Обработчик отправки формы отзыва
+
 document.getElementById('review-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Проверка заполнения обязательных полей
+    
     const name = document.getElementById('review-name').value;
     const rating = document.querySelector('input[name="rating"]:checked');
     const product = document.getElementById('review-product').value;
@@ -348,17 +348,17 @@ document.getElementById('review-form').addEventListener('submit', function(e) {
         return;
     }
     
-    // Собираем данные формы
+
     const formData = new FormData(this);
     const data = Object.fromEntries(formData.entries());
     
-    // Добавляем дополнительные данные
+
     data.timestamp = new Date().toISOString();
     data.review_id = 'REV_' + Date.now();
     
     console.log('Отправка отзыва:', data);
     
-    // Отправляем данные на тестовый сервер
+    
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         headers: {
@@ -375,9 +375,9 @@ document.getElementById('review-form').addEventListener('submit', function(e) {
     .then(result => {
         alert(`Спасибо за ваш отзыв! Он успешно отправлен.\n\nID отзыва: ${result.id}\n\nПосле модерации отзыв появится на сайте.`);
         
-        // Очищаем форму
+      
         this.reset();
-        // Возвращаем выбранную оценку на 5 звезд
+     
         document.getElementById('rating-5').checked = true;
     })
     .catch(error => {

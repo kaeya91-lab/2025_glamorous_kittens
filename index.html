@@ -4,389 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гламурные котята</title>
+    
+    <!-- Подключение шрифта Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Подключение внешнего CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Подключение шрифта */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
-        
-        /* Сброс стилей */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: white;
-            color: #E196A9;
-            line-height: 1.6;
-        }
-        
-        /* ===== HEADER ===== */
-        header.text-center.py-5 {
-            background-color: white !important;
-            padding: 60px 20px 30px 20px !important;
-            text-align: center;
-        }
-        
-        header h1 {
-            color: #E196A9 !important;
-            font-weight: 900 !important;
-            font-size: 4rem !important;
-            display: inline-block;
-            padding: 25px 50px !important;
-            border: 5px solid #DAE498 !important;
-            border-radius: 15px !important;
-            margin: 0 auto !important;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            background-color: white !important;
-        }
-        
-        /* Белое пространство после заголовка */
-        .white-space {
-            height: 50px;
-            background-color: white;
-            width: 100%;
-        }
-        
-        /* ===== NAVIGATION ===== */
-        nav.navbar {
-            background-color: white !important;
-            border-top: 4px solid #DAE498 !important;
-            border-bottom: 4px solid #DAE498 !important;
-            padding: 20px 0 !important;
-        }
-        
-        .nav-link {
-            color: #E196A9 !important;
-            font-weight: 700 !important;
-            font-size: 1.2rem !important;
-            padding: 12px 24px !important;
-            text-transform: uppercase;
-            transition: all 0.3s ease !important;
-        }
-        
-        .nav-link:hover {
-            background-color: #F0EEE9 !important;
-            border-radius: 8px !important;
-            transform: translateY(-3px) !important;
-        }
-        
-        .nav-link.active {
-            background-color: #DAE498 !important;
-            border-radius: 8px !important;
-            color: #E196A9 !important;
-        }
-        
-        .nav-link.text-pink.fs-4 {
-            font-size: 1.8rem !important;
-            color: #E196A9 !important;
-        }
-        
-        /* Выпадающее меню */
-        .dropdown-menu {
-            background-color: white !important;
-            border: 3px solid #DAE498 !important;
-        }
-        
-        .dropdown-item {
-            color: #E196A9 !important;
-            font-weight: 700;
-        }
-        
-        /* ===== ВВОДНЫЙ ТЕКСТ ===== */
-        section.text-center.py-4 {
-            background-color: white !important;
-            padding: 50px 20px !important;
-        }
-        
-        section.text-center.py-4 p {
-            color: #E196A9 !important;
-            font-size: 1.8rem !important;
-            font-weight: 700 !important;
-            max-width: 900px;
-            margin: 0 auto !important;
-            line-height: 1.8;
-        }
-        
-        /* ===== КАРТОЧКИ (БЕЛЫЙ ТЕКСТ) ===== */
-        .container.py-5 {
-            padding: 40px 20px !important;
-        }
-        
-        .card {
-            background-color: #DAE498 !important;
-            border: 4px solid #DAE498 !important;
-            border-radius: 15px !important;
-            overflow: hidden;
-            transition: all 0.3s ease !important;
-            height: 100% !important;
-        }
-        
-        .card:hover {
-            transform: translateY(-10px) !important;
-            box-shadow: 0 20px 40px rgba(225, 150, 169, 0.3) !important;
-        }
-        
-        .card-img-top {
-            height: 250px;
-            object-fit: cover;
-            width: 100%;
-        }
-        
-        .card-body {
-            padding: 25px !important;
-            text-align: center !important;
-            background-color: #DAE498 !important;
-        }
-        
-        .card-title a {
-            color: white !important; /* БЕЛЫЙ ТЕКСТ В КАРТОЧКАХ */
-            font-weight: 700 !important;
-            font-size: 1.4rem !important;
-            text-transform: uppercase;
-            text-decoration: none !important;
-            display: block;
-            padding: 15px !important;
-            transition: all 0.3s ease !important;
-        }
-        
-        .card-title a:hover {
-            background-color: rgba(255, 255, 255, 0.2) !important; /* Полупрозрачный белый при наведении */
-            border-radius: 8px !important;
-        }
-        
-        /* ===== НАШИ ПРЕДЛОЖЕНИЯ ===== */
-        #offers {
-            padding: 80px 20px !important;
-            text-align: center;
-        }
-        
-        #offers h2 {
-            color: #E196A9 !important;
-            font-weight: 700 !important;
-            font-size: 3rem !important;
-            text-transform: uppercase;
-            padding: 25px 45px !important;
-            border: 5px solid #DAE498 !important;
-            border-radius: 15px !important;
-            display: inline-block;
-            background-color: white !important;
-            margin-bottom: 60px !important;
-        }
-        
-        /* ===== ПОЧЕМУ МЫ ===== */
-        #why-us {
-            padding: 80px 20px !important;
-            text-align: center;
-        }
-        
-        #why-us h2 {
-            color: #E196A9 !important;
-            font-weight: 700 !important;
-            font-size: 3rem !important;
-            text-transform: uppercase;
-            padding: 25px 45px !important;
-            border: 5px solid #DAE498 !important;
-            border-radius: 15px !important;
-            display: inline-block;
-            background-color: white !important;
-            margin-bottom: 60px !important;
-        }
-        
-        #why-us p {
-            color: #E196A9 !important;
-            font-size: 1.6rem !important;
-            font-weight: 700 !important;
-            max-width: 900px;
-            margin: 0 auto !important;
-            line-height: 1.8;
-        }
-        
-        /* ===== ТЕКСТ ВНИЗУ С ССЫЛКАМИ ===== */
-        .bottom-text-section {
-            padding: 60px 20px !important;
-            margin: 40px 0 !important;
-            background-color: white !important;
-            width: 100%;
-        }
-        
-        .bottom-text-section .container {
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-            text-align: center !important;
-        }
-        
-        .bottom-text-section p {
-            color: #E196A9 !important;
-            font-size: 1.7rem !important;
-            font-weight: 700 !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            text-align: center !important;
-            display: inline-block !important;
-        }
-        
-        .bottom-text-section a {
-            color: #DAE498 !important;
-            font-weight: 700 !important;
-            text-decoration: none !important;
-            border-bottom: 3px solid #DAE498 !important;
-            padding-bottom: 3px !important;
-            transition: all 0.3s ease !important;
-            font-size: 1.7rem !important;
-            display: inline !important;
-        }
-        
-        .bottom-text-section a:hover {
-            background-color: rgba(218, 228, 152, 0.15) !important;
-            padding: 8px 15px !important;
-            border-radius: 8px !important;
-            border-bottom: none !important;
-        }
-        
-        /* ===== ФУТЕР (БЕЛЫЙ ТЕКСТ) ===== */
-        footer.bg-dark {
-            background-color: #DAE498 !important;
-            padding: 40px 0 !important;
-            margin-top: 60px !important;
-        }
-        
-        footer p {
-            color: white !important; /* БЕЛЫЙ ТЕКСТ В ФУТЕРЕ */
-            font-weight: 700 !important;
-            font-size: 1.4rem !important;
-            margin: 0 !important;
-        }
-        
-        /* Убираем стили Bootstrap */
-        .bg-gradient {
-            background: none !important;
-        }
-        
-        .text-white {
-            color: #E196A9 !important;
-        }
-        
-        .bg-dark {
-            background-color: #DAE498 !important;
-        }
-        
-        .bg-pink {
-            background-color: white !important;
-        }
-        
-        /* ===== АДАПТИВНОСТЬ ===== */
-        @media (max-width: 1200px) {
-            header h1 { font-size: 3.5rem !important; }
-        }
-        
-        @media (max-width: 992px) {
-            header h1 { 
-                font-size: 2.8rem !important; 
-                padding: 20px 35px !important;
-            }
-            
-            .nav-link { 
-                font-size: 1.1rem !important;
-                padding: 10px 18px !important;
-            }
-            
-            section.text-center.py-4 p { font-size: 1.6rem !important; }
-            
-            #offers h2, #why-us h2 { font-size: 2.5rem !important; }
-            
-            .card-title a { font-size: 1.3rem !important; }
-            
-            .bottom-text-section p,
-            .bottom-text-section a { font-size: 1.5rem !important; }
-        }
-        
-        @media (max-width: 768px) {
-            header h1 { 
-                font-size: 2.2rem !important; 
-                padding: 15px 25px !important;
-            }
-            
-            .navbar-nav {
-                flex-direction: column !important;
-                gap: 10px !important;
-            }
-            
-            .nav-item {
-                width: 100% !important;
-            }
-            
-            .nav-link {
-                display: block !important;
-                text-align: center !important;
-                width: 90% !important;
-                margin: 0 auto 10px auto !important;
-            }
-            
-            section.text-center.py-4 p { 
-                font-size: 1.4rem !important;
-                padding: 0 15px !important;
-            }
-            
-            #offers h2, #why-us h2 { 
-                font-size: 2rem !important;
-                padding: 18px 30px !important;
-                margin-bottom: 50px !important;
-            }
-            
-            #why-us p { font-size: 1.3rem !important; }
-            
-            .card-title a { font-size: 1.2rem !important; }
-            
-            .bottom-text-section p,
-            .bottom-text-section a { 
-                font-size: 1.3rem !important;
-            }
-            
-            footer p { font-size: 1.2rem !important; }
-        }
-        
-        @media (max-width: 576px) {
-            header h1 { 
-                font-size: 1.8rem !important; 
-                padding: 12px 20px !important;
-            }
-            
-            section.text-center.py-4 p { 
-                font-size: 1.2rem !important;
-            }
-            
-            #offers h2, #why-us h2 { 
-                font-size: 1.6rem !important;
-                padding: 15px 25px !important;
-            }
-            
-            #why-us { 
-                padding: 60px 20px !important;
-            }
-            
-            #why-us p { font-size: 1.1rem !important; }
-            
-            .bottom-text-section { 
-                padding: 40px 15px !important;
-            }
-            
-            .bottom-text-section p,
-            .bottom-text-section a {
-                font-size: 1.1rem !important;
-                line-height: 1.5 !important;
-            }
-        }
-    </style>
 </head>
 <body>
 
 <!-- Заголовок по центру -->
-<header class="text-center py-5 bg-gradient">
+<header class="text-center py-5">
     <h1>Гламурные котята</h1>
 </header>
 
@@ -394,20 +25,20 @@
 <div class="white-space"></div>
 
 <!-- Навигация -->
-<nav class="navbar navbar-expand-lg navbar-light bg-pink py-3">
+<nav class="navbar navbar-expand-lg py-3">
     <div class="container justify-content-center">
         <ul class="navbar-nav mb-2 mb-lg-0 text-center">
             <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
             <li class="nav-item"><a class="nav-link" href="breeds.html">Стильные породы</a></li>
             <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуары</a></li>
-            <li class="nav-item"><a class="nav-link text-pink fs-4" href="order.html">🩷</a></li>
+            <li class="nav-item"><a class="nav-link special-link fs-4" href="order.html">🩷</a></li>
             <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительно</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
-                    <li><a class="dropdown-item" href="#book-photoshoot">Записаться на фотосессию</a></li>
+                    <li><a class="dropdown-item" href="#book-photoshoot">Фотосессия</a></li>
                 </ul>
             </li>
         </ul>
@@ -419,14 +50,14 @@
     <p>Добро пожаловать в наш гламурный журнал о котиках! Здесь вы найдёте стильные породы, модные аксессуары и лучшие beauty-процедуры для пушистых модников.</p>
 </section>
 
-<!-- Карточки Узнать подробнее и Почему мы -->
+<!-- Карточки -->
 <section class="container py-5">
     <div class="row justify-content-center g-4">
         <div class="col-md-5">
             <div class="card h-100">
                 <img src="images/cat1.jpg" class="card-img-top" alt="Стильные породы">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="#offers" class="text-decoration-none">Узнать подробнее</a></h5>
+                    <h5 class="card-title"><a href="#offers">Узнать подробнее</a></h5>
                 </div>
             </div>
         </div>
@@ -434,7 +65,7 @@
             <div class="card h-100">
                 <img src="images/cat2.jpg" class="card-img-top" alt="Почему мы">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="#why-us" class="text-decoration-none">Почему мы?</a></h5>
+                    <h5 class="card-title"><a href="#why-us">Почему мы?</a></h5>
                 </div>
             </div>
         </div>
@@ -449,15 +80,15 @@
             <div class="card h-100">
                 <img src="images/cat1.jpg" class="card-img-top" alt="Стильные породы">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="breeds.html" class="text-decoration-none">Стильные породы</a></h5>
+                    <h5 class="card-title"><a href="breeds.html">Стильные породы</a></h5>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card h-100">
-                <img src="images/cat2.jpg" class="card-img-top" alt="Гламурные аксессуары">
+                <img src="images/cat2.jpg" class="card-img-top" alt="Аксессуары">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="accessories.html" class="text-decoration-none">Гламурные аксессуары</a></h5>
+                    <h5 class="card-title"><a href="accessories.html">Гламурные аксессуары</a></h5>
                 </div>
             </div>
         </div>
@@ -465,7 +96,9 @@
             <div class="card h-100">
                 <img src="images/cat3.jpg" class="card-img-top" alt="Beauty-процедуры">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="beauty.html" class="text-decoration-none">Beauty-процедуры</a></h5>
+                    <h5 class="card-title"><a href="beauty.
+
+html">Beauty-процедуры</a></h5>
                 </div>
             </div>
         </div>
@@ -473,20 +106,20 @@
 </section>
 
 <!-- Почему мы -->
-<section class="container py-5" id="why-us">
-    <h2 class="text-center mb-4">Почему мы?</h2>
-    <p>Мы предлагаем индивидуальный подход к каждому пушистику, высокое качество ухода и профессиональные услуги по стрижке, спа-процедурам и аксессуарам.</p>
+<section class="container py-5 text-center" id="why-us">
+    <h2>Почему мы?</h2>
+    <p>Мы предлагаем индивидуальный подход к каждому пушистику, высокое качество ухода и профессиональные услуги.</p>
 </section>
 
-<!-- Текст внизу страницы -->
+<!-- Текст внизу -->
 <section class="bottom-text-section">
     <div class="container text-center">
-        <p>Узнайте больше о наших <a href="breeds.html">стильных породах</a> или посетите <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.</p>
+        <p>Узнайте больше о наших <a href="breeds.html">стильных породах</a> или посетите <a href="https://example.com" target="_blank">наш блог</a>.</p>
     </div>
 </section>
 
 <!-- Футер -->
-<footer class="text-center py-4 bg-dark text-white">
+<footer class="text-center py-4">
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
 

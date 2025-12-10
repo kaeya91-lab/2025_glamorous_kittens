@@ -17,16 +17,16 @@ body {
     padding: 0 20px;
 }
 
-/* Цветовая палитра */
+
 :root {
-    --color1: #F0EEE9;  /* Светлый бежевый */
-    --color2: #E196A9;  /* Розовый */
-    --color3: #DAE498;  /* Зеленый */
+    --color1: #F0EEE9; 
+    --color2: #E196A9;  
+    --color3: #DAE498;  
     --white: #FFFFFF;
     --black: #000000;
 }
 
-/* Главный заголовок */
+
 .main-header {
     text-align: center;
     padding: 60px 20px;
@@ -49,7 +49,7 @@ body {
     box-shadow: 0 8px 20px rgba(225, 150, 169, 0.3);
 }
 
-/* Навигация */
+
 .main-nav {
     padding: 60px 0 40px;
     background-color: var(--white);
@@ -130,7 +130,7 @@ body {
     color: var(--white) !important;
 }
 
-/* Приветственный текст */
+
 .welcome-section {
     padding: 60px 0;
     background-color: var(--white);
@@ -148,7 +148,7 @@ body {
     padding: 0 20px;
 }
 
-/* Заголовок раздела */
+
 .section-title {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
@@ -165,7 +165,7 @@ body {
     margin-top: 40px;
 }
 
-/* Кнопки навигации по аксессуарам */
+
 .section-buttons {
     display: flex;
     justify-content: center;
@@ -199,13 +199,13 @@ body {
     box-shadow: 0 10px 25px rgba(225, 150, 169, 0.5);
 }
 
-/* Секция с аксессуарами */
+
 .offers-section {
     padding: 60px 0;
     text-align: center;
 }
 
-/* Карточки аксессуаров */
+
 .cards-row {
     display: flex;
     justify-content: center;
@@ -289,7 +289,7 @@ body {
     margin-top: 15px;
 }
 
-/* Кнопка заказа */
+
 .btn-order {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
@@ -312,12 +312,12 @@ body {
     box-shadow: 0 12px 25px rgba(218, 228, 152, 0.4);
 }
 
-/* Кнопка наверх */
+
 .text-center.py-4 {
     padding: 40px 0;
 }
 
-/* Нижний текст */
+
 .bottom-section {
     padding: 60px 0;
     text-align: center;
@@ -348,7 +348,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Футер */
+
 .main-footer {
     background-color: var(--color2);
     color: var(--white);
@@ -363,7 +363,7 @@ body {
     margin: 0;
 }
 
-/* Адаптивность */
+
 @media (max-width: 1200px) {
     .container {
         max-width: 1000px;

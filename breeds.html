@@ -1,4 +1,3 @@
-мя, [10.12.2025 6:43]
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -10,41 +9,58 @@
 </head>
 <body>
 
+<!-- Заголовок по центру -->
+<header class="text-center py-5">
+    <h1>Стильные породы котят</h1>
+</header>
+
+<!-- Белое пространство -->
+<div class="white-space"></div>
+
 <!-- Навигация -->
-<nav class="navbar navbar-expand-lg navbar-light bg-pink py-3">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Гламурные котята</a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container justify-content-center">
+        <ul class="navbar-nav mb-2 mb-lg-0 text-center">
             <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
             <li class="nav-item"><a class="nav-link active" href="breeds.html">Стильные породы</a></li>
             <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуары</a></li>
+            <li class="nav-item"><a class="nav-link heart-icon" href="order.html">🩷</a></li>
             <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-            <li class="nav-item"><a class="nav-link" href="photoshoot.html">Фотосессия</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+                    <li><a class="dropdown-item" href="#book-photoshoot">Записаться на фотосессию</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </nav>
 
-<!-- Баннер раздела -->
-<header class="text-center py-5 bg-gradient">
-    <h1>Стильные породы котят</h1>
-    <p class="lead">Познакомьтесь с пушистыми модниками разных пород</p>
-</header>
+<!-- Вводный текст -->
+<section class="intro-section text-center py-4">
+    <div class="container">
+        <p>Познакомьтесь с пушистыми модниками разных пород</p>
+    </div>
+</section>
 
 <!-- Навигация по разделам внутри страницы -->
 <section class="container text-center py-4">
-    <a href="#section1" class="btn btn-pink m-2">Сибирский котёнок</a>
-    <a href="#section4" class="btn btn-pink m-2">Скандинавский котёнок</a>
-    <a href="#section5" class="btn btn-pink m-2">Норвежский лесной котёнок</a>
-    <a href="#section2" class="btn btn-pink m-2">Британский котёнок</a>
-    <a href="#section6" class="btn btn-pink m-2">Шотландский котёнок</a>
-    <a href="#section7" class="btn btn-pink m-2">Экзотический котёнок</a>
-    <a href="#section3" class="btn btn-pink m-2">Мейн-кун котёнок</a>
-    <a href="#section8" class="btn btn-pink m-2">Рэгдолл котёнок</a>
-    <a href="#section9" class="btn btn-pink m-2">Сомалийский котёнок</a>
+    <div class="section-buttons">
+        <a href="#section1" class="btn btn-section">Сибирский котёнок</a>
+        <a href="#section4" class="btn btn-section">Скандинавский котёнок</a>
+        <a href="#section5" class="btn btn-section">Норвежский лесной котёнок</a>
+        <a href="#section2" class="btn btn-section">Британский котёнок</a>
+        <a href="#section6" class="btn btn-section">Шотландский котёнок</a>
+        <a href="#section7" class="btn btn-section">Экзотический котёнок</a>
+        <a href="#section3" class="btn btn-section">Мейн-кун котёнок</a>
+        <a href="#section8" class="btn btn-section">Рэгдолл котёнок</a>
+        <a href="#section9" class="btn btn-section">Сомалийский котёнок</a>
+    </div>
 </section>
 
-<!-- Разделы с карточками (как у тебя) -->
+<!-- Разделы с карточками -->
 <section id="section1" class="container py-5">
     <div class="row g-4">
         <div class="col-md-4">
@@ -86,9 +102,7 @@
                     <h5 class="card-title">Британский котёнок</h5>
                     <p class="card-text">Стильный, с красивой круглой мордочкой и плюшевой шерстью.</p>
                 </div>
-
-мя, [10.12.2025 6:43]
-</div>
+            </div>
         </div>
         <div class="col-md-4" id="section6">
             <div class="card h-100">
@@ -145,11 +159,18 @@
 
 <!-- Кнопка сделать заказ -->
 <div class="text-center py-5">
-    <a href="order.html" class="btn btn-pink btn-lg">Сделать заказ 🩷</a>
+    <a href="order.html" class="btn-order">Сделать заказ 🩷</a>
 </div>
 
+<!-- Текст внизу страницы -->
+<section class="bottom-text-section">
+    <div class="container text-center">
+        <p>Узнайте больше о наших <a href="accessories.html">гламурных аксессуарах</a> или посетите <a href="https://example.com" target="_blank">наш блог</a> для дополнительных советов.</p>
+    </div>
+</section>
+
 <!-- Футер -->
-<footer class="text-center py-4 bg-dark text-white">
+<footer class="text-center py-4">
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
 

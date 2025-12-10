@@ -66,13 +66,36 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+        
+        /* Стили для заголовка большими буквами */
+        .main-title {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+                letter-spacing: 1px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .main-title {
+                font-size: 2rem;
+                letter-spacing: 0.5px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <!-- Заголовок по центру -->
 <header class="text-center py-5 bg-gradient text-white">
-    <h1 class="display-4 fw-bold">Гламурные котята</h1>
+    <h1 class="main-title">ГЛАМУРНЫЕ КОТЯТА</h1>
     <p class="lead mt-3">Стиль и элегантность для ваших пушистых друзей</p>
 </header>
 

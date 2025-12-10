@@ -10,12 +10,12 @@
 </head>
 <body>
 
-<!-- Заголовок по центру -->
+
 <header class="main-header">
     <h1 class="main-title">ГЛАМУРНЫЕ КОТЯТА</h1>
 </header>
 
-<!-- Навигация -->
+
 <nav class="main-nav">
     <div class="nav-container">
         <ul class="nav-menu">
@@ -26,7 +26,7 @@
             <li class="nav-item"><a class="nav-link" href="beauty.html">Beauty-процедуры</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
             <li class="nav-item dropdown">
-                <!-- Добавлен data-bs-toggle для работы дропдауна Bootstrap -->
+               
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Дополнительная информация</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="reviews.html">Отзывы</a></li>
@@ -37,14 +37,14 @@
     </div>
 </nav>
 
-<!-- Вводный текст -->
+
 <section class="welcome-section">
     <div class="container">
         <p class="welcome-text">Добро пожаловать в наш гламурный мир котиков! Здесь вы найдёте стильные породы, модные аксессуары и лучшие beauty-процедуры для пушистых модников.</p>
     </div>
 </section>
 
-<!-- Карточки Узнать подробнее и Почему мы -->
+
 <section class="container cards-section">
     <div class="cards-row">
         <div class="card-col">
@@ -74,7 +74,7 @@
     </div>
 </section>
 
-<!-- Наши предложения -->
+
 <section class="container offers-section" id="offers">
     <h2 class="section-title">Наши предложения</h2>
     <div class="cards-row offers-cards">
@@ -117,7 +117,7 @@
     </div>
 </section>
 
-<!-- Почему мы -->
+
 <section class="why-us-section" id="why-us">
     <div class="container">
         <h2 class="section-title">Почему мы?</h2>
@@ -127,17 +127,17 @@
     </div>
 </section>
 
-<!-- Кнопка наверх -->
+
 <section class="container text-center py-4">
     <a href="#" class="btn-section">Наверх ⏏️</a>
 </section>
 
-<!-- Текст внизу страницы -->
+
 <section class="container bottom-section">
     <p class="bottom-text">Узнайте больше о наших <a href="breeds.html" class="green-link">стильных породах</a> или посетите <a href="https://example.com" target="_blank" class="green-link">наш блог</a> для дополнительных советов.</p>
 </section>
 
-<!-- Футер -->
+
 <footer class="main-footer">
     <p>© 2025 Гламурные котята. Все права защищены.</p>
 </footer>
@@ -146,14 +146,14 @@
 <script src="script.js"></script>
 
 <script>
-// Плавная прокрутка к якорям
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         
         const targetId = this.getAttribute('href');
         if (targetId === '#') {
-            // Прокрутка наверх
+          
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
